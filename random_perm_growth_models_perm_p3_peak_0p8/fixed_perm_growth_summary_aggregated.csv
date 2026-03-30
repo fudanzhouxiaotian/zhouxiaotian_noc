@@ -1,0 +1,7 @@
+﻿"model","model_title","routing","accepted_rate_avg","avg_packet_latency_avg","xy_fraction_avg"
+"linear_scale","Linear Scaling on Fixed Permutation Matrix","dim_order","0.606166666666667","4206.97",
+"linear_scale","Linear Scaling on Fixed Permutation Matrix","racke_tree","0.649977666666667","14.4234333333333",
+"linear_scale","Linear Scaling on Fixed Permutation Matrix","hybrid_xy_racke","0.704929","72.2868","0.415376"
+"ordered_fill","Ordered Fill on Fixed Permutation Matrix","dim_order","0.604023","4310.59333333333",
+"ordered_fill","Ordered Fill on Fixed Permutation Matrix","racke_tree","0.649921","14.2851",
+"ordered_fill","Ordered Fill on Fixed Permutation Matrix","hybrid_xy_racke","0.653094666666667","57.8349333333333","0.474488666666667"
