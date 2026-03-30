@@ -1,0 +1,1252 @@
+﻿BEGIN Configuration File: D:\noc_huawei\noc\booksim2-noc_speedup_study\booksim2-noc_speedup_study\tests\data\results\fixed_perm_growth_models_perm_4_3_6_1_8_7_2_5_0_peak_0p8_current_defaults\tmp_configs\linear_scale_dim_order_s2204.config
+num_vcs     = 48;
+vc_buf_size = 16;
+wait_for_tail_credit = 1;
+
+vc_allocator = islip;
+sw_allocator = islip;
+alloc_iters  = 16;
+
+credit_delay   = 2;
+routing_delay  = 0;
+vc_alloc_delay = 1;
+sw_alloc_delay = 1;
+st_final_delay = 1;
+
+input_speedup     = 1;
+output_speedup    = 1;
+internal_speedup  = 2.0;
+
+sim_type = latency;
+latency_thres  = 100000.0;
+sim_count      = 1;
+queue_sample_period_cycles = 0;
+
+topology = mesh;
+k  = 3;
+n  = 2;
+
+hybrid_transition_mode = linear_prob;
+hybrid_xy_low_threshold = 0.35;
+hybrid_racke_high_threshold = 0.65;
+hybrid_buffer_soft_threshold = 0.50;
+hybrid_buffer_hard_threshold = 0.85;
+hybrid_buffer_release_threshold = 0.35;
+hybrid_rate_soft_threshold = 0.55;
+hybrid_rate_hard_threshold = 0.90;
+hybrid_rate_weight = 0.25;
+hybrid_congestion_alpha = 0.25;
+hybrid_racke_increase_step = 0.25;
+hybrid_racke_decrease_step = 0.10;
+hybrid_epoch_cycles = 200;
+hybrid_hold_cycles = 600;
+hybrid_enable_midflight_override = 1;
+hybrid_feedback_delay_per_hop = 1;
+hybrid_flow_increase_step = 0.20;
+hybrid_flow_decrease_step = 0.08;
+hybrid_flow_hard_threshold = 0.95;
+
+packet_size = 1;
+
+
+ordered_injection_coefficients = {0.1666666667,0.3333333333,0.5};
+ordered_injection_phase_cycles = {1000,1000,1000};
+ordered_injection_source_order = {4,0,7,2,8,1,5,3,6};
+ordered_injection_flow_peak_rate = 0.60;
+warmup_periods = 2;
+custom_perm_array = {4,3,6,1,8,7,2,5,0};
+injection_process = scheduled;
+injection_rate = 0.8;
+scheduled_default_phase_cycles = 3000;
+perm_seed = 2204;
+hybrid_flow_hotspot_alpha = 0.85;
+hybrid_stats_window_cycles = 3000;
+hybrid_flow_hotspot_threshold = 1.1;
+sample_period = 3000;
+scheduled_injection_rates = {0.05,0.1,0.15,0.2,0.25,0.3,0.35,0.4,0.45,0.5,0.55,0.6,0.65,0.7,0.75,0.8,0.8,0.8};
+traffic = custom_perm;
+routing_function = dim_order;
+scheduled_phase_cycles = {3000,3000,3000,3000,3000,3000,3000,3000,3000,3000,3000,3000,3000,3000,3000,3000,3000,3000};
+seed = 2204;
+max_samples = 26;
+
+END Configuration File: D:\noc_huawei\noc\booksim2-noc_speedup_study\booksim2-noc_speedup_study\tests\data\results\fixed_perm_growth_models_perm_4_3_6_1_8_7_2_5_0_peak_0p8_current_defaults\tmp_configs\linear_scale_dim_order_s2204.config
+Class 0:
+Packet latency average = 12.9896
+	minimum = 11
+	maximum = 18
+	95th percentile = 17.5
+	99th percentile = 17.5
+Network latency average = 12.9896
+	minimum = 11
+	maximum = 18
+	95th percentile = 17.5
+	99th percentile = 17.5
+Slowest packet = 70
+Flit latency average = 12.9896
+	minimum = 11
+	maximum = 18
+	95th percentile = 17.5
+	99th percentile = 17.5
+Slowest flit = 70
+Fragmentation average = 0
+	minimum = 0
+	maximum = 0
+Injected packet rate average = 0.0500741
+	minimum = 0.043 (at node 1)
+	maximum = 0.0553333 (at node 0)
+Accepted packet rate average = 0.0497037
+	minimum = 0.0426667 (at node 3)
+	maximum = 0.055 (at node 4)
+Injected flit rate average = 0.0500741
+	minimum = 0.043 (at node 1)
+	maximum = 0.0553333 (at node 0)
+Accepted flit rate average= 0.0497037
+	minimum = 0.0426667 (at node 3)
+	maximum = 0.055 (at node 4)
+Injected packet length average = 1
+Accepted packet length average = 1
+Total in-flight flits = 10 (0 measured)
+====== Peak Queue Occupancy Statistics (Absolute Max) ======
+  Overall Max VC Occupancy = 1
+  Overall Max Buffer Occupancy = 1
+latency change    = 1
+throughput change = 1
+Class 0:
+Packet latency average = 12.993
+	minimum = 11
+	maximum = 18
+	95th percentile = 17.5
+	99th percentile = 18.5
+Network latency average = 12.993
+	minimum = 11
+	maximum = 18
+	95th percentile = 17.5
+	99th percentile = 18.5
+Slowest packet = 70
+Flit latency average = 12.993
+	minimum = 11
+	maximum = 18
+	95th percentile = 17.5
+	99th percentile = 18.5
+Slowest flit = 70
+Fragmentation average = 0
+	minimum = 0
+	maximum = 0
+Injected packet rate average = 0.0766111
+	minimum = 0.0706667 (at node 1)
+	maximum = 0.0818333 (at node 0)
+Accepted packet rate average = 0.0763333
+	minimum = 0.0705 (at node 3)
+	maximum = 0.0816667 (at node 4)
+Injected flit rate average = 0.0766111
+	minimum = 0.0706667 (at node 1)
+	maximum = 0.0818333 (at node 0)
+Accepted flit rate average= 0.0763333
+	minimum = 0.0705 (at node 3)
+	maximum = 0.0816667 (at node 4)
+Injected packet length average = 1
+Accepted packet length average = 1
+Total in-flight flits = 15 (0 measured)
+====== Peak Queue Occupancy Statistics (Absolute Max) ======
+  Overall Max VC Occupancy = 1
+  Overall Max Buffer Occupancy = 2
+latency change    = 0.000261432
+throughput change = 0.34886
+Warmed up ...Time used is 6000 cycles
+Class 0:
+Packet latency average = 13.026
+	minimum = 11
+	maximum = 19
+	95th percentile = 17.5
+	99th percentile = 18.5
+Network latency average = 13.026
+	minimum = 11
+	maximum = 19
+	95th percentile = 17.5
+	99th percentile = 18.5
+Slowest packet = 5558
+Flit latency average = 13.0318
+	minimum = 11
+	maximum = 19
+	95th percentile = 17.5
+	99th percentile = 18.5
+Slowest flit = 5558
+Fragmentation average = 0
+	minimum = 0
+	maximum = 0
+Injected packet rate average = 0.150333
+	minimum = 0.140667 (at node 4)
+	maximum = 0.167333 (at node 1)
+Accepted packet rate average = 0.150259
+	minimum = 0.140667 (at node 8)
+	maximum = 0.167 (at node 3)
+Injected flit rate average = 0.150333
+	minimum = 0.140667 (at node 4)
+	maximum = 0.167333 (at node 1)
+Accepted flit rate average= 0.150259
+	minimum = 0.140667 (at node 8)
+	maximum = 0.167 (at node 3)
+Injected packet length average = 1
+Accepted packet length average = 1
+Total in-flight flits = 17 (17 measured)
+====== Peak Queue Occupancy Statistics (Absolute Max) ======
+  Overall Max VC Occupancy = 1
+  Overall Max Buffer Occupancy = 2
+latency change    = 0.00253437
+throughput change = 0.491989
+Class 0:
+Packet latency average = 13.0487
+	minimum = 11
+	maximum = 19
+	95th percentile = 17.5
+	99th percentile = 18.5
+Network latency average = 13.0487
+	minimum = 11
+	maximum = 19
+	95th percentile = 17.5
+	99th percentile = 18.5
+Slowest packet = 5558
+Flit latency average = 13.0511
+	minimum = 11
+	maximum = 19
+	95th percentile = 17.5
+	99th percentile = 18.5
+Slowest flit = 5558
+Fragmentation average = 0
+	minimum = 0
+	maximum = 0
+Injected packet rate average = 0.173685
+	minimum = 0.171 (at node 3)
+	maximum = 0.179 (at node 1)
+Accepted packet rate average = 0.173444
+	minimum = 0.170833 (at node 1)
+	maximum = 0.1785 (at node 3)
+Injected flit rate average = 0.173685
+	minimum = 0.171 (at node 3)
+	maximum = 0.179 (at node 1)
+Accepted flit rate average= 0.173444
+	minimum = 0.170833 (at node 1)
+	maximum = 0.1785 (at node 3)
+Injected packet length average = 1
+Accepted packet length average = 1
+Total in-flight flits = 28 (28 measured)
+====== Peak Queue Occupancy Statistics (Absolute Max) ======
+  Overall Max VC Occupancy = 1
+  Overall Max Buffer Occupancy = 2
+latency change    = 0.00173816
+throughput change = 0.133675
+Class 0:
+Packet latency average = 13.0898
+	minimum = 11
+	maximum = 20
+	95th percentile = 17.5
+	99th percentile = 18.5
+Network latency average = 13.0898
+	minimum = 11
+	maximum = 20
+	95th percentile = 17.5
+	99th percentile = 18.5
+Slowest packet = 16714
+Flit latency average = 13.0912
+	minimum = 11
+	maximum = 20
+	95th percentile = 17.5
+	99th percentile = 18.5
+Slowest flit = 16714
+Fragmentation average = 0
+	minimum = 0
+	maximum = 0
+Injected packet rate average = 0.198617
+	minimum = 0.194444 (at node 4)
+	maximum = 0.201778 (at node 6)
+Accepted packet rate average = 0.198519
+	minimum = 0.194444 (at node 8)
+	maximum = 0.201778 (at node 2)
+Injected flit rate average = 0.198617
+	minimum = 0.194444 (at node 4)
+	maximum = 0.201778 (at node 6)
+Accepted flit rate average= 0.198519
+	minimum = 0.194444 (at node 8)
+	maximum = 0.201778 (at node 2)
+Injected packet length average = 1
+Accepted packet length average = 1
+Total in-flight flits = 23 (23 measured)
+====== Peak Queue Occupancy Statistics (Absolute Max) ======
+  Overall Max VC Occupancy = 1
+  Overall Max Buffer Occupancy = 2
+latency change    = 0.00314479
+throughput change = 0.126306
+Class 0:
+Packet latency average = 13.13
+	minimum = 11
+	maximum = 21
+	95th percentile = 17.5
+	99th percentile = 18.5
+Network latency average = 13.13
+	minimum = 11
+	maximum = 21
+	95th percentile = 17.5
+	99th percentile = 18.5
+Slowest packet = 22598
+Flit latency average = 13.1309
+	minimum = 11
+	maximum = 21
+	95th percentile = 17.5
+	99th percentile = 18.5
+Slowest flit = 22598
+Fragmentation average = 0
+	minimum = 0
+	maximum = 0
+Injected packet rate average = 0.223759
+	minimum = 0.218833 (at node 4)
+	maximum = 0.229583 (at node 2)
+Accepted packet rate average = 0.223509
+	minimum = 0.218667 (at node 8)
+	maximum = 0.229083 (at node 6)
+Injected flit rate average = 0.223759
+	minimum = 0.218833 (at node 4)
+	maximum = 0.229583 (at node 2)
+Accepted flit rate average= 0.223509
+	minimum = 0.218667 (at node 8)
+	maximum = 0.229083 (at node 6)
+Injected packet length average = 1
+Accepted packet length average = 1
+Total in-flight flits = 42 (42 measured)
+====== Peak Queue Occupancy Statistics (Absolute Max) ======
+  Overall Max VC Occupancy = 1
+  Overall Max Buffer Occupancy = 2
+latency change    = 0.00306274
+throughput change = 0.111811
+Class 0:
+Packet latency average = 13.1598
+	minimum = 11
+	maximum = 21
+	95th percentile = 18.5
+	99th percentile = 19.5
+Network latency average = 13.1598
+	minimum = 11
+	maximum = 21
+	95th percentile = 18.5
+	99th percentile = 19.5
+Slowest packet = 22598
+Flit latency average = 13.1605
+	minimum = 11
+	maximum = 21
+	95th percentile = 18.5
+	99th percentile = 19.5
+Slowest flit = 22598
+Fragmentation average = 0
+	minimum = 0
+	maximum = 0
+Injected packet rate average = 0.249496
+	minimum = 0.2464 (at node 8)
+	maximum = 0.254067 (at node 2)
+Accepted packet rate average = 0.249326
+	minimum = 0.246267 (at node 0)
+	maximum = 0.253867 (at node 6)
+Injected flit rate average = 0.249496
+	minimum = 0.2464 (at node 8)
+	maximum = 0.254067 (at node 2)
+Accepted flit rate average= 0.249326
+	minimum = 0.246267 (at node 0)
+	maximum = 0.253867 (at node 6)
+Injected packet length average = 1
+Accepted packet length average = 1
+Total in-flight flits = 38 (38 measured)
+====== Peak Queue Occupancy Statistics (Absolute Max) ======
+  Overall Max VC Occupancy = 1
+  Overall Max Buffer Occupancy = 2
+latency change    = 0.00226325
+throughput change = 0.103546
+Class 0:
+Packet latency average = 13.2338
+	minimum = 11
+	maximum = 23
+	95th percentile = 18.5
+	99th percentile = 19.5
+Network latency average = 13.2338
+	minimum = 11
+	maximum = 23
+	95th percentile = 18.5
+	99th percentile = 19.5
+Slowest packet = 41006
+Flit latency average = 13.2343
+	minimum = 11
+	maximum = 23
+	95th percentile = 18.5
+	99th percentile = 19.5
+Slowest flit = 41006
+Fragmentation average = 0
+	minimum = 0
+	maximum = 0
+Injected packet rate average = 0.274401
+	minimum = 0.268722 (at node 0)
+	maximum = 0.279111 (at node 6)
+Accepted packet rate average = 0.274198
+	minimum = 0.268556 (at node 4)
+	maximum = 0.278944 (at node 2)
+Injected flit rate average = 0.274401
+	minimum = 0.268722 (at node 0)
+	maximum = 0.279111 (at node 6)
+Accepted flit rate average= 0.274198
+	minimum = 0.268556 (at node 4)
+	maximum = 0.278944 (at node 2)
+Injected packet length average = 1
+Accepted packet length average = 1
+Total in-flight flits = 48 (48 measured)
+====== Peak Queue Occupancy Statistics (Absolute Max) ======
+  Overall Max VC Occupancy = 1
+  Overall Max Buffer Occupancy = 2
+latency change    = 0.00559377
+throughput change = 0.0907069
+Class 0:
+Packet latency average = 13.4059
+	minimum = 11
+	maximum = 29
+	95th percentile = 18.5
+	99th percentile = 21.5
+Network latency average = 13.4059
+	minimum = 11
+	maximum = 29
+	95th percentile = 18.5
+	99th percentile = 21.5
+Slowest packet = 50130
+Flit latency average = 13.4062
+	minimum = 11
+	maximum = 29
+	95th percentile = 18.5
+	99th percentile = 21.5
+Slowest flit = 50130
+Fragmentation average = 0
+	minimum = 0
+	maximum = 0
+Injected packet rate average = 0.300011
+	minimum = 0.295619 (at node 0)
+	maximum = 0.304762 (at node 2)
+Accepted packet rate average = 0.299804
+	minimum = 0.295286 (at node 4)
+	maximum = 0.304571 (at node 6)
+Injected flit rate average = 0.300011
+	minimum = 0.295619 (at node 0)
+	maximum = 0.304762 (at node 2)
+Accepted flit rate average= 0.299804
+	minimum = 0.295286 (at node 4)
+	maximum = 0.304571 (at node 6)
+Injected packet length average = 1
+Accepted packet length average = 1
+Total in-flight flits = 54 (54 measured)
+====== Peak Queue Occupancy Statistics (Absolute Max) ======
+  Overall Max VC Occupancy = 1
+  Overall Max Buffer Occupancy = 2
+latency change    = 0.0128361
+throughput change = 0.0854114
+Class 0:
+Packet latency average = 14.1769
+	minimum = 11
+	maximum = 57
+	95th percentile = 22.5
+	99th percentile = 34.5
+Network latency average = 14.1769
+	minimum = 11
+	maximum = 57
+	95th percentile = 22.5
+	99th percentile = 34.5
+Slowest packet = 71915
+Flit latency average = 14.177
+	minimum = 11
+	maximum = 57
+	95th percentile = 22.5
+	99th percentile = 34.5
+Slowest flit = 71915
+Fragmentation average = 0
+	minimum = 0
+	maximum = 0
+Injected packet rate average = 0.325079
+	minimum = 0.322833 (at node 0)
+	maximum = 0.3295 (at node 2)
+Accepted packet rate average = 0.324731
+	minimum = 0.322542 (at node 4)
+	maximum = 0.328958 (at node 6)
+Injected flit rate average = 0.325079
+	minimum = 0.322833 (at node 0)
+	maximum = 0.3295 (at node 2)
+Accepted flit rate average= 0.324731
+	minimum = 0.322542 (at node 4)
+	maximum = 0.328958 (at node 6)
+Injected packet length average = 1
+Accepted packet length average = 1
+Total in-flight flits = 90 (90 measured)
+====== Peak Queue Occupancy Statistics (Absolute Max) ======
+  Overall Max VC Occupancy = 1
+  Overall Max Buffer Occupancy = 2
+latency change    = 0.0543828
+throughput change = 0.0767626
+Class 0:
+Packet latency average = 22.0884
+	minimum = 11
+	maximum = 1115
+	95th percentile = 61.5
+	99th percentile = 212.5
+Network latency average = 20.6855
+	minimum = 11
+	maximum = 1115
+	95th percentile = 58.5
+	99th percentile = 165.5
+Slowest packet = 83533
+Flit latency average = 20.6844
+	minimum = 11
+	maximum = 1115
+	95th percentile = 58.5
+	99th percentile = 165.5
+Slowest flit = 83533
+Fragmentation average = 0
+	minimum = 0
+	maximum = 0
+Injected packet rate average = 0.349033
+	minimum = 0.34537 (at node 7)
+	maximum = 0.353444 (at node 2)
+Accepted packet rate average = 0.347436
+	minimum = 0.342741 (at node 5)
+	maximum = 0.350296 (at node 0)
+Injected flit rate average = 0.349033
+	minimum = 0.34537 (at node 7)
+	maximum = 0.353444 (at node 2)
+Accepted flit rate average= 0.347436
+	minimum = 0.342741 (at node 5)
+	maximum = 0.350296 (at node 0)
+Injected packet length average = 1
+Accepted packet length average = 1
+Total in-flight flits = 404 (404 measured)
+====== Peak Queue Occupancy Statistics (Absolute Max) ======
+  Overall Max VC Occupancy = 1
+  Overall Max Buffer Occupancy = 48
+latency change    = 0.358173
+throughput change = 0.0653494
+Class 0:
+Packet latency average = 50.0392
+	minimum = 11
+	maximum = 1979
+	95th percentile = 257.5
+	99th percentile = 839.5
+Network latency average = 30.1088
+	minimum = 11
+	maximum = 1691
+	95th percentile = 95.5
+	99th percentile = 324.5
+Slowest packet = 90250
+Flit latency average = 30.1065
+	minimum = 11
+	maximum = 1691
+	95th percentile = 95.5
+	99th percentile = 324.5
+Slowest flit = 90160
+Fragmentation average = 0
+	minimum = 0
+	maximum = 0
+Injected packet rate average = 0.369822
+	minimum = 0.360133 (at node 7)
+	maximum = 0.374867 (at node 8)
+Accepted packet rate average = 0.368326
+	minimum = 0.358067 (at node 5)
+	maximum = 0.374667 (at node 0)
+Injected flit rate average = 0.369822
+	minimum = 0.360133 (at node 7)
+	maximum = 0.374867 (at node 8)
+Accepted flit rate average= 0.368326
+	minimum = 0.358067 (at node 5)
+	maximum = 0.374667 (at node 0)
+Injected packet length average = 1
+Accepted packet length average = 1
+Total in-flight flits = 420 (420 measured)
+====== Peak Queue Occupancy Statistics (Absolute Max) ======
+  Overall Max VC Occupancy = 1
+  Overall Max Buffer Occupancy = 48
+latency change    = 0.558579
+throughput change = 0.0567153
+Class 0:
+Packet latency average = 100.512
+	minimum = 11
+	maximum = 2496
+	95th percentile = 860.5
+	99th percentile = 999.5
+Network latency average = 36.9609
+	minimum = 11
+	maximum = 1691
+	95th percentile = 137.5
+	99th percentile = 435.5
+Slowest packet = 90250
+Flit latency average = 36.958
+	minimum = 11
+	maximum = 1691
+	95th percentile = 137.5
+	99th percentile = 435.5
+Slowest flit = 90160
+Fragmentation average = 0
+	minimum = 0
+	maximum = 0
+Injected packet rate average = 0.38938
+	minimum = 0.374606 (at node 6)
+	maximum = 0.400606 (at node 8)
+Accepted packet rate average = 0.38798
+	minimum = 0.371 (at node 2)
+	maximum = 0.400333 (at node 0)
+Injected flit rate average = 0.38938
+	minimum = 0.374606 (at node 6)
+	maximum = 0.400606 (at node 8)
+Accepted flit rate average= 0.38798
+	minimum = 0.371 (at node 2)
+	maximum = 0.400333 (at node 0)
+Injected packet length average = 1
+Accepted packet length average = 1
+Total in-flight flits = 433 (433 measured)
+====== Peak Queue Occupancy Statistics (Absolute Max) ======
+  Overall Max VC Occupancy = 1
+  Overall Max Buffer Occupancy = 48
+latency change    = 0.502155
+throughput change = 0.0506569
+Class 0:
+Packet latency average = 173.406
+	minimum = 11
+	maximum = 3089
+	95th percentile = 999.5
+	99th percentile = 999.5
+Network latency average = 42.0648
+	minimum = 11
+	maximum = 1691
+	95th percentile = 161.5
+	99th percentile = 558.5
+Slowest packet = 90250
+Flit latency average = 42.0616
+	minimum = 11
+	maximum = 1691
+	95th percentile = 161.5
+	99th percentile = 558.5
+Slowest flit = 90160
+Fragmentation average = 0
+	minimum = 0
+	maximum = 0
+Injected packet rate average = 0.407852
+	minimum = 0.384556 (at node 7)
+	maximum = 0.425917 (at node 5)
+Accepted packet rate average = 0.406568
+	minimum = 0.382639 (at node 3)
+	maximum = 0.425722 (at node 7)
+Injected flit rate average = 0.407852
+	minimum = 0.384556 (at node 7)
+	maximum = 0.425917 (at node 5)
+Accepted flit rate average= 0.406568
+	minimum = 0.382639 (at node 3)
+	maximum = 0.425722 (at node 7)
+Injected packet length average = 1
+Accepted packet length average = 1
+Total in-flight flits = 432 (432 measured)
+====== Peak Queue Occupancy Statistics (Absolute Max) ======
+  Overall Max VC Occupancy = 1
+  Overall Max Buffer Occupancy = 48
+latency change    = 0.420368
+throughput change = 0.0457196
+Class 0:
+Packet latency average = 265.307
+	minimum = 11
+	maximum = 4117
+	95th percentile = 999.5
+	99th percentile = 999.5
+Network latency average = 45.8439
+	minimum = 11
+	maximum = 1691
+	95th percentile = 181.5
+	99th percentile = 698.5
+Slowest packet = 90250
+Flit latency average = 45.8408
+	minimum = 11
+	maximum = 1691
+	95th percentile = 180.5
+	99th percentile = 698.5
+Slowest flit = 90160
+Fragmentation average = 0
+	minimum = 0
+	maximum = 0
+Injected packet rate average = 0.425718
+	minimum = 0.393487 (at node 7)
+	maximum = 0.451282 (at node 4)
+Accepted packet rate average = 0.424536
+	minimum = 0.391154 (at node 6)
+	maximum = 0.451051 (at node 8)
+Injected flit rate average = 0.425718
+	minimum = 0.393487 (at node 7)
+	maximum = 0.451282 (at node 4)
+Accepted flit rate average= 0.424536
+	minimum = 0.391154 (at node 6)
+	maximum = 0.451051 (at node 8)
+Injected packet length average = 1
+Accepted packet length average = 1
+Total in-flight flits = 432 (432 measured)
+====== Peak Queue Occupancy Statistics (Absolute Max) ======
+  Overall Max VC Occupancy = 1
+  Overall Max Buffer Occupancy = 48
+latency change    = 0.346394
+throughput change = 0.0423232
+Class 0:
+Packet latency average = 374.595
+	minimum = 11
+	maximum = 5068
+	95th percentile = 999.5
+	99th percentile = 999.5
+Network latency average = 48.6167
+	minimum = 11
+	maximum = 1691
+	95th percentile = 191.5
+	99th percentile = 768.5
+Slowest packet = 90250
+Flit latency average = 48.6136
+	minimum = 11
+	maximum = 1691
+	95th percentile = 191.5
+	99th percentile = 768.5
+Slowest flit = 90160
+Fragmentation average = 0
+	minimum = 0
+	maximum = 0
+Injected packet rate average = 0.443019
+	minimum = 0.401357 (at node 6)
+	maximum = 0.476262 (at node 4)
+Accepted packet rate average = 0.441926
+	minimum = 0.398524 (at node 2)
+	maximum = 0.476071 (at node 8)
+Injected flit rate average = 0.443019
+	minimum = 0.401357 (at node 6)
+	maximum = 0.476262 (at node 4)
+Accepted flit rate average= 0.441926
+	minimum = 0.398524 (at node 2)
+	maximum = 0.476071 (at node 8)
+Injected packet length average = 1
+Accepted packet length average = 1
+Total in-flight flits = 432 (432 measured)
+====== Peak Queue Occupancy Statistics (Absolute Max) ======
+  Overall Max VC Occupancy = 1
+  Overall Max Buffer Occupancy = 48
+latency change    = 0.291751
+throughput change = 0.0393512
+Class 0:
+Packet latency average = 499.589
+	minimum = 11
+	maximum = 6239
+	95th percentile = 999.5
+	99th percentile = 999.5
+Network latency average = 50.9246
+	minimum = 11
+	maximum = 1691
+	95th percentile = 197.5
+	99th percentile = 820.5
+Slowest packet = 90250
+Flit latency average = 50.9217
+	minimum = 11
+	maximum = 1691
+	95th percentile = 197.5
+	99th percentile = 820.5
+Slowest flit = 90160
+Fragmentation average = 0
+	minimum = 0
+	maximum = 0
+Injected packet rate average = 0.457852
+	minimum = 0.407311 (at node 1)
+	maximum = 0.497267 (at node 4)
+Accepted packet rate average = 0.456812
+	minimum = 0.405822 (at node 5)
+	maximum = 0.497111 (at node 8)
+Injected flit rate average = 0.457852
+	minimum = 0.407311 (at node 1)
+	maximum = 0.497267 (at node 4)
+Accepted flit rate average= 0.456812
+	minimum = 0.405822 (at node 5)
+	maximum = 0.497111 (at node 8)
+Injected packet length average = 1
+Accepted packet length average = 1
+Total in-flight flits = 436 (436 measured)
+====== Peak Queue Occupancy Statistics (Absolute Max) ======
+  Overall Max VC Occupancy = 1
+  Overall Max Buffer Occupancy = 48
+latency change    = 0.250194
+throughput change = 0.0325876
+Class 0:
+Packet latency average = 635.177
+	minimum = 11
+	maximum = 7395
+	95th percentile = 999.5
+	99th percentile = 999.5
+Network latency average = 52.795
+	minimum = 11
+	maximum = 1691
+	95th percentile = 205.5
+	99th percentile = 853.5
+Slowest packet = 90250
+Flit latency average = 52.7922
+	minimum = 11
+	maximum = 1691
+	95th percentile = 205.5
+	99th percentile = 852.5
+Slowest flit = 90160
+Fragmentation average = 0
+	minimum = 0
+	maximum = 0
+Injected packet rate average = 0.470868
+	minimum = 0.413833 (at node 2)
+	maximum = 0.516521 (at node 5)
+Accepted packet rate average = 0.46991
+	minimum = 0.411292 (at node 6)
+	maximum = 0.516417 (at node 7)
+Injected flit rate average = 0.470868
+	minimum = 0.413833 (at node 2)
+	maximum = 0.516521 (at node 5)
+Accepted flit rate average= 0.46991
+	minimum = 0.411292 (at node 6)
+	maximum = 0.516417 (at node 7)
+Injected packet length average = 1
+Accepted packet length average = 1
+Total in-flight flits = 430 (430 measured)
+====== Peak Queue Occupancy Statistics (Absolute Max) ======
+  Overall Max VC Occupancy = 1
+  Overall Max Buffer Occupancy = 48
+latency change    = 0.213464
+throughput change = 0.0278721
+Class 0:
+Packet latency average = 780.179
+	minimum = 11
+	maximum = 8473
+	95th percentile = 999.5
+	99th percentile = 999.5
+Network latency average = 54.3198
+	minimum = 11
+	maximum = 1691
+	95th percentile = 209.5
+	99th percentile = 900.5
+Slowest packet = 90250
+Flit latency average = 54.3171
+	minimum = 11
+	maximum = 1691
+	95th percentile = 209.5
+	99th percentile = 900.5
+Slowest flit = 90160
+Fragmentation average = 0
+	minimum = 0
+	maximum = 0
+Injected packet rate average = 0.482322
+	minimum = 0.41851 (at node 6)
+	maximum = 0.533059 (at node 4)
+Accepted packet rate average = 0.481414
+	minimum = 0.416176 (at node 2)
+	maximum = 0.532902 (at node 8)
+Injected flit rate average = 0.482322
+	minimum = 0.41851 (at node 6)
+	maximum = 0.533059 (at node 4)
+Accepted flit rate average= 0.481414
+	minimum = 0.416176 (at node 2)
+	maximum = 0.532902 (at node 8)
+Injected packet length average = 1
+Accepted packet length average = 1
+Total in-flight flits = 434 (434 measured)
+====== Peak Queue Occupancy Statistics (Absolute Max) ======
+  Overall Max VC Occupancy = 1
+  Overall Max Buffer Occupancy = 48
+latency change    = 0.185858
+throughput change = 0.0238967
+Class 0:
+Packet latency average = 932.048
+	minimum = 11
+	maximum = 9746
+	95th percentile = 999.5
+	99th percentile = 999.5
+Network latency average = 55.694
+	minimum = 11
+	maximum = 1691
+	95th percentile = 214.5
+	99th percentile = 901.5
+Slowest packet = 90250
+Flit latency average = 55.6914
+	minimum = 11
+	maximum = 1691
+	95th percentile = 214.5
+	99th percentile = 901.5
+Slowest flit = 90160
+Fragmentation average = 0
+	minimum = 0
+	maximum = 0
+Injected packet rate average = 0.492484
+	minimum = 0.422722 (at node 7)
+	maximum = 0.548111 (at node 5)
+Accepted packet rate average = 0.491623
+	minimum = 0.421389 (at node 5)
+	maximum = 0.547981 (at node 7)
+Injected flit rate average = 0.492484
+	minimum = 0.422722 (at node 7)
+	maximum = 0.548111 (at node 5)
+Accepted flit rate average= 0.491623
+	minimum = 0.421389 (at node 5)
+	maximum = 0.547981 (at node 7)
+Injected packet length average = 1
+Accepted packet length average = 1
+Total in-flight flits = 433 (433 measured)
+====== Peak Queue Occupancy Statistics (Absolute Max) ======
+  Overall Max VC Occupancy = 1
+  Overall Max Buffer Occupancy = 48
+latency change    = 0.162941
+throughput change = 0.0207669
+Class 0:
+Packet latency average = 1088.45
+	minimum = 11
+	maximum = 10808
+	95th percentile = 999.5
+	99th percentile = 999.5
+Network latency average = 56.8321
+	minimum = 11
+	maximum = 1691
+	95th percentile = 221.5
+	99th percentile = 901.5
+Slowest packet = 90250
+Flit latency average = 56.8297
+	minimum = 11
+	maximum = 1691
+	95th percentile = 221.5
+	99th percentile = 901.5
+Slowest flit = 90160
+Fragmentation average = 0
+	minimum = 0
+	maximum = 0
+Injected packet rate average = 0.501602
+	minimum = 0.426842 (at node 2)
+	maximum = 0.561246 (at node 4)
+Accepted packet rate average = 0.500795
+	minimum = 0.424684 (at node 6)
+	maximum = 0.561105 (at node 8)
+Injected flit rate average = 0.501602
+	minimum = 0.426842 (at node 2)
+	maximum = 0.561246 (at node 4)
+Accepted flit rate average= 0.500795
+	minimum = 0.424684 (at node 6)
+	maximum = 0.561105 (at node 8)
+Injected packet length average = 1
+Accepted packet length average = 1
+Total in-flight flits = 431 (431 measured)
+====== Peak Queue Occupancy Statistics (Absolute Max) ======
+  Overall Max VC Occupancy = 1
+  Overall Max Buffer Occupancy = 48
+latency change    = 0.143695
+throughput change = 0.0183146
+Class 0:
+Packet latency average = 1249.77
+	minimum = 11
+	maximum = 11880
+	95th percentile = 999.5
+	99th percentile = 999.5
+Network latency average = 57.7979
+	minimum = 11
+	maximum = 1691
+	95th percentile = 225.5
+	99th percentile = 901.5
+Slowest packet = 90250
+Flit latency average = 57.7956
+	minimum = 11
+	maximum = 1691
+	95th percentile = 225.5
+	99th percentile = 901.5
+Slowest flit = 90160
+Fragmentation average = 0
+	minimum = 0
+	maximum = 0
+Injected packet rate average = 0.509793
+	minimum = 0.4308 (at node 6)
+	maximum = 0.572933 (at node 4)
+Accepted packet rate average = 0.509026
+	minimum = 0.428967 (at node 2)
+	maximum = 0.572767 (at node 8)
+Injected flit rate average = 0.509793
+	minimum = 0.4308 (at node 6)
+	maximum = 0.572933 (at node 4)
+Accepted flit rate average= 0.509026
+	minimum = 0.428967 (at node 2)
+	maximum = 0.572767 (at node 8)
+Injected packet length average = 1
+Accepted packet length average = 1
+Total in-flight flits = 432 (432 measured)
+====== Peak Queue Occupancy Statistics (Absolute Max) ======
+  Overall Max VC Occupancy = 1
+  Overall Max Buffer Occupancy = 48
+latency change    = 0.129078
+throughput change = 0.0161693
+Class 0:
+Packet latency average = 1414.06
+	minimum = 11
+	maximum = 13009
+	95th percentile = 999.5
+	99th percentile = 999.5
+Network latency average = 58.7037
+	minimum = 11
+	maximum = 1695
+	95th percentile = 228.5
+	99th percentile = 901.5
+Slowest packet = 90250
+Flit latency average = 58.7014
+	minimum = 11
+	maximum = 1695
+	95th percentile = 228.5
+	99th percentile = 901.5
+Slowest flit = 275904
+Fragmentation average = 0
+	minimum = 0
+	maximum = 0
+Injected packet rate average = 0.51722
+	minimum = 0.433556 (at node 7)
+	maximum = 0.583476 (at node 4)
+Accepted packet rate average = 0.516494
+	minimum = 0.432413 (at node 5)
+	maximum = 0.583365 (at node 8)
+Injected flit rate average = 0.51722
+	minimum = 0.433556 (at node 7)
+	maximum = 0.583476 (at node 4)
+Accepted flit rate average= 0.516494
+	minimum = 0.432413 (at node 5)
+	maximum = 0.583365 (at node 8)
+Injected packet length average = 1
+Accepted packet length average = 1
+Total in-flight flits = 429 (429 measured)
+====== Peak Queue Occupancy Statistics (Absolute Max) ======
+  Overall Max VC Occupancy = 1
+  Overall Max Buffer Occupancy = 48
+latency change    = 0.116184
+throughput change = 0.0144588
+Class 0:
+Packet latency average = 1580.81
+	minimum = 11
+	maximum = 14153
+	95th percentile = 999.5
+	99th percentile = 999.5
+Network latency average = 59.4619
+	minimum = 11
+	maximum = 1695
+	95th percentile = 232.5
+	99th percentile = 907.5
+Slowest packet = 90250
+Flit latency average = 59.4597
+	minimum = 11
+	maximum = 1695
+	95th percentile = 232.5
+	99th percentile = 907.5
+Slowest flit = 275904
+Fragmentation average = 0
+	minimum = 0
+	maximum = 0
+Injected packet rate average = 0.52398
+	minimum = 0.436394 (at node 2)
+	maximum = 0.593424 (at node 5)
+Accepted packet rate average = 0.523274
+	minimum = 0.43453 (at node 6)
+	maximum = 0.593273 (at node 7)
+Injected flit rate average = 0.52398
+	minimum = 0.436394 (at node 2)
+	maximum = 0.593424 (at node 5)
+Accepted flit rate average= 0.523274
+	minimum = 0.43453 (at node 6)
+	maximum = 0.593273 (at node 7)
+Injected packet length average = 1
+Accepted packet length average = 1
+Total in-flight flits = 437 (437 measured)
+====== Peak Queue Occupancy Statistics (Absolute Max) ======
+  Overall Max VC Occupancy = 1
+  Overall Max Buffer Occupancy = 48
+latency change    = 0.105483
+throughput change = 0.012958
+Class 0:
+Packet latency average = 1750.28
+	minimum = 11
+	maximum = 15132
+	95th percentile = 999.5
+	99th percentile = 999.5
+Network latency average = 60.141
+	minimum = 11
+	maximum = 1695
+	95th percentile = 234.5
+	99th percentile = 907.5
+Slowest packet = 90250
+Flit latency average = 60.1389
+	minimum = 11
+	maximum = 1695
+	95th percentile = 234.5
+	99th percentile = 907.5
+Slowest flit = 275904
+Fragmentation average = 0
+	minimum = 0
+	maximum = 0
+Injected packet rate average = 0.530151
+	minimum = 0.440391 (at node 6)
+	maximum = 0.602391 (at node 5)
+Accepted packet rate average = 0.529472
+	minimum = 0.438841 (at node 2)
+	maximum = 0.602275 (at node 7)
+Injected flit rate average = 0.530151
+	minimum = 0.440391 (at node 6)
+	maximum = 0.602391 (at node 5)
+Accepted flit rate average= 0.529472
+	minimum = 0.438841 (at node 2)
+	maximum = 0.602275 (at node 7)
+Injected packet length average = 1
+Accepted packet length average = 1
+Total in-flight flits = 439 (439 measured)
+====== Peak Queue Occupancy Statistics (Absolute Max) ======
+  Overall Max VC Occupancy = 1
+  Overall Max Buffer Occupancy = 48
+latency change    = 0.0968224
+throughput change = 0.0117049
+Class 0:
+Packet latency average = 1921.3
+	minimum = 11
+	maximum = 16346
+	95th percentile = 999.5
+	99th percentile = 999.5
+Network latency average = 60.7827
+	minimum = 11
+	maximum = 1695
+	95th percentile = 235.5
+	99th percentile = 914.5
+Slowest packet = 90250
+Flit latency average = 60.7807
+	minimum = 11
+	maximum = 1695
+	95th percentile = 235.5
+	99th percentile = 914.5
+Slowest flit = 275904
+Fragmentation average = 0
+	minimum = 0
+	maximum = 0
+Injected packet rate average = 0.535731
+	minimum = 0.441792 (at node 7)
+	maximum = 0.610444 (at node 5)
+Accepted packet rate average = 0.535086
+	minimum = 0.440792 (at node 5)
+	maximum = 0.610333 (at node 7)
+Injected flit rate average = 0.535731
+	minimum = 0.441792 (at node 7)
+	maximum = 0.610444 (at node 5)
+Accepted flit rate average= 0.535086
+	minimum = 0.440792 (at node 5)
+	maximum = 0.610333 (at node 7)
+Injected packet length average = 1
+Accepted packet length average = 1
+Total in-flight flits = 433 (433 measured)
+====== Peak Queue Occupancy Statistics (Absolute Max) ======
+  Overall Max VC Occupancy = 1
+  Overall Max Buffer Occupancy = 48
+latency change    = 0.0890161
+throughput change = 0.0104929
+Draining all recorded packets ...
+Class 0:
+Remaining flits: 350027 350313 350533 350610 351292 351310 351433 351584 351714 351863 [...] (433 flits)
+Measured flits: 350027 350313 350533 350610 351292 351310 351433 351584 351714 351863 [...] (386 flits)
+Class 0:
+Remaining flits: 355957 355984 356647 356856 356914 357066 357259 357510 357523 357563 [...] (431 flits)
+Measured flits: 355957 355984 356647 356856 356914 357066 357259 357510 357523 357563 [...] (384 flits)
+Class 0:
+Remaining flits: 362824 363114 363333 363398 363430 363460 363491 363525 363647 363655 [...] (430 flits)
+Measured flits: 362824 363114 363333 363398 363430 363460 363491 363525 363647 363655 [...] (386 flits)
+Class 0:
+Remaining flits: 367429 368914 369057 369202 369332 369420 369485 369628 369707 369766 [...] (435 flits)
+Measured flits: 367429 368914 369057 369202 369332 369420 369485 369628 369707 369766 [...] (385 flits)
+Class 0:
+Remaining flits: 374937 375228 375340 375491 375492 375517 375777 375802 375868 375871 [...] (434 flits)
+Measured flits: 374937 375228 375340 375491 375492 375517 375777 375802 375868 375871 [...] (384 flits)
+Class 0:
+Remaining flits: 379491 379925 380526 380745 380897 381144 381161 381374 381389 381590 [...] (438 flits)
+Measured flits: 379491 379925 380526 380745 380897 381144 381161 381374 381389 381590 [...] (385 flits)
+Class 0:
+Remaining flits: 385571 386431 386562 386755 386780 386837 386988 387011 387051 387219 [...] (433 flits)
+Measured flits: 385571 386431 386562 386755 386780 386837 386988 387011 387051 387219 [...] (386 flits)
+Class 0:
+Remaining flits: 391665 391948 392233 392489 392768 392839 392923 392965 393053 393332 [...] (428 flits)
+Measured flits: 391665 391948 392233 392489 392768 392839 392923 392965 393053 393332 [...] (384 flits)
+Class 0:
+Remaining flits: 398829 399107 399246 399259 399280 399380 399455 399478 399524 399663 [...] (436 flits)
+Measured flits: 398829 399107 399246 399259 399280 399380 399455 399478 399524 399663 [...] (385 flits)
+Class 0:
+Remaining flits: 404518 404851 405076 405097 405159 405202 405366 405497 405648 405650 [...] (433 flits)
+Measured flits: 404518 404851 405076 405097 405159 405202 405366 405497 405648 405650 [...] (385 flits)
+Class 0:
+Remaining flits: 409432 409694 410264 410558 410585 411057 411077 411440 411444 411514 [...] (436 flits)
+Measured flits: 409432 409694 410264 410558 410585 411057 411077 411440 411444 411514 [...] (384 flits)
+Class 0:
+Remaining flits: 414881 416027 416262 416916 417001 417033 417360 417570 417678 417701 [...] (432 flits)
+Measured flits: 414881 416027 416262 416916 417001 417033 417360 417570 417678 417701 [...] (386 flits)
+Class 0:
+Remaining flits: 421929 422610 422759 422871 422903 423107 423164 423185 423447 423466 [...] (432 flits)
+Measured flits: 421929 422610 422759 422871 422903 423107 423164 423185 423447 423466 [...] (384 flits)
+Class 0:
+Remaining flits: 428714 428906 429006 429277 429303 429390 429405 429415 429573 429597 [...] (430 flits)
+Measured flits: 428714 428906 429006 429277 429303 429390 429405 429415 429573 429597 [...] (386 flits)
+Class 0:
+Remaining flits: 434036 434835 434855 434883 435292 435429 435524 435583 435599 435674 [...] (433 flits)
+Measured flits: 434036 434835 434855 434883 435292 435429 435524 435583 435599 435674 [...] (386 flits)
+Class 0:
+Remaining flits: 439922 440342 440707 440784 440860 440956 440980 441143 441272 441344 [...] (434 flits)
+Measured flits: 439922 440342 440707 440784 440860 440956 440980 441143 441272 441344 [...] (386 flits)
+Class 0:
+Remaining flits: 446494 446524 446763 446814 447011 447051 447059 447089 447103 447111 [...] (441 flits)
+Measured flits: 446494 446524 446763 446814 447011 447051 447059 447089 447103 447111 [...] (386 flits)
+Class 0:
+Remaining flits: 452563 452845 453031 453130 453138 453276 453279 453352 453430 453575 [...] (431 flits)
+Measured flits: 452563 452845 453031 453130 453138 453276 453279 453352 453430 453575 [...] (385 flits)
+Class 0:
+Remaining flits: 458420 458617 458663 458905 459055 459152 459288 459435 459570 459713 [...] (439 flits)
+Measured flits: 458420 458617 458663 458905 459055 459152 459288 459435 459570 459713 [...] (386 flits)
+Class 0:
+Remaining flits: 462646 464087 464164 464171 464420 464455 464970 465057 465264 465266 [...] (435 flits)
+Measured flits: 462646 464087 464164 464171 464420 464455 464970 465057 465264 465266 [...] (385 flits)
+Class 0:
+Remaining flits: 469441 470131 470238 470594 470624 470671 470689 470773 470995 471276 [...] (432 flits)
+Measured flits: 469441 470131 470238 470594 470624 470671 470689 470773 470995 471276 [...] (385 flits)
+Class 0:
+Remaining flits: 476143 476418 476680 476697 476988 476993 477275 477413 477473 477499 [...] (425 flits)
+Measured flits: 476143 476418 476680 476697 476988 476993 477275 477413 477473 477499 [...] (384 flits)
+Class 0:
+Remaining flits: 482824 482894 483103 483205 483273 483363 483391 483515 483651 483655 [...] (429 flits)
+Measured flits: 482824 482894 483103 483205 483273 483363 483391 483515 483651 483655 [...] (385 flits)
+Class 0:
+Remaining flits: 487828 488224 488808 488989 489395 489498 489532 489614 489680 489789 [...] (430 flits)
+Measured flits: 487828 488224 488808 488989 489395 489498 489532 489614 489680 489789 [...] (384 flits)
+Class 0:
+Remaining flits: 492871 493473 493776 494327 494550 494821 494902 494961 494999 495147 [...] (436 flits)
+Measured flits: 492871 493473 493776 494327 494550 494821 494902 494961 494999 495147 [...] (221 flits)
+Class 0:
+Remaining flits: 500524 500573 500840 500852 501104 501125 501139 501157 501200 501410 [...] (432 flits)
+Measured flits: 500524 (1 flits)
+Draining remaining packets ...
+Time taken is 104212 cycles
+====== Overall Traffic Statistics ======
+====== Traffic class 0 ======
+Packet latency average = 4240.44 (1 samples)
+	minimum = 11 (1 samples)
+	maximum = 26219 (1 samples)
+Network latency average = 77.5243 (1 samples)
+	minimum = 11 (1 samples)
+	maximum = 1695 (1 samples)
+Flit latency average = 64.462 (1 samples)
+	minimum = 11 (1 samples)
+	maximum = 1695 (1 samples)
+Fragmentation average = 0 (1 samples)
+	minimum = 0 (1 samples)
+	maximum = 0 (1 samples)
+Injected packet rate average = 0.535731 (1 samples)
+	minimum = 0.441792 (1 samples)
+	maximum = 0.610444 (1 samples)
+Accepted packet rate average = 0.535086 (1 samples)
+	minimum = 0.440792 (1 samples)
+	maximum = 0.610333 (1 samples)
+Injected flit rate average = 0.535731 (1 samples)
+	minimum = 0.441792 (1 samples)
+	maximum = 0.610444 (1 samples)
+Accepted flit rate average = 0.535086 (1 samples)
+	minimum = 0.440792 (1 samples)
+	maximum = 0.610333 (1 samples)
+Injected packet size average = 1 (1 samples)
+Accepted packet size average = 1 (1 samples)
+Hops average = 3.66874 (1 samples)
+Total run time 45.4525
+
