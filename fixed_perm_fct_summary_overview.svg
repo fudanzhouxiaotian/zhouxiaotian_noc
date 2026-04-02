@@ -1,0 +1,180 @@
+<svg xmlns='http://www.w3.org/2000/svg' width='1500' height='1200' viewBox='0 0 1500 1200'>
+<rect width='100%' height='100%' fill='#f8fafc'/>
+<text x='60' y='42' font-family='Segoe UI, Arial' font-size='30' font-weight='700' fill='#0f172a' text-anchor='start'>Finite-Flow FCT Comparison (2K flits/flow)</text>
+<text x='60' y='68' font-family='Segoe UI, Arial' font-size='13' font-weight='400' fill='#475569' text-anchor='start'>Permutation P = (4,3,6,1,8,7,2,5,0), packet_size = 1 flit, models = all-start and ordered-start</text>
+<rect x='60' y='100' width='660' height='300' fill='white' stroke='#cbd5e1' rx='8'/>
+<text x='78' y='128' font-family='Segoe UI, Arial' font-size='18' font-weight='700' fill='#111827' text-anchor='start'>Average FCT: All-Start</text>
+<line x1='130' y1='356.0' x2='690' y2='356.0' stroke='#e5e7eb' stroke-width='1'/>
+<text x='120' y='360.0' font-family='Segoe UI, Arial' font-size='11' font-weight='400' fill='#64748b' text-anchor='end'>0.0</text>
+<line x1='130' y1='303.0' x2='690' y2='303.0' stroke='#e5e7eb' stroke-width='1'/>
+<text x='120' y='307.0' font-family='Segoe UI, Arial' font-size='11' font-weight='400' fill='#64748b' text-anchor='end'>831.4</text>
+<line x1='130' y1='250.0' x2='690' y2='250.0' stroke='#e5e7eb' stroke-width='1'/>
+<text x='120' y='254.0' font-family='Segoe UI, Arial' font-size='11' font-weight='400' fill='#64748b' text-anchor='end'>1662.8</text>
+<line x1='130' y1='197.0' x2='690' y2='197.0' stroke='#e5e7eb' stroke-width='1'/>
+<text x='120' y='201.0' font-family='Segoe UI, Arial' font-size='11' font-weight='400' fill='#64748b' text-anchor='end'>2494.2</text>
+<line x1='130' y1='144.0' x2='690' y2='144.0' stroke='#e5e7eb' stroke-width='1'/>
+<text x='120' y='148.0' font-family='Segoe UI, Arial' font-size='11' font-weight='400' fill='#64748b' text-anchor='end'>3325.6</text>
+<rect x='171.4814814814815' y='166.71428571428572' width='103.7037037037037' height='189.28571428571428' fill='#0f766e' stroke='none' rx='4'/>
+<text x='223.33333333333334' y='376' font-family='Segoe UI, Arial' font-size='11' font-weight='600' fill='#334155' text-anchor='middle'>XY</text>
+<text x='223.33333333333334' y='394' font-family='Segoe UI, Arial' font-size='10' font-weight='400' fill='#64748b' text-anchor='middle'>2969.3</text>
+<rect x='358.14814814814815' y='194.6137733812967' width='103.7037037037037' height='161.3862266187033' fill='#b45309' stroke='none' rx='4'/>
+<text x='410.0' y='376' font-family='Segoe UI, Arial' font-size='11' font-weight='600' fill='#334155' text-anchor='middle'>Racke</text>
+<text x='410.0' y='394' font-family='Segoe UI, Arial' font-size='10' font-weight='400' fill='#64748b' text-anchor='middle'>2531.7</text>
+<rect x='544.8148148148148' y='192.03151215930868' width='103.7037037037037' height='163.96848784069132' fill='#2563eb' stroke='none' rx='4'/>
+<text x='596.6666666666666' y='376' font-family='Segoe UI, Arial' font-size='11' font-weight='600' fill='#334155' text-anchor='middle'>Hybrid</text>
+<text x='596.6666666666666' y='394' font-family='Segoe UI, Arial' font-size='10' font-weight='400' fill='#64748b' text-anchor='middle'>2572.2</text>
+<rect x='780' y='100' width='660' height='300' fill='white' stroke='#cbd5e1' rx='8'/>
+<text x='798' y='128' font-family='Segoe UI, Arial' font-size='18' font-weight='700' fill='#111827' text-anchor='start'>Average FCT: Ordered-Start</text>
+<line x1='850' y1='356.0' x2='1410' y2='356.0' stroke='#e5e7eb' stroke-width='1'/>
+<text x='840' y='360.0' font-family='Segoe UI, Arial' font-size='11' font-weight='400' fill='#64748b' text-anchor='end'>0.0</text>
+<line x1='850' y1='303.0' x2='1410' y2='303.0' stroke='#e5e7eb' stroke-width='1'/>
+<text x='840' y='307.0' font-family='Segoe UI, Arial' font-size='11' font-weight='400' fill='#64748b' text-anchor='end'>672.3</text>
+<line x1='850' y1='250.0' x2='1410' y2='250.0' stroke='#e5e7eb' stroke-width='1'/>
+<text x='840' y='254.0' font-family='Segoe UI, Arial' font-size='11' font-weight='400' fill='#64748b' text-anchor='end'>1344.7</text>
+<line x1='850' y1='197.0' x2='1410' y2='197.0' stroke='#e5e7eb' stroke-width='1'/>
+<text x='840' y='201.0' font-family='Segoe UI, Arial' font-size='11' font-weight='400' fill='#64748b' text-anchor='end'>2017.0</text>
+<line x1='850' y1='144.0' x2='1410' y2='144.0' stroke='#e5e7eb' stroke-width='1'/>
+<text x='840' y='148.0' font-family='Segoe UI, Arial' font-size='11' font-weight='400' fill='#64748b' text-anchor='end'>2689.4</text>
+<rect x='891.4814814814815' y='166.71428571428572' width='103.7037037037037' height='189.28571428571428' fill='#0f766e' stroke='none' rx='4'/>
+<text x='943.3333333333334' y='376' font-family='Segoe UI, Arial' font-size='11' font-weight='600' fill='#334155' text-anchor='middle'>XY</text>
+<text x='943.3333333333334' y='394' font-family='Segoe UI, Arial' font-size='10' font-weight='400' fill='#64748b' text-anchor='middle'>2401.2</text>
+<rect x='1078.1481481481483' y='184.75745008192263' width='103.7037037037037' height='171.24254991807737' fill='#b45309' stroke='none' rx='4'/>
+<text x='1130.0' y='376' font-family='Segoe UI, Arial' font-size='11' font-weight='600' fill='#334155' text-anchor='middle'>Racke</text>
+<text x='1130.0' y='394' font-family='Segoe UI, Arial' font-size='10' font-weight='400' fill='#64748b' text-anchor='middle'>2172.3</text>
+<rect x='1264.8148148148148' y='177.16164759104595' width='103.7037037037037' height='178.83835240895405' fill='#2563eb' stroke='none' rx='4'/>
+<text x='1316.6666666666665' y='376' font-family='Segoe UI, Arial' font-size='11' font-weight='600' fill='#334155' text-anchor='middle'>Hybrid</text>
+<text x='1316.6666666666665' y='394' font-family='Segoe UI, Arial' font-size='10' font-weight='400' fill='#64748b' text-anchor='middle'>2268.7</text>
+<rect x='60' y='440' width='660' height='300' fill='white' stroke='#cbd5e1' rx='8'/>
+<text x='78' y='468' font-family='Segoe UI, Arial' font-size='18' font-weight='700' fill='#111827' text-anchor='start'>Maximum FCT</text>
+<line x1='130' y1='696.0' x2='690' y2='696.0' stroke='#e5e7eb' stroke-width='1'/>
+<text x='120' y='700.0' font-family='Segoe UI, Arial' font-size='11' font-weight='400' fill='#64748b' text-anchor='end'>0.0</text>
+<line x1='130' y1='643.0' x2='690' y2='643.0' stroke='#e5e7eb' stroke-width='1'/>
+<text x='120' y='647.0' font-family='Segoe UI, Arial' font-size='11' font-weight='400' fill='#64748b' text-anchor='end'>857.1</text>
+<line x1='130' y1='590.0' x2='690' y2='590.0' stroke='#e5e7eb' stroke-width='1'/>
+<text x='120' y='594.0' font-family='Segoe UI, Arial' font-size='11' font-weight='400' fill='#64748b' text-anchor='end'>1714.3</text>
+<line x1='130' y1='537.0' x2='690' y2='537.0' stroke='#e5e7eb' stroke-width='1'/>
+<text x='120' y='541.0' font-family='Segoe UI, Arial' font-size='11' font-weight='400' fill='#64748b' text-anchor='end'>2571.4</text>
+<line x1='130' y1='484.0' x2='690' y2='484.0' stroke='#e5e7eb' stroke-width='1'/>
+<text x='120' y='488.0' font-family='Segoe UI, Arial' font-size='11' font-weight='400' fill='#64748b' text-anchor='end'>3428.5</text>
+<rect x='60' y='440' width='1380' height='300' fill='white' stroke='#cbd5e1' rx='8'/>
+<text x='78' y='468' font-family='Segoe UI, Arial' font-size='18' font-weight='700' fill='#111827' text-anchor='start'>Maximum FCT Across Both Models</text>
+<line x1='130' y1='696.0' x2='1410' y2='696.0' stroke='#e5e7eb' stroke-width='1'/>
+<text x='120' y='700.0' font-family='Segoe UI, Arial' font-size='11' font-weight='400' fill='#64748b' text-anchor='end'>0</text>
+<line x1='130' y1='643.0' x2='1410' y2='643.0' stroke='#e5e7eb' stroke-width='1'/>
+<text x='120' y='647.0' font-family='Segoe UI, Arial' font-size='11' font-weight='400' fill='#64748b' text-anchor='end'>1151</text>
+<line x1='130' y1='590.0' x2='1410' y2='590.0' stroke='#e5e7eb' stroke-width='1'/>
+<text x='120' y='594.0' font-family='Segoe UI, Arial' font-size='11' font-weight='400' fill='#64748b' text-anchor='end'>2301</text>
+<line x1='130' y1='537.0' x2='1410' y2='537.0' stroke='#e5e7eb' stroke-width='1'/>
+<text x='120' y='541.0' font-family='Segoe UI, Arial' font-size='11' font-weight='400' fill='#64748b' text-anchor='end'>3452</text>
+<line x1='130' y1='484.0' x2='1410' y2='484.0' stroke='#e5e7eb' stroke-width='1'/>
+<text x='120' y='488.0' font-family='Segoe UI, Arial' font-size='11' font-weight='400' fill='#64748b' text-anchor='end'>4602</text>
+<rect x='177.4074074074074' y='506.7142857142858' width='118.5185185185185' height='189.28571428571425' fill='#0f766e' stroke='none' rx='4'/>
+<text x='236.66666666666663' y='714' font-family='Segoe UI, Arial' font-size='10' font-weight='600' fill='#334155' text-anchor='middle'>All-Start</text>
+<text x='236.66666666666663' y='729' font-family='Segoe UI, Arial' font-size='10' font-weight='600' fill='#334155' text-anchor='middle'>XY</text>
+<text x='236.66666666666663' y='744' font-family='Segoe UI, Arial' font-size='10' font-weight='400' fill='#64748b' text-anchor='middle'>4109.0</text>
+<rect x='390.7407407407407' y='564.8036713833745' width='118.5185185185185' height='131.1963286166255' fill='#b45309' stroke='none' rx='4'/>
+<text x='449.99999999999994' y='714' font-family='Segoe UI, Arial' font-size='10' font-weight='600' fill='#334155' text-anchor='middle'>All-Start</text>
+<text x='449.99999999999994' y='729' font-family='Segoe UI, Arial' font-size='10' font-weight='600' fill='#334155' text-anchor='middle'>Racke</text>
+<text x='449.99999999999994' y='744' font-family='Segoe UI, Arial' font-size='10' font-weight='400' fill='#64748b' text-anchor='middle'>2848.0</text>
+<rect x='604.074074074074' y='554.982373187776' width='118.5185185185185' height='141.017626812224' fill='#2563eb' stroke='none' rx='4'/>
+<text x='663.3333333333333' y='714' font-family='Segoe UI, Arial' font-size='10' font-weight='600' fill='#334155' text-anchor='middle'>All-Start</text>
+<text x='663.3333333333333' y='729' font-family='Segoe UI, Arial' font-size='10' font-weight='600' fill='#334155' text-anchor='middle'>Hybrid</text>
+<text x='663.3333333333333' y='744' font-family='Segoe UI, Arial' font-size='10' font-weight='400' fill='#64748b' text-anchor='middle'>3061.2</text>
+<rect x='817.4074074074074' y='507.86593887981087' width='118.5185185185185' height='188.1340611201891' fill='#0f766e' stroke='none' rx='4'/>
+<text x='876.6666666666666' y='714' font-family='Segoe UI, Arial' font-size='10' font-weight='600' fill='#334155' text-anchor='middle'>Ordered-Start</text>
+<text x='876.6666666666666' y='729' font-family='Segoe UI, Arial' font-size='10' font-weight='600' fill='#334155' text-anchor='middle'>XY</text>
+<text x='876.6666666666666' y='744' font-family='Segoe UI, Arial' font-size='10' font-weight='400' fill='#64748b' text-anchor='middle'>4084.0</text>
+<rect x='1030.7407407407406' y='584.9806348433751' width='118.5185185185185' height='111.01936515662481' fill='#b45309' stroke='none' rx='4'/>
+<text x='1090.0' y='714' font-family='Segoe UI, Arial' font-size='10' font-weight='600' fill='#334155' text-anchor='middle'>Ordered-Start</text>
+<text x='1090.0' y='729' font-family='Segoe UI, Arial' font-size='10' font-weight='600' fill='#334155' text-anchor='middle'>Racke</text>
+<text x='1090.0' y='744' font-family='Segoe UI, Arial' font-size='10' font-weight='400' fill='#64748b' text-anchor='middle'>2410.0</text>
+<rect x='1244.074074074074' y='567.8808886416577' width='118.5185185185185' height='128.11911135834228' fill='#2563eb' stroke='none' rx='4'/>
+<text x='1303.3333333333333' y='714' font-family='Segoe UI, Arial' font-size='10' font-weight='600' fill='#334155' text-anchor='middle'>Ordered-Start</text>
+<text x='1303.3333333333333' y='729' font-family='Segoe UI, Arial' font-size='10' font-weight='600' fill='#334155' text-anchor='middle'>Hybrid</text>
+<text x='1303.3333333333333' y='744' font-family='Segoe UI, Arial' font-size='10' font-weight='400' fill='#64748b' text-anchor='middle'>2781.2</text>
+<rect x='60' y='780' width='660' height='300' fill='white' stroke='#cbd5e1' rx='8'/>
+<text x='78' y='808' font-family='Segoe UI, Arial' font-size='18' font-weight='700' fill='#111827' text-anchor='start'>Average Packet Latency</text>
+<line x1='130' y1='1036.0' x2='690' y2='1036.0' stroke='#e5e7eb' stroke-width='1'/>
+<text x='120' y='1040.0' font-family='Segoe UI, Arial' font-size='11' font-weight='400' fill='#64748b' text-anchor='end'>0.0</text>
+<line x1='130' y1='983.0' x2='690' y2='983.0' stroke='#e5e7eb' stroke-width='1'/>
+<text x='120' y='987.0' font-family='Segoe UI, Arial' font-size='11' font-weight='400' fill='#64748b' text-anchor='end'>130.9</text>
+<line x1='130' y1='930.0' x2='690' y2='930.0' stroke='#e5e7eb' stroke-width='1'/>
+<text x='120' y='934.0' font-family='Segoe UI, Arial' font-size='11' font-weight='400' fill='#64748b' text-anchor='end'>261.8</text>
+<line x1='130' y1='877.0' x2='690' y2='877.0' stroke='#e5e7eb' stroke-width='1'/>
+<text x='120' y='881.0' font-family='Segoe UI, Arial' font-size='11' font-weight='400' fill='#64748b' text-anchor='end'>392.7</text>
+<line x1='130' y1='824.0' x2='690' y2='824.0' stroke='#e5e7eb' stroke-width='1'/>
+<text x='120' y='828.0' font-family='Segoe UI, Arial' font-size='11' font-weight='400' fill='#64748b' text-anchor='end'>523.5</text>
+<rect x='150.74074074074076' y='846.7142857142858' width='51.85185185185185' height='189.28571428571425' fill='#0f766e' stroke='none' rx='4'/>
+<text x='176.66666666666669' y='1056' font-family='Segoe UI, Arial' font-size='11' font-weight='600' fill='#334155' text-anchor='middle'>XY</text>
+<text x='176.66666666666669' y='1074' font-family='Segoe UI, Arial' font-size='10' font-weight='400' fill='#64748b' text-anchor='middle'>467.4</text>
+<rect x='244.07407407407408' y='930.659902729372' width='51.85185185185185' height='105.34009727062796' fill='#b45309' stroke='none' rx='4'/>
+<text x='270.0' y='1056' font-family='Segoe UI, Arial' font-size='11' font-weight='600' fill='#334155' text-anchor='middle'>Racke</text>
+<text x='270.0' y='1074' font-family='Segoe UI, Arial' font-size='10' font-weight='400' fill='#64748b' text-anchor='middle'>260.1</text>
+<rect x='337.4074074074074' y='910.7768120734402' width='51.85185185185185' height='125.22318792655983' fill='#2563eb' stroke='none' rx='4'/>
+<text x='363.3333333333333' y='1056' font-family='Segoe UI, Arial' font-size='11' font-weight='600' fill='#334155' text-anchor='middle'>Hybrid</text>
+<text x='363.3333333333333' y='1074' font-family='Segoe UI, Arial' font-size='10' font-weight='400' fill='#64748b' text-anchor='middle'>309.2</text>
+<rect x='430.74074074074076' y='983.4479907142429' width='51.85185185185185' height='52.55200928575706' fill='#0f766e' stroke='none' rx='4'/>
+<text x='456.6666666666667' y='1056' font-family='Segoe UI, Arial' font-size='11' font-weight='600' fill='#334155' text-anchor='middle'>XY</text>
+<text x='456.6666666666667' y='1074' font-family='Segoe UI, Arial' font-size='10' font-weight='400' fill='#64748b' text-anchor='middle'>129.8</text>
+<rect x='60' y='780' width='660' height='300' fill='white' stroke='#cbd5e1' rx='8'/>
+<text x='78' y='808' font-family='Segoe UI, Arial' font-size='18' font-weight='700' fill='#111827' text-anchor='start'>Average Packet Latency</text>
+<line x1='120' y1='1036.0' x2='690' y2='1036.0' stroke='#e5e7eb' stroke-width='1'/>
+<text x='110' y='1040.0' font-family='Segoe UI, Arial' font-size='11' font-weight='400' fill='#64748b' text-anchor='end'>0</text>
+<line x1='120' y1='983.0' x2='690' y2='983.0' stroke='#e5e7eb' stroke-width='1'/>
+<text x='110' y='987.0' font-family='Segoe UI, Arial' font-size='11' font-weight='400' fill='#64748b' text-anchor='end'>131</text>
+<line x1='120' y1='930.0' x2='690' y2='930.0' stroke='#e5e7eb' stroke-width='1'/>
+<text x='110' y='934.0' font-family='Segoe UI, Arial' font-size='11' font-weight='400' fill='#64748b' text-anchor='end'>262</text>
+<line x1='120' y1='877.0' x2='690' y2='877.0' stroke='#e5e7eb' stroke-width='1'/>
+<text x='110' y='881.0' font-family='Segoe UI, Arial' font-size='11' font-weight='400' fill='#64748b' text-anchor='end'>393</text>
+<line x1='120' y1='824.0' x2='690' y2='824.0' stroke='#e5e7eb' stroke-width='1'/>
+<text x='110' y='828.0' font-family='Segoe UI, Arial' font-size='11' font-weight='400' fill='#64748b' text-anchor='end'>524</text>
+<rect x='141.11111111111114' y='846.7142857142858' width='52.77777777777777' height='189.28571428571425' fill='#0f766e' stroke='none' rx='4'/>
+<text x='167.50000000000003' y='1054' font-family='Segoe UI, Arial' font-size='10' font-weight='600' fill='#334155' text-anchor='middle'>All-Start</text>
+<text x='167.50000000000003' y='1069' font-family='Segoe UI, Arial' font-size='10' font-weight='600' fill='#334155' text-anchor='middle'>XY</text>
+<text x='167.50000000000003' y='1084' font-family='Segoe UI, Arial' font-size='10' font-weight='400' fill='#64748b' text-anchor='middle'>467.4</text>
+<rect x='236.11111111111114' y='930.659902729372' width='52.77777777777777' height='105.34009727062796' fill='#b45309' stroke='none' rx='4'/>
+<text x='262.5' y='1054' font-family='Segoe UI, Arial' font-size='10' font-weight='600' fill='#334155' text-anchor='middle'>All-Start</text>
+<text x='262.5' y='1069' font-family='Segoe UI, Arial' font-size='10' font-weight='600' fill='#334155' text-anchor='middle'>Racke</text>
+<text x='262.5' y='1084' font-family='Segoe UI, Arial' font-size='10' font-weight='400' fill='#64748b' text-anchor='middle'>260.1</text>
+<rect x='331.11111111111114' y='910.7768120734402' width='52.77777777777777' height='125.22318792655983' fill='#2563eb' stroke='none' rx='4'/>
+<text x='357.5' y='1054' font-family='Segoe UI, Arial' font-size='10' font-weight='600' fill='#334155' text-anchor='middle'>All-Start</text>
+<text x='357.5' y='1069' font-family='Segoe UI, Arial' font-size='10' font-weight='600' fill='#334155' text-anchor='middle'>Hybrid</text>
+<text x='357.5' y='1084' font-family='Segoe UI, Arial' font-size='10' font-weight='400' fill='#64748b' text-anchor='middle'>309.2</text>
+<rect x='426.11111111111114' y='983.4479907142429' width='52.77777777777777' height='52.55200928575706' fill='#0f766e' stroke='none' rx='4'/>
+<text x='452.5' y='1054' font-family='Segoe UI, Arial' font-size='10' font-weight='600' fill='#334155' text-anchor='middle'>Ordered-Start</text>
+<text x='452.5' y='1069' font-family='Segoe UI, Arial' font-size='10' font-weight='600' fill='#334155' text-anchor='middle'>XY</text>
+<text x='452.5' y='1084' font-family='Segoe UI, Arial' font-size='10' font-weight='400' fill='#64748b' text-anchor='middle'>129.8</text>
+<rect x='521.1111111111111' y='1009.8094372190649' width='52.77777777777777' height='26.190562780935096' fill='#b45309' stroke='none' rx='4'/>
+<text x='547.5' y='1054' font-family='Segoe UI, Arial' font-size='10' font-weight='600' fill='#334155' text-anchor='middle'>Ordered-Start</text>
+<text x='547.5' y='1069' font-family='Segoe UI, Arial' font-size='10' font-weight='600' fill='#334155' text-anchor='middle'>Racke</text>
+<text x='547.5' y='1084' font-family='Segoe UI, Arial' font-size='10' font-weight='400' fill='#64748b' text-anchor='middle'>64.7</text>
+<rect x='616.1111111111111' y='993.186484064707' width='52.77777777777777' height='42.813515935293076' fill='#2563eb' stroke='none' rx='4'/>
+<text x='642.5' y='1054' font-family='Segoe UI, Arial' font-size='10' font-weight='600' fill='#334155' text-anchor='middle'>Ordered-Start</text>
+<text x='642.5' y='1069' font-family='Segoe UI, Arial' font-size='10' font-weight='600' fill='#334155' text-anchor='middle'>Hybrid</text>
+<text x='642.5' y='1084' font-family='Segoe UI, Arial' font-size='10' font-weight='400' fill='#64748b' text-anchor='middle'>105.7</text>
+<rect x='780' y='780' width='660' height='300' fill='white' stroke='#cbd5e1' rx='8'/>
+<text x='798' y='808' font-family='Segoe UI, Arial' font-size='18' font-weight='700' fill='#111827' text-anchor='start'>Hybrid Split Fraction</text>
+<line x1='870' y1='1028.0' x2='1400' y2='1028.0' stroke='#e5e7eb' stroke-width='1'/>
+<text x='858' y='1032.0' font-family='Segoe UI, Arial' font-size='11' font-weight='400' fill='#64748b' text-anchor='end'>0.00</text>
+<line x1='870' y1='978.0' x2='1400' y2='978.0' stroke='#e5e7eb' stroke-width='1'/>
+<text x='858' y='982.0' font-family='Segoe UI, Arial' font-size='11' font-weight='400' fill='#64748b' text-anchor='end'>0.25</text>
+<line x1='870' y1='928.0' x2='1400' y2='928.0' stroke='#e5e7eb' stroke-width='1'/>
+<text x='858' y='932.0' font-family='Segoe UI, Arial' font-size='11' font-weight='400' fill='#64748b' text-anchor='end'>0.50</text>
+<line x1='870' y1='878.0' x2='1400' y2='878.0' stroke='#e5e7eb' stroke-width='1'/>
+<text x='858' y='882.0' font-family='Segoe UI, Arial' font-size='11' font-weight='400' fill='#64748b' text-anchor='end'>0.75</text>
+<line x1='870' y1='828.0' x2='1400' y2='828.0' stroke='#e5e7eb' stroke-width='1'/>
+<text x='858' y='832.0' font-family='Segoe UI, Arial' font-size='11' font-weight='400' fill='#64748b' text-anchor='end'>1.00</text>
+<rect x='940' y='855.41752' width='180' height='172.58248' fill='#2563eb' stroke='none' rx='0'/>
+<rect x='940' y='828.0' width='180' height='27.41752' fill='#0f766e' stroke='none' rx='0'/>
+<text x='1030.0' y='1050' font-family='Segoe UI, Arial' font-size='12' font-weight='600' fill='#334155' text-anchor='middle'>All-Start</text>
+<text x='1030.0' y='1068' font-family='Segoe UI, Arial' font-size='10' font-weight='400' fill='#64748b' text-anchor='middle'>XY 13.7% / Racke 86.3%</text>
+<rect x='1120' y='884.33684' width='180' height='143.66315999999998' fill='#2563eb' stroke='none' rx='0'/>
+<rect x='1120' y='828.0' width='180' height='56.33684' fill='#0f766e' stroke='none' rx='0'/>
+<text x='1210.0' y='1050' font-family='Segoe UI, Arial' font-size='12' font-weight='600' fill='#334155' text-anchor='middle'>Ordered-Start</text>
+<text x='1210.0' y='1068' font-family='Segoe UI, Arial' font-size='10' font-weight='400' fill='#64748b' text-anchor='middle'>XY 28.2% / Racke 71.8%</text>
+<rect x='800' y='1052' width='16' height='10' fill='#0f766e' stroke='none' rx='0'/>
+<text x='822' y='1062' font-family='Segoe UI, Arial' font-size='11' font-weight='400' fill='#475569' text-anchor='start'>XY fraction</text>
+<rect x='930' y='1052' width='16' height='10' fill='#2563eb' stroke='none' rx='0'/>
+<text x='952' y='1062' font-family='Segoe UI, Arial' font-size='11' font-weight='400' fill='#475569' text-anchor='start'>Racke fraction</text>
+<text x='60' y='1135' font-family='Segoe UI, Arial' font-size='12' font-weight='400' fill='#475569' text-anchor='start'>Reading guide: lower Avg/Max FCT and lower packet latency are better; Hybrid fraction panel shows how much traffic stayed on XY vs shifted to Racke.</text>
+</svg>
