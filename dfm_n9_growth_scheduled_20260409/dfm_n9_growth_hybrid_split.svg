@@ -1,0 +1,86 @@
+﻿<svg xmlns='http://www.w3.org/2000/svg' width='1480' height='700' viewBox='0 0 1480 700'>
+<rect width='100%' height='100%' fill='#fafaf9'/>
+<text x='740' y='36' font-family='Segoe UI, Arial' font-size='24' font-weight='700' fill='#0f172a' text-anchor='middle'>DFM n=9 Scheduled Dynamic Load: Hybrid DR/DSL Split</text>
+<rect x='70' y='80' width='1340' height='520' fill='white' stroke='#cbd5e1'/>
+<text x='86' y='108' font-family='Segoe UI, Arial' font-size='18' font-weight='700' fill='#1f2937' text-anchor='start'>Hybrid DR / DSL Fraction by Phase</text>
+<line x1='140' y1='545' x2='1370' y2='545' stroke='#e5e7eb' stroke-width='1'/>
+<text x='130' y='549' font-family='Segoe UI, Arial' font-size='11' font-weight='400' fill='#64748b' text-anchor='end'>0</text>
+<line x1='140' y1='440' x2='1370' y2='440' stroke='#e5e7eb' stroke-width='1'/>
+<text x='130' y='444' font-family='Segoe UI, Arial' font-size='11' font-weight='400' fill='#64748b' text-anchor='end'>0.25</text>
+<line x1='140' y1='335' x2='1370' y2='335' stroke='#e5e7eb' stroke-width='1'/>
+<text x='130' y='339' font-family='Segoe UI, Arial' font-size='11' font-weight='400' fill='#64748b' text-anchor='end'>0.5</text>
+<line x1='140' y1='230' x2='1370' y2='230' stroke='#e5e7eb' stroke-width='1'/>
+<text x='130' y='234' font-family='Segoe UI, Arial' font-size='11' font-weight='400' fill='#64748b' text-anchor='end'>0.75</text>
+<line x1='140' y1='125' x2='1370' y2='125' stroke='#e5e7eb' stroke-width='1'/>
+<text x='130' y='129' font-family='Segoe UI, Arial' font-size='11' font-weight='400' fill='#64748b' text-anchor='end'>1</text>
+<line x1='140' y1='125' x2='140' y2='545' stroke='#f1f5f9' stroke-width='1'/>
+<text x='140' y='565' font-family='Segoe UI, Arial' font-size='11' font-weight='400' fill='#475569' text-anchor='middle'>P1</text>
+<text x='140' y='581' font-family='Segoe UI, Arial' font-size='10' font-weight='400' fill='#64748b' text-anchor='middle'>0.05</text>
+<line x1='204.736842105263' y1='125' x2='204.736842105263' y2='545' stroke='#f1f5f9' stroke-width='1'/>
+<text x='204.736842105263' y='565' font-family='Segoe UI, Arial' font-size='11' font-weight='400' fill='#475569' text-anchor='middle'>P2</text>
+<text x='204.736842105263' y='581' font-family='Segoe UI, Arial' font-size='10' font-weight='400' fill='#64748b' text-anchor='middle'>0.1</text>
+<line x1='269.473684210526' y1='125' x2='269.473684210526' y2='545' stroke='#f1f5f9' stroke-width='1'/>
+<text x='269.473684210526' y='565' font-family='Segoe UI, Arial' font-size='11' font-weight='400' fill='#475569' text-anchor='middle'>P3</text>
+<text x='269.473684210526' y='581' font-family='Segoe UI, Arial' font-size='10' font-weight='400' fill='#64748b' text-anchor='middle'>0.15</text>
+<line x1='334.210526315789' y1='125' x2='334.210526315789' y2='545' stroke='#f1f5f9' stroke-width='1'/>
+<text x='334.210526315789' y='565' font-family='Segoe UI, Arial' font-size='11' font-weight='400' fill='#475569' text-anchor='middle'>P4</text>
+<text x='334.210526315789' y='581' font-family='Segoe UI, Arial' font-size='10' font-weight='400' fill='#64748b' text-anchor='middle'>0.2</text>
+<line x1='398.947368421053' y1='125' x2='398.947368421053' y2='545' stroke='#f1f5f9' stroke-width='1'/>
+<text x='398.947368421053' y='565' font-family='Segoe UI, Arial' font-size='11' font-weight='400' fill='#475569' text-anchor='middle'>P5</text>
+<text x='398.947368421053' y='581' font-family='Segoe UI, Arial' font-size='10' font-weight='400' fill='#64748b' text-anchor='middle'>0.25</text>
+<line x1='463.684210526316' y1='125' x2='463.684210526316' y2='545' stroke='#f1f5f9' stroke-width='1'/>
+<text x='463.684210526316' y='565' font-family='Segoe UI, Arial' font-size='11' font-weight='400' fill='#475569' text-anchor='middle'>P6</text>
+<text x='463.684210526316' y='581' font-family='Segoe UI, Arial' font-size='10' font-weight='400' fill='#64748b' text-anchor='middle'>0.3</text>
+<line x1='528.421052631579' y1='125' x2='528.421052631579' y2='545' stroke='#f1f5f9' stroke-width='1'/>
+<text x='528.421052631579' y='565' font-family='Segoe UI, Arial' font-size='11' font-weight='400' fill='#475569' text-anchor='middle'>P7</text>
+<text x='528.421052631579' y='581' font-family='Segoe UI, Arial' font-size='10' font-weight='400' fill='#64748b' text-anchor='middle'>0.35</text>
+<line x1='593.157894736842' y1='125' x2='593.157894736842' y2='545' stroke='#f1f5f9' stroke-width='1'/>
+<text x='593.157894736842' y='565' font-family='Segoe UI, Arial' font-size='11' font-weight='400' fill='#475569' text-anchor='middle'>P8</text>
+<text x='593.157894736842' y='581' font-family='Segoe UI, Arial' font-size='10' font-weight='400' fill='#64748b' text-anchor='middle'>0.4</text>
+<line x1='657.894736842105' y1='125' x2='657.894736842105' y2='545' stroke='#f1f5f9' stroke-width='1'/>
+<text x='657.894736842105' y='565' font-family='Segoe UI, Arial' font-size='11' font-weight='400' fill='#475569' text-anchor='middle'>P9</text>
+<text x='657.894736842105' y='581' font-family='Segoe UI, Arial' font-size='10' font-weight='400' fill='#64748b' text-anchor='middle'>0.45</text>
+<line x1='722.631578947368' y1='125' x2='722.631578947368' y2='545' stroke='#f1f5f9' stroke-width='1'/>
+<text x='722.631578947368' y='565' font-family='Segoe UI, Arial' font-size='11' font-weight='400' fill='#475569' text-anchor='middle'>P10</text>
+<text x='722.631578947368' y='581' font-family='Segoe UI, Arial' font-size='10' font-weight='400' fill='#64748b' text-anchor='middle'>0.5</text>
+<line x1='787.368421052632' y1='125' x2='787.368421052632' y2='545' stroke='#f1f5f9' stroke-width='1'/>
+<text x='787.368421052632' y='565' font-family='Segoe UI, Arial' font-size='11' font-weight='400' fill='#475569' text-anchor='middle'>P11</text>
+<text x='787.368421052632' y='581' font-family='Segoe UI, Arial' font-size='10' font-weight='400' fill='#64748b' text-anchor='middle'>0.55</text>
+<line x1='852.105263157895' y1='125' x2='852.105263157895' y2='545' stroke='#f1f5f9' stroke-width='1'/>
+<text x='852.105263157895' y='565' font-family='Segoe UI, Arial' font-size='11' font-weight='400' fill='#475569' text-anchor='middle'>P12</text>
+<text x='852.105263157895' y='581' font-family='Segoe UI, Arial' font-size='10' font-weight='400' fill='#64748b' text-anchor='middle'>0.6</text>
+<line x1='916.842105263158' y1='125' x2='916.842105263158' y2='545' stroke='#f1f5f9' stroke-width='1'/>
+<text x='916.842105263158' y='565' font-family='Segoe UI, Arial' font-size='11' font-weight='400' fill='#475569' text-anchor='middle'>P13</text>
+<text x='916.842105263158' y='581' font-family='Segoe UI, Arial' font-size='10' font-weight='400' fill='#64748b' text-anchor='middle'>0.65</text>
+<line x1='981.578947368421' y1='125' x2='981.578947368421' y2='545' stroke='#f1f5f9' stroke-width='1'/>
+<text x='981.578947368421' y='565' font-family='Segoe UI, Arial' font-size='11' font-weight='400' fill='#475569' text-anchor='middle'>P14</text>
+<text x='981.578947368421' y='581' font-family='Segoe UI, Arial' font-size='10' font-weight='400' fill='#64748b' text-anchor='middle'>0.7</text>
+<line x1='1046.31578947368' y1='125' x2='1046.31578947368' y2='545' stroke='#f1f5f9' stroke-width='1'/>
+<text x='1046.31578947368' y='565' font-family='Segoe UI, Arial' font-size='11' font-weight='400' fill='#475569' text-anchor='middle'>P15</text>
+<text x='1046.31578947368' y='581' font-family='Segoe UI, Arial' font-size='10' font-weight='400' fill='#64748b' text-anchor='middle'>0.75</text>
+<line x1='1111.05263157895' y1='125' x2='1111.05263157895' y2='545' stroke='#f1f5f9' stroke-width='1'/>
+<text x='1111.05263157895' y='565' font-family='Segoe UI, Arial' font-size='11' font-weight='400' fill='#475569' text-anchor='middle'>P16</text>
+<text x='1111.05263157895' y='581' font-family='Segoe UI, Arial' font-size='10' font-weight='400' fill='#64748b' text-anchor='middle'>0.8</text>
+<line x1='1175.78947368421' y1='125' x2='1175.78947368421' y2='545' stroke='#f1f5f9' stroke-width='1'/>
+<text x='1175.78947368421' y='565' font-family='Segoe UI, Arial' font-size='11' font-weight='400' fill='#475569' text-anchor='middle'>P17</text>
+<text x='1175.78947368421' y='581' font-family='Segoe UI, Arial' font-size='10' font-weight='400' fill='#64748b' text-anchor='middle'>0.8</text>
+<line x1='1240.52631578947' y1='125' x2='1240.52631578947' y2='545' stroke='#f1f5f9' stroke-width='1'/>
+<text x='1240.52631578947' y='565' font-family='Segoe UI, Arial' font-size='11' font-weight='400' fill='#475569' text-anchor='middle'>P18</text>
+<text x='1240.52631578947' y='581' font-family='Segoe UI, Arial' font-size='10' font-weight='400' fill='#64748b' text-anchor='middle'>0.8</text>
+<line x1='1305.26315789474' y1='125' x2='1305.26315789474' y2='545' stroke='#f1f5f9' stroke-width='1'/>
+<text x='1305.26315789474' y='565' font-family='Segoe UI, Arial' font-size='11' font-weight='400' fill='#475569' text-anchor='middle'>P19</text>
+<text x='1305.26315789474' y='581' font-family='Segoe UI, Arial' font-size='10' font-weight='400' fill='#64748b' text-anchor='middle'>0.8</text>
+<line x1='1370' y1='125' x2='1370' y2='545' stroke='#f1f5f9' stroke-width='1'/>
+<text x='1370' y='565' font-family='Segoe UI, Arial' font-size='11' font-weight='400' fill='#475569' text-anchor='middle'>P20</text>
+<text x='1370' y='581' font-family='Segoe UI, Arial' font-size='10' font-weight='400' fill='#64748b' text-anchor='middle'>0.8</text>
+<polyline fill='none' stroke='#4C78A8' stroke-width='3' points='140,130.721 204.737,142.394 269.474,213.04 334.211,438.942 398.947,544.205 463.684,545 528.421,545 593.158,545 657.895,545 722.632,545 787.368,545 852.105,545 916.842,545 981.579,545 1046.316,545 1111.053,545 1175.789,545 1240.526,545 1305.263,545 1370,545'/>
+<polyline fill='none' stroke='#54A24B' stroke-width='3' points='140,539.279 204.737,527.606 269.474,456.96 334.211,231.058 398.947,125.795 463.684,125 528.421,125 593.158,125 657.895,125 722.632,125 787.368,125 852.105,125 916.842,125 981.579,125 1046.316,125 1111.053,125 1175.789,125 1240.526,125 1305.263,125 1370,125'/>
+<polyline fill='none' stroke='#64748b' stroke-width='2' points='140,524 204.737,503 269.474,482 334.211,461 398.947,440 463.684,419 528.421,398 593.158,377 657.895,356 722.632,335 787.368,314 852.105,293 916.842,272 981.579,251 1046.316,230 1111.053,209 1175.789,209 1240.526,209 1305.263,209 1370,209'/>
+<rect x='130' y='638' width='18' height='18' fill='#4C78A8' stroke='none'/>
+<text x='156' y='650' font-family='Segoe UI, Arial' font-size='12' font-weight='400' fill='#334155' text-anchor='start'>DR Fraction</text>
+<rect x='300' y='638' width='18' height='18' fill='#54A24B' stroke='none'/>
+<text x='326' y='650' font-family='Segoe UI, Arial' font-size='12' font-weight='400' fill='#334155' text-anchor='start'>DSL Fraction</text>
+<rect x='480' y='638' width='18' height='18' fill='#64748b' stroke='none'/>
+<text x='506' y='650' font-family='Segoe UI, Arial' font-size='12' font-weight='400' fill='#334155' text-anchor='start'>Offered Load</text>
+</svg>
+

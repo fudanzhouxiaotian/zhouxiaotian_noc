@@ -1,0 +1,1311 @@
+﻿BEGIN Configuration File: D:\noc_huawei\noc\booksim2-noc_speedup_study\booksim2-noc_speedup_study\tests\data\results\dfm_n9_growth_scheduled_20260409\tmp_configs\dfm_hybrid_dr_dsl_s2204.config
+num_vcs     = 24;
+vc_buf_size = 16;
+wait_for_tail_credit = 1;
+
+vc_allocator = islip;
+sw_allocator = islip;
+alloc_iters  = 4;
+
+credit_delay   = 2;
+routing_delay  = 0;
+vc_alloc_delay = 1;
+sw_alloc_delay = 1;
+st_final_delay = 1;
+
+input_speedup     = 1;
+output_speedup    = 1;
+internal_speedup  = 1.0;
+
+sim_type = latency;
+latency_thres  = 100000.0;
+sim_count      = 1;
+queue_sample_period_cycles = 0;
+
+topology = die_mesh_full;
+dfm_tiles_per_die = 9;
+dfm_intra_bandwidth_num = 4;
+
+dfm_hybrid_soft_threshold = 0.25;
+dfm_hybrid_hard_threshold = 0.50;
+dfm_hybrid_release_threshold = 0.18;
+dfm_hybrid_congestion_alpha = 0.25;
+dfm_hybrid_increase_step = 0.50;
+dfm_hybrid_decrease_step = 0.06;
+dfm_hybrid_capacity_guard_ratio = 0.98;
+dfm_hybrid_rate_weight = 0.50;
+dfm_hybrid_util_target = 0.98;
+dfm_hybrid_util_gain = 0.60;
+dfm_hybrid_epoch_cycles = 200;
+dfm_hybrid_feedback_delay_per_hop = 1;
+
+hybrid_edge_capacity = 1.0;
+hybrid_stats_window_cycles = 1000;
+
+packet_size = 1;
+traffic = custom_perm;
+custom_perm_array = {3,10,20,6,13,23,0,16,26,12,28,2,15,31,5,9,34,8,21,1,29,24,4,32,18,7,35,30,19,11,33,22,14,27,25,17};
+
+injection_rate = 0.05;
+dfm_hybrid_stats_window_cycles = 3000;
+max_samples = 26;
+scheduled_phase_cycles = {3000,3000,3000,3000,3000,3000,3000,3000,3000,3000,3000,3000,3000,3000,3000,3000,3000,3000};
+sample_period = 3000;
+routing_function = dfm_hybrid_dr_dsl;
+warmup_periods = 2;
+injection_process = scheduled;
+scheduled_injection_rates = {0.05,0.1,0.15,0.2,0.25,0.3,0.35,0.4,0.45,0.5,0.55,0.6,0.65,0.7,0.75,0.8,0.8,0.8};
+scheduled_default_phase_cycles = 3000;
+perm_seed = 2204;
+seed = 2204;
+
+END Configuration File: D:\noc_huawei\noc\booksim2-noc_speedup_study\booksim2-noc_speedup_study\tests\data\results\dfm_n9_growth_scheduled_20260409\tmp_configs\dfm_hybrid_dr_dsl_s2204.config
+Class 0:
+Packet latency average = 10.1565
+	minimum = 10
+	maximum = 16
+	95th percentile = 11.5
+	99th percentile = 14.5
+Network latency average = 10.1565
+	minimum = 10
+	maximum = 16
+	95th percentile = 11.5
+	99th percentile = 14.5
+Slowest packet = 3625
+Flit latency average = 10.1565
+	minimum = 10
+	maximum = 16
+	95th percentile = 11.5
+	99th percentile = 14.5
+Slowest flit = 3625
+Fragmentation average = 0
+	minimum = 0
+	maximum = 0
+Injected packet rate average = 0.0504074
+	minimum = 0.0423333 (at node 28)
+	maximum = 0.0603333 (at node 27)
+Accepted packet rate average = 0.0501667
+	minimum = 0.0416667 (at node 19)
+	maximum = 0.06 (at node 30)
+Injected flit rate average = 0.0504074
+	minimum = 0.0423333 (at node 28)
+	maximum = 0.0603333 (at node 27)
+Accepted flit rate average= 0.0501667
+	minimum = 0.0416667 (at node 19)
+	maximum = 0.06 (at node 30)
+Injected packet length average = 1
+Accepted packet length average = 1
+Total in-flight flits = 26 (0 measured)
+====== Peak Queue Occupancy Statistics (Absolute Max) ======
+  Overall Max VC Occupancy = 1
+  Overall Max Buffer Occupancy = 2
+latency change    = 1
+throughput change = 1
+Class 0:
+Packet latency average = 10.2917
+	minimum = 10
+	maximum = 18
+	95th percentile = 14.5
+	99th percentile = 14.5
+Network latency average = 10.2917
+	minimum = 10
+	maximum = 18
+	95th percentile = 14.5
+	99th percentile = 14.5
+Slowest packet = 15355
+Flit latency average = 10.2917
+	minimum = 10
+	maximum = 18
+	95th percentile = 14.5
+	99th percentile = 14.5
+Slowest flit = 15355
+Fragmentation average = 0
+	minimum = 0
+	maximum = 0
+Injected packet rate average = 0.074713
+	minimum = 0.066 (at node 23)
+	maximum = 0.0846667 (at node 4)
+Accepted packet rate average = 0.0745509
+	minimum = 0.0658333 (at node 32)
+	maximum = 0.0846667 (at node 13)
+Injected flit rate average = 0.074713
+	minimum = 0.066 (at node 23)
+	maximum = 0.0846667 (at node 4)
+Accepted flit rate average= 0.0745509
+	minimum = 0.0658333 (at node 32)
+	maximum = 0.0846667 (at node 13)
+Injected packet length average = 1
+Accepted packet length average = 1
+Total in-flight flits = 35 (0 measured)
+====== Peak Queue Occupancy Statistics (Absolute Max) ======
+  Overall Max VC Occupancy = 1
+  Overall Max Buffer Occupancy = 2
+latency change    = 0.0131398
+throughput change = 0.327082
+Warmed up ...Time used is 6000 cycles
+Class 0:
+Packet latency average = 11.1202
+	minimum = 10
+	maximum = 21
+	95th percentile = 18.5
+	99th percentile = 18.5
+Network latency average = 11.1202
+	minimum = 10
+	maximum = 21
+	95th percentile = 18.5
+	99th percentile = 18.5
+Slowest packet = 27038
+Flit latency average = 11.1216
+	minimum = 10
+	maximum = 21
+	95th percentile = 18.5
+	99th percentile = 18.5
+Slowest flit = 27038
+Fragmentation average = 0
+	minimum = 0
+	maximum = 0
+Injected packet rate average = 0.151065
+	minimum = 0.137333 (at node 33)
+	maximum = 0.167667 (at node 27)
+Accepted packet rate average = 0.150861
+	minimum = 0.137 (at node 27)
+	maximum = 0.167333 (at node 30)
+Injected flit rate average = 0.151065
+	minimum = 0.137333 (at node 33)
+	maximum = 0.167667 (at node 27)
+Accepted flit rate average= 0.150861
+	minimum = 0.137 (at node 27)
+	maximum = 0.167333 (at node 30)
+Injected packet length average = 1
+Accepted packet length average = 1
+Total in-flight flits = 57 (57 measured)
+====== Peak Queue Occupancy Statistics (Absolute Max) ======
+  Overall Max VC Occupancy = 1
+  Overall Max Buffer Occupancy = 2
+latency change    = 0.0745039
+throughput change = 0.505831
+Class 0:
+Packet latency average = 13.109
+	minimum = 10
+	maximum = 24
+	95th percentile = 18.5
+	99th percentile = 20.5
+Network latency average = 13.109
+	minimum = 10
+	maximum = 24
+	95th percentile = 18.5
+	99th percentile = 20.5
+Slowest packet = 46122
+Flit latency average = 13.1077
+	minimum = 10
+	maximum = 24
+	95th percentile = 18.5
+	99th percentile = 20.5
+Slowest flit = 46122
+Fragmentation average = 0
+	minimum = 0
+	maximum = 0
+Injected packet rate average = 0.175819
+	minimum = 0.166 (at node 33)
+	maximum = 0.1905 (at node 27)
+Accepted packet rate average = 0.175514
+	minimum = 0.1655 (at node 27)
+	maximum = 0.1905 (at node 30)
+Injected flit rate average = 0.175819
+	minimum = 0.166 (at node 33)
+	maximum = 0.1905 (at node 27)
+Accepted flit rate average= 0.175514
+	minimum = 0.1655 (at node 27)
+	maximum = 0.1905 (at node 30)
+Injected packet length average = 1
+Accepted packet length average = 1
+Total in-flight flits = 101 (101 measured)
+====== Peak Queue Occupancy Statistics (Absolute Max) ======
+  Overall Max VC Occupancy = 1
+  Overall Max Buffer Occupancy = 3
+latency change    = 0.151708
+throughput change = 0.140461
+Class 0:
+Packet latency average = 14.3564
+	minimum = 10
+	maximum = 24
+	95th percentile = 19.5
+	99th percentile = 21.5
+Network latency average = 14.3564
+	minimum = 10
+	maximum = 24
+	95th percentile = 19.5
+	99th percentile = 21.5
+Slowest packet = 46122
+Flit latency average = 14.355
+	minimum = 10
+	maximum = 24
+	95th percentile = 19.5
+	99th percentile = 21.5
+Slowest flit = 46122
+Fragmentation average = 0
+	minimum = 0
+	maximum = 0
+Injected packet rate average = 0.200167
+	minimum = 0.193444 (at node 33)
+	maximum = 0.211 (at node 27)
+Accepted packet rate average = 0.199849
+	minimum = 0.193 (at node 27)
+	maximum = 0.210889 (at node 30)
+Injected flit rate average = 0.200167
+	minimum = 0.193444 (at node 33)
+	maximum = 0.211 (at node 27)
+Accepted flit rate average= 0.199849
+	minimum = 0.193 (at node 27)
+	maximum = 0.210889 (at node 30)
+Injected packet length average = 1
+Accepted packet length average = 1
+Total in-flight flits = 138 (138 measured)
+====== Peak Queue Occupancy Statistics (Absolute Max) ======
+  Overall Max VC Occupancy = 1
+  Overall Max Buffer Occupancy = 3
+latency change    = 0.0868882
+throughput change = 0.121766
+Class 0:
+Packet latency average = 14.9743
+	minimum = 10
+	maximum = 26
+	95th percentile = 19.5
+	99th percentile = 21.5
+Network latency average = 14.9743
+	minimum = 10
+	maximum = 26
+	95th percentile = 19.5
+	99th percentile = 21.5
+Slowest packet = 107614
+Flit latency average = 14.9732
+	minimum = 10
+	maximum = 26
+	95th percentile = 19.5
+	99th percentile = 21.5
+Slowest flit = 107614
+Fragmentation average = 0
+	minimum = 0
+	maximum = 0
+Injected packet rate average = 0.225535
+	minimum = 0.21775 (at node 14)
+	maximum = 0.234583 (at node 27)
+Accepted packet rate average = 0.225218
+	minimum = 0.217417 (at node 5)
+	maximum = 0.23425 (at node 30)
+Injected flit rate average = 0.225535
+	minimum = 0.21775 (at node 14)
+	maximum = 0.234583 (at node 27)
+Accepted flit rate average= 0.225218
+	minimum = 0.217417 (at node 5)
+	maximum = 0.23425 (at node 30)
+Injected packet length average = 1
+Accepted packet length average = 1
+Total in-flight flits = 172 (172 measured)
+====== Peak Queue Occupancy Statistics (Absolute Max) ======
+  Overall Max VC Occupancy = 1
+  Overall Max Buffer Occupancy = 3
+latency change    = 0.0412665
+throughput change = 0.112641
+Class 0:
+Packet latency average = 15.3399
+	minimum = 10
+	maximum = 28
+	95th percentile = 20.5
+	99th percentile = 21.5
+Network latency average = 15.3399
+	minimum = 10
+	maximum = 28
+	95th percentile = 20.5
+	99th percentile = 21.5
+Slowest packet = 130382
+Flit latency average = 15.3389
+	minimum = 10
+	maximum = 28
+	95th percentile = 20.5
+	99th percentile = 21.5
+Slowest flit = 130382
+Fragmentation average = 0
+	minimum = 0
+	maximum = 0
+Injected packet rate average = 0.250107
+	minimum = 0.239867 (at node 14)
+	maximum = 0.258533 (at node 10)
+Accepted packet rate average = 0.2498
+	minimum = 0.2396 (at node 5)
+	maximum = 0.258267 (at node 28)
+Injected flit rate average = 0.250107
+	minimum = 0.239867 (at node 14)
+	maximum = 0.258533 (at node 10)
+Accepted flit rate average= 0.2498
+	minimum = 0.2396 (at node 5)
+	maximum = 0.258267 (at node 28)
+Injected packet length average = 1
+Accepted packet length average = 1
+Total in-flight flits = 201 (201 measured)
+====== Peak Queue Occupancy Statistics (Absolute Max) ======
+  Overall Max VC Occupancy = 1
+  Overall Max Buffer Occupancy = 3
+latency change    = 0.0238288
+throughput change = 0.0984084
+Class 0:
+Packet latency average = 15.5892
+	minimum = 10
+	maximum = 29
+	95th percentile = 20.5
+	99th percentile = 21.5
+Network latency average = 15.5892
+	minimum = 10
+	maximum = 29
+	95th percentile = 20.5
+	99th percentile = 21.5
+Slowest packet = 180028
+Flit latency average = 15.5885
+	minimum = 10
+	maximum = 29
+	95th percentile = 20.5
+	99th percentile = 21.5
+Slowest flit = 180028
+Fragmentation average = 0
+	minimum = 0
+	maximum = 0
+Injected packet rate average = 0.275199
+	minimum = 0.267222 (at node 14)
+	maximum = 0.281833 (at node 3)
+Accepted packet rate average = 0.27488
+	minimum = 0.266833 (at node 5)
+	maximum = 0.281722 (at node 6)
+Injected flit rate average = 0.275199
+	minimum = 0.267222 (at node 14)
+	maximum = 0.281833 (at node 3)
+Accepted flit rate average= 0.27488
+	minimum = 0.266833 (at node 5)
+	maximum = 0.281722 (at node 6)
+Injected packet length average = 1
+Accepted packet length average = 1
+Total in-flight flits = 242 (242 measured)
+====== Peak Queue Occupancy Statistics (Absolute Max) ======
+  Overall Max VC Occupancy = 1
+  Overall Max Buffer Occupancy = 3
+latency change    = 0.0159965
+throughput change = 0.0912386
+Class 0:
+Packet latency average = 15.7781
+	minimum = 10
+	maximum = 29
+	95th percentile = 20.5
+	99th percentile = 21.5
+Network latency average = 15.7781
+	minimum = 10
+	maximum = 29
+	95th percentile = 20.5
+	99th percentile = 21.5
+Slowest packet = 180028
+Flit latency average = 15.7775
+	minimum = 10
+	maximum = 29
+	95th percentile = 20.5
+	99th percentile = 21.5
+Slowest flit = 180028
+Fragmentation average = 0
+	minimum = 0
+	maximum = 0
+Injected packet rate average = 0.300385
+	minimum = 0.293 (at node 14)
+	maximum = 0.306 (at node 3)
+Accepted packet rate average = 0.300075
+	minimum = 0.292429 (at node 5)
+	maximum = 0.305619 (at node 6)
+Injected flit rate average = 0.300385
+	minimum = 0.293 (at node 14)
+	maximum = 0.306 (at node 3)
+Accepted flit rate average= 0.300075
+	minimum = 0.292429 (at node 5)
+	maximum = 0.305619 (at node 6)
+Injected packet length average = 1
+Accepted packet length average = 1
+Total in-flight flits = 269 (269 measured)
+====== Peak Queue Occupancy Statistics (Absolute Max) ======
+  Overall Max VC Occupancy = 1
+  Overall Max Buffer Occupancy = 3
+latency change    = 0.0119701
+throughput change = 0.0839648
+Class 0:
+Packet latency average = 15.9327
+	minimum = 10
+	maximum = 29
+	95th percentile = 20.5
+	99th percentile = 22.5
+Network latency average = 15.9327
+	minimum = 10
+	maximum = 29
+	95th percentile = 20.5
+	99th percentile = 22.5
+Slowest packet = 180028
+Flit latency average = 15.9322
+	minimum = 10
+	maximum = 29
+	95th percentile = 20.5
+	99th percentile = 22.5
+Slowest flit = 180028
+Fragmentation average = 0
+	minimum = 0
+	maximum = 0
+Injected packet rate average = 0.325487
+	minimum = 0.3195 (at node 2)
+	maximum = 0.331083 (at node 3)
+Accepted packet rate average = 0.325161
+	minimum = 0.319042 (at node 20)
+	maximum = 0.33075 (at node 6)
+Injected flit rate average = 0.325487
+	minimum = 0.3195 (at node 2)
+	maximum = 0.331083 (at node 3)
+Accepted flit rate average= 0.325161
+	minimum = 0.319042 (at node 20)
+	maximum = 0.33075 (at node 6)
+Injected packet length average = 1
+Accepted packet length average = 1
+Total in-flight flits = 317 (317 measured)
+====== Peak Queue Occupancy Statistics (Absolute Max) ======
+  Overall Max VC Occupancy = 1
+  Overall Max Buffer Occupancy = 4
+latency change    = 0.00970604
+throughput change = 0.0771479
+Class 0:
+Packet latency average = 16.0675
+	minimum = 10
+	maximum = 30
+	95th percentile = 20.5
+	99th percentile = 22.5
+Network latency average = 16.0675
+	minimum = 10
+	maximum = 30
+	95th percentile = 20.5
+	99th percentile = 22.5
+Slowest packet = 347986
+Flit latency average = 16.0671
+	minimum = 10
+	maximum = 30
+	95th percentile = 20.5
+	99th percentile = 22.5
+Slowest flit = 347986
+Fragmentation average = 0
+	minimum = 0
+	maximum = 0
+Injected packet rate average = 0.350787
+	minimum = 0.345037 (at node 1)
+	maximum = 0.355926 (at node 18)
+Accepted packet rate average = 0.350477
+	minimum = 0.344815 (at node 10)
+	maximum = 0.355593 (at node 21)
+Injected flit rate average = 0.350787
+	minimum = 0.345037 (at node 1)
+	maximum = 0.355926 (at node 18)
+Accepted flit rate average= 0.350477
+	minimum = 0.344815 (at node 10)
+	maximum = 0.355593 (at node 21)
+Injected packet length average = 1
+Accepted packet length average = 1
+Total in-flight flits = 336 (336 measured)
+====== Peak Queue Occupancy Statistics (Absolute Max) ======
+  Overall Max VC Occupancy = 1
+  Overall Max Buffer Occupancy = 4
+latency change    = 0.00838875
+throughput change = 0.0722343
+Class 0:
+Packet latency average = 16.1862
+	minimum = 10
+	maximum = 30
+	95th percentile = 20.5
+	99th percentile = 22.5
+Network latency average = 16.1862
+	minimum = 10
+	maximum = 30
+	95th percentile = 20.5
+	99th percentile = 22.5
+Slowest packet = 347986
+Flit latency average = 16.1858
+	minimum = 10
+	maximum = 30
+	95th percentile = 20.5
+	99th percentile = 22.5
+Slowest flit = 347986
+Fragmentation average = 0
+	minimum = 0
+	maximum = 0
+Injected packet rate average = 0.37563
+	minimum = 0.369967 (at node 1)
+	maximum = 0.382267 (at node 27)
+Accepted packet rate average = 0.375322
+	minimum = 0.369733 (at node 10)
+	maximum = 0.381933 (at node 30)
+Injected flit rate average = 0.37563
+	minimum = 0.369967 (at node 1)
+	maximum = 0.382267 (at node 27)
+Accepted flit rate average= 0.375322
+	minimum = 0.369733 (at node 10)
+	maximum = 0.381933 (at node 30)
+Injected packet length average = 1
+Accepted packet length average = 1
+Total in-flight flits = 367 (367 measured)
+====== Peak Queue Occupancy Statistics (Absolute Max) ======
+  Overall Max VC Occupancy = 1
+  Overall Max Buffer Occupancy = 4
+latency change    = 0.00733
+throughput change = 0.0661961
+Class 0:
+Packet latency average = 16.3017
+	minimum = 10
+	maximum = 37
+	95th percentile = 21.5
+	99th percentile = 22.5
+Network latency average = 16.3017
+	minimum = 10
+	maximum = 37
+	95th percentile = 21.5
+	99th percentile = 22.5
+Slowest packet = 483488
+Flit latency average = 16.3013
+	minimum = 10
+	maximum = 37
+	95th percentile = 21.5
+	99th percentile = 22.5
+Slowest flit = 483488
+Fragmentation average = 0
+	minimum = 0
+	maximum = 0
+Injected packet rate average = 0.400607
+	minimum = 0.395212 (at node 1)
+	maximum = 0.407091 (at node 27)
+Accepted packet rate average = 0.400318
+	minimum = 0.39497 (at node 10)
+	maximum = 0.406848 (at node 30)
+Injected flit rate average = 0.400607
+	minimum = 0.395212 (at node 1)
+	maximum = 0.407091 (at node 27)
+Accepted flit rate average= 0.400318
+	minimum = 0.39497 (at node 10)
+	maximum = 0.406848 (at node 30)
+Injected packet length average = 1
+Accepted packet length average = 1
+Total in-flight flits = 378 (378 measured)
+====== Peak Queue Occupancy Statistics (Absolute Max) ======
+  Overall Max VC Occupancy = 1
+  Overall Max Buffer Occupancy = 4
+latency change    = 0.00708556
+throughput change = 0.0624402
+Class 0:
+Packet latency average = 16.4136
+	minimum = 10
+	maximum = 37
+	95th percentile = 21.5
+	99th percentile = 22.5
+Network latency average = 16.4136
+	minimum = 10
+	maximum = 37
+	95th percentile = 21.5
+	99th percentile = 22.5
+Slowest packet = 483488
+Flit latency average = 16.4133
+	minimum = 10
+	maximum = 37
+	95th percentile = 21.5
+	99th percentile = 22.5
+Slowest flit = 483488
+Fragmentation average = 0
+	minimum = 0
+	maximum = 0
+Injected packet rate average = 0.425647
+	minimum = 0.420028 (at node 1)
+	maximum = 0.431861 (at node 27)
+Accepted packet rate average = 0.425341
+	minimum = 0.419722 (at node 10)
+	maximum = 0.431639 (at node 30)
+Injected flit rate average = 0.425647
+	minimum = 0.420028 (at node 1)
+	maximum = 0.431861 (at node 27)
+Accepted flit rate average= 0.425341
+	minimum = 0.419722 (at node 10)
+	maximum = 0.431639 (at node 30)
+Injected packet length average = 1
+Accepted packet length average = 1
+Total in-flight flits = 431 (431 measured)
+====== Peak Queue Occupancy Statistics (Absolute Max) ======
+  Overall Max VC Occupancy = 1
+  Overall Max Buffer Occupancy = 4
+latency change    = 0.00681752
+throughput change = 0.0588301
+Class 0:
+Packet latency average = 16.5295
+	minimum = 10
+	maximum = 39
+	95th percentile = 21.5
+	99th percentile = 23.5
+Network latency average = 16.5295
+	minimum = 10
+	maximum = 39
+	95th percentile = 21.5
+	99th percentile = 23.5
+Slowest packet = 625719
+Flit latency average = 16.5293
+	minimum = 10
+	maximum = 39
+	95th percentile = 21.5
+	99th percentile = 23.5
+Slowest flit = 625719
+Fragmentation average = 0
+	minimum = 0
+	maximum = 0
+Injected packet rate average = 0.450526
+	minimum = 0.445308 (at node 1)
+	maximum = 0.455949 (at node 18)
+Accepted packet rate average = 0.450217
+	minimum = 0.445 (at node 13)
+	maximum = 0.455615 (at node 21)
+Injected flit rate average = 0.450526
+	minimum = 0.445308 (at node 1)
+	maximum = 0.455949 (at node 18)
+Accepted flit rate average= 0.450217
+	minimum = 0.445 (at node 13)
+	maximum = 0.455615 (at node 21)
+Injected packet length average = 1
+Accepted packet length average = 1
+Total in-flight flits = 469 (469 measured)
+====== Peak Queue Occupancy Statistics (Absolute Max) ======
+  Overall Max VC Occupancy = 1
+  Overall Max Buffer Occupancy = 4
+latency change    = 0.0070161
+throughput change = 0.0552537
+Class 0:
+Packet latency average = 16.6525
+	minimum = 10
+	maximum = 47
+	95th percentile = 21.5
+	99th percentile = 23.5
+Network latency average = 16.6525
+	minimum = 10
+	maximum = 47
+	95th percentile = 21.5
+	99th percentile = 23.5
+Slowest packet = 711793
+Flit latency average = 16.6522
+	minimum = 10
+	maximum = 47
+	95th percentile = 21.5
+	99th percentile = 23.5
+Slowest flit = 711793
+Fragmentation average = 0
+	minimum = 0
+	maximum = 0
+Injected packet rate average = 0.475496
+	minimum = 0.470357 (at node 4)
+	maximum = 0.480976 (at node 18)
+Accepted packet rate average = 0.475173
+	minimum = 0.469976 (at node 13)
+	maximum = 0.480619 (at node 21)
+Injected flit rate average = 0.475496
+	minimum = 0.470357 (at node 4)
+	maximum = 0.480976 (at node 18)
+Accepted flit rate average= 0.475173
+	minimum = 0.469976 (at node 13)
+	maximum = 0.480619 (at node 21)
+Injected packet length average = 1
+Accepted packet length average = 1
+Total in-flight flits = 524 (524 measured)
+====== Peak Queue Occupancy Statistics (Absolute Max) ======
+  Overall Max VC Occupancy = 1
+  Overall Max Buffer Occupancy = 4
+latency change    = 0.0073821
+throughput change = 0.0525186
+Class 0:
+Packet latency average = 16.7492
+	minimum = 10
+	maximum = 47
+	95th percentile = 21.5
+	99th percentile = 23.5
+Network latency average = 16.7492
+	minimum = 10
+	maximum = 47
+	95th percentile = 21.5
+	99th percentile = 23.5
+Slowest packet = 711793
+Flit latency average = 16.749
+	minimum = 10
+	maximum = 47
+	95th percentile = 21.5
+	99th percentile = 23.5
+Slowest flit = 711793
+Fragmentation average = 0
+	minimum = 0
+	maximum = 0
+Injected packet rate average = 0.497081
+	minimum = 0.491644 (at node 4)
+	maximum = 0.501822 (at node 18)
+Accepted packet rate average = 0.496794
+	minimum = 0.491311 (at node 13)
+	maximum = 0.501622 (at node 21)
+Injected flit rate average = 0.497081
+	minimum = 0.491644 (at node 4)
+	maximum = 0.501822 (at node 18)
+Accepted flit rate average= 0.496794
+	minimum = 0.491311 (at node 13)
+	maximum = 0.501622 (at node 21)
+Injected packet length average = 1
+Accepted packet length average = 1
+Total in-flight flits = 500 (500 measured)
+====== Peak Queue Occupancy Statistics (Absolute Max) ======
+  Overall Max VC Occupancy = 1
+  Overall Max Buffer Occupancy = 4
+latency change    = 0.00577435
+throughput change = 0.0435227
+Class 0:
+Packet latency average = 16.8291
+	minimum = 10
+	maximum = 52
+	95th percentile = 21.5
+	99th percentile = 24.5
+Network latency average = 16.8291
+	minimum = 10
+	maximum = 52
+	95th percentile = 21.5
+	99th percentile = 24.5
+Slowest packet = 844418
+Flit latency average = 16.8289
+	minimum = 10
+	maximum = 52
+	95th percentile = 21.5
+	99th percentile = 24.5
+Slowest flit = 844418
+Fragmentation average = 0
+	minimum = 0
+	maximum = 0
+Injected packet rate average = 0.516167
+	minimum = 0.512062 (at node 1)
+	maximum = 0.520646 (at node 18)
+Accepted packet rate average = 0.515895
+	minimum = 0.511813 (at node 10)
+	maximum = 0.520375 (at node 21)
+Injected flit rate average = 0.516167
+	minimum = 0.512062 (at node 1)
+	maximum = 0.520646 (at node 18)
+Accepted flit rate average= 0.515895
+	minimum = 0.511813 (at node 10)
+	maximum = 0.520375 (at node 21)
+Injected packet length average = 1
+Accepted packet length average = 1
+Total in-flight flits = 505 (505 measured)
+====== Peak Queue Occupancy Statistics (Absolute Max) ======
+  Overall Max VC Occupancy = 1
+  Overall Max Buffer Occupancy = 4
+latency change    = 0.00475006
+throughput change = 0.0370235
+Class 0:
+Packet latency average = 16.8948
+	minimum = 10
+	maximum = 52
+	95th percentile = 21.5
+	99th percentile = 24.5
+Network latency average = 16.8948
+	minimum = 10
+	maximum = 52
+	95th percentile = 21.5
+	99th percentile = 24.5
+Slowest packet = 844418
+Flit latency average = 16.8947
+	minimum = 10
+	maximum = 52
+	95th percentile = 21.5
+	99th percentile = 24.5
+Slowest flit = 844418
+Fragmentation average = 0
+	minimum = 0
+	maximum = 0
+Injected packet rate average = 0.532958
+	minimum = 0.528765 (at node 4)
+	maximum = 0.537098 (at node 18)
+Accepted packet rate average = 0.532694
+	minimum = 0.528471 (at node 13)
+	maximum = 0.536824 (at node 21)
+Injected flit rate average = 0.532958
+	minimum = 0.528765 (at node 4)
+	maximum = 0.537098 (at node 18)
+Accepted flit rate average= 0.532694
+	minimum = 0.528471 (at node 13)
+	maximum = 0.536824 (at node 21)
+Injected packet length average = 1
+Accepted packet length average = 1
+Total in-flight flits = 518 (518 measured)
+====== Peak Queue Occupancy Statistics (Absolute Max) ======
+  Overall Max VC Occupancy = 1
+  Overall Max Buffer Occupancy = 4
+latency change    = 0.00388944
+throughput change = 0.0315373
+Draining all recorded packets ...
+Draining remaining packets ...
+Time taken is 57054 cycles
+====== Overall Traffic Statistics ======
+====== Traffic class 0 ======
+Packet latency average = 16.8956 (1 samples)
+	minimum = 10 (1 samples)
+	maximum = 52 (1 samples)
+Network latency average = 16.8956 (1 samples)
+	minimum = 10 (1 samples)
+	maximum = 52 (1 samples)
+Flit latency average = 16.8959 (1 samples)
+	minimum = 10 (1 samples)
+	maximum = 52 (1 samples)
+Fragmentation average = 0 (1 samples)
+	minimum = 0 (1 samples)
+	maximum = 0 (1 samples)
+Injected packet rate average = 0.532958 (1 samples)
+	minimum = 0.528765 (1 samples)
+	maximum = 0.537098 (1 samples)
+Accepted packet rate average = 0.532694 (1 samples)
+	minimum = 0.528471 (1 samples)
+	maximum = 0.536824 (1 samples)
+Injected flit rate average = 0.532958 (1 samples)
+	minimum = 0.528765 (1 samples)
+	maximum = 0.537098 (1 samples)
+Accepted flit rate average = 0.532694 (1 samples)
+	minimum = 0.528471 (1 samples)
+	maximum = 0.536824 (1 samples)
+Injected packet size average = 1 (1 samples)
+Accepted packet size average = 1 (1 samples)
+Hops average = 3.41673 (1 samples)
+Total run time 51.2364
+====== DFM Hybrid Routing Split Statistics ======
+DR packets = 32523
+DSL packets = 962869
+DR fraction = 0.0326736
+DSL fraction = 0.967326
+DFM Flow (0 -> 3) alpha=1 dr_packets=1110 dsl_packets=26404 dsl_fraction=0.959657
+DFM Flow (1 -> 10) alpha=1 dr_packets=579 dsl_packets=26874 dsl_fraction=0.978909
+DFM Flow (2 -> 20) alpha=1 dr_packets=862 dsl_packets=26700 dsl_fraction=0.968725
+DFM Flow (3 -> 6) alpha=1 dr_packets=1064 dsl_packets=26634 dsl_fraction=0.961586
+DFM Flow (4 -> 13) alpha=1 dr_packets=1136 dsl_packets=26359 dsl_fraction=0.958683
+DFM Flow (5 -> 23) alpha=1 dr_packets=1154 dsl_packets=26339 dsl_fraction=0.958026
+DFM Flow (6 -> 0) alpha=1 dr_packets=1204 dsl_packets=26520 dsl_fraction=0.956572
+DFM Flow (7 -> 16) alpha=1 dr_packets=1124 dsl_packets=26489 dsl_fraction=0.959295
+DFM Flow (8 -> 26) alpha=1 dr_packets=901 dsl_packets=26913 dsl_fraction=0.967606
+DFM Flow (9 -> 12) alpha=1 dr_packets=835 dsl_packets=26826 dsl_fraction=0.969813
+DFM Flow (10 -> 28) alpha=1 dr_packets=573 dsl_packets=27228 dsl_fraction=0.979389
+DFM Flow (11 -> 2) alpha=1 dr_packets=1028 dsl_packets=26616 dsl_fraction=0.962813
+DFM Flow (12 -> 15) alpha=1 dr_packets=289 dsl_packets=27494 dsl_fraction=0.989598
+DFM Flow (13 -> 31) alpha=1 dr_packets=1322 dsl_packets=26285 dsl_fraction=0.952114
+DFM Flow (14 -> 5) alpha=1 dr_packets=1022 dsl_packets=26527 dsl_fraction=0.962902
+DFM Flow (15 -> 9) alpha=1 dr_packets=262 dsl_packets=27294 dsl_fraction=0.990492
+DFM Flow (16 -> 34) alpha=1 dr_packets=1061 dsl_packets=26628 dsl_fraction=0.961682
+DFM Flow (17 -> 8) alpha=1 dr_packets=1096 dsl_packets=26559 dsl_fraction=0.960369
+DFM Flow (18 -> 21) alpha=1 dr_packets=446 dsl_packets=27415 dsl_fraction=0.983992
+DFM Flow (19 -> 1) alpha=1 dr_packets=1084 dsl_packets=26647 dsl_fraction=0.96091
+DFM Flow (20 -> 29) alpha=1 dr_packets=950 dsl_packets=26645 dsl_fraction=0.965573
+DFM Flow (21 -> 24) alpha=1 dr_packets=59 dsl_packets=27491 dsl_fraction=0.997858
+DFM Flow (22 -> 4) alpha=1 dr_packets=1066 dsl_packets=26718 dsl_fraction=0.961633
+DFM Flow (23 -> 32) alpha=1 dr_packets=821 dsl_packets=26771 dsl_fraction=0.970245
+DFM Flow (24 -> 18) alpha=1 dr_packets=44 dsl_packets=27456 dsl_fraction=0.9984
+DFM Flow (25 -> 7) alpha=1 dr_packets=1112 dsl_packets=26590 dsl_fraction=0.959858
+DFM Flow (26 -> 35) alpha=1 dr_packets=891 dsl_packets=26791 dsl_fraction=0.967813
+DFM Flow (27 -> 30) alpha=1 dr_packets=1017 dsl_packets=26864 dsl_fraction=0.963524
+DFM Flow (28 -> 19) alpha=1 dr_packets=775 dsl_packets=26792 dsl_fraction=0.971887
+DFM Flow (29 -> 11) alpha=1 dr_packets=1024 dsl_packets=26703 dsl_fraction=0.963068
+DFM Flow (30 -> 33) alpha=1 dr_packets=1260 dsl_packets=26414 dsl_fraction=0.95447
+DFM Flow (31 -> 22) alpha=1 dr_packets=1199 dsl_packets=26497 dsl_fraction=0.956709
+DFM Flow (32 -> 14) alpha=1 dr_packets=998 dsl_packets=26704 dsl_fraction=0.963974
+DFM Flow (33 -> 27) alpha=1 dr_packets=952 dsl_packets=26685 dsl_fraction=0.965553
+DFM Flow (34 -> 25) alpha=1 dr_packets=1107 dsl_packets=26380 dsl_fraction=0.959726
+DFM Flow (35 -> 17) alpha=1 dr_packets=1096 dsl_packets=26617 dsl_fraction=0.960452
+====== DFM Hybrid Routing Window Statistics ======
+Window 0 DR packets=5252 DSL packets=192 DSL fraction=0.0352682
+Window 1 DR packets=9761 DSL packets=933 DSL fraction=0.0872452
+Window 2 DR packets=12610 DSL packets=3705 DSL fraction=0.227092
+Window 3 DR packets=4900 DSL packets=16762 DSL fraction=0.773797
+Window 4 DR packets=0 DSL packets=26877 DSL fraction=1
+Window 5 DR packets=0 DSL packets=32577 DSL fraction=1
+Window 6 DR packets=0 DSL packets=37627 DSL fraction=1
+Window 7 DR packets=0 DSL packets=43271 DSL fraction=1
+Window 8 DR packets=0 DSL packets=48762 DSL fraction=1
+Window 9 DR packets=0 DSL packets=54130 DSL fraction=1
+Window 10 DR packets=0 DSL packets=59744 DSL fraction=1
+Window 11 DR packets=0 DSL packets=64715 DSL fraction=1
+Window 12 DR packets=0 DSL packets=70241 DSL fraction=1
+Window 13 DR packets=0 DSL packets=75717 DSL fraction=1
+Window 14 DR packets=0 DSL packets=80901 DSL fraction=1
+Window 15 DR packets=0 DSL packets=86411 DSL fraction=1
+Window 16 DR packets=0 DSL packets=86322 DSL fraction=1
+Window 17 DR packets=0 DSL packets=86664 DSL fraction=1
+Window 18 DR packets=0 DSL packets=86574 DSL fraction=1
+Window 19 DR packets=0 DSL packets=744 DSL fraction=1
+====== Observed Edge Statistics ======
+edge_capacity = 1
+Edge (0 -> 1) dst_input_port=2 max_buffer_ratio=1 buffer_over_90_fraction=0.0171877 buffer_full_fraction=0.0171877 max_full_streak=4 edge_capacity=0.444444 max_edge_load=0.182 max_edge_utilization=0.4095 total_traversals=5895 buffer_exploded=1 load_exceeded_capacity=0
+Edge (0 -> 2) dst_input_port=2 max_buffer_ratio=1 buffer_over_90_fraction=0.0103147 buffer_full_fraction=0.0103147 max_full_streak=3 edge_capacity=0.444444 max_edge_load=0.18 max_edge_utilization=0.405 total_traversals=5892 buffer_exploded=1 load_exceeded_capacity=0
+Edge (0 -> 3) dst_input_port=2 max_buffer_ratio=1 buffer_over_90_fraction=0.0359766 buffer_full_fraction=0.0359766 max_full_streak=5 edge_capacity=0.444444 max_edge_load=0.188 max_edge_utilization=0.423 total_traversals=6978 buffer_exploded=1 load_exceeded_capacity=0
+Edge (0 -> 4) dst_input_port=2 max_buffer_ratio=1 buffer_over_90_fraction=0.011512 buffer_full_fraction=0.011512 max_full_streak=3 edge_capacity=0.444444 max_edge_load=0.181 max_edge_utilization=0.40725 total_traversals=5903 buffer_exploded=1 load_exceeded_capacity=0
+Edge (0 -> 5) dst_input_port=2 max_buffer_ratio=1 buffer_over_90_fraction=0.023244 buffer_full_fraction=0.023244 max_full_streak=3 edge_capacity=0.444444 max_edge_load=0.18 max_edge_utilization=0.405 total_traversals=5882 buffer_exploded=1 load_exceeded_capacity=0
+Edge (0 -> 6) dst_input_port=2 max_buffer_ratio=1 buffer_over_90_fraction=0.0398041 buffer_full_fraction=0.0398041 max_full_streak=3 edge_capacity=0.444444 max_edge_load=0.18 max_edge_utilization=0.405 total_traversals=5894 buffer_exploded=1 load_exceeded_capacity=0
+Edge (0 -> 7) dst_input_port=2 max_buffer_ratio=1 buffer_over_90_fraction=0.0260053 buffer_full_fraction=0.0260053 max_full_streak=7 edge_capacity=0.444444 max_edge_load=0.18 max_edge_utilization=0.405 total_traversals=5888 buffer_exploded=1 load_exceeded_capacity=0
+Edge (0 -> 8) dst_input_port=2 max_buffer_ratio=1 buffer_over_90_fraction=0.0481823 buffer_full_fraction=0.0481823 max_full_streak=6 edge_capacity=0.444444 max_edge_load=0.182 max_edge_utilization=0.4095 total_traversals=5884 buffer_exploded=1 load_exceeded_capacity=0
+Edge (0 -> 9) dst_input_port=0 max_buffer_ratio=1 buffer_over_90_fraction=0.0010752 buffer_full_fraction=0.0010752 max_full_streak=2 edge_capacity=1 max_edge_load=0.27 max_edge_utilization=0.27 total_traversals=8859 buffer_exploded=1 load_exceeded_capacity=0
+Edge (0 -> 18) dst_input_port=0 max_buffer_ratio=1 buffer_over_90_fraction=0.000842764 buffer_full_fraction=0.000842764 max_full_streak=1 edge_capacity=1 max_edge_load=0.27 max_edge_utilization=0.27 total_traversals=8885 buffer_exploded=1 load_exceeded_capacity=0
+Edge (1 -> 0) dst_input_port=2 max_buffer_ratio=1 buffer_over_90_fraction=0.021144 buffer_full_fraction=0.021144 max_full_streak=7 edge_capacity=0.444444 max_edge_load=0.181 max_edge_utilization=0.40725 total_traversals=5933 buffer_exploded=1 load_exceeded_capacity=0
+Edge (1 -> 2) dst_input_port=3 max_buffer_ratio=1 buffer_over_90_fraction=0.0294569 buffer_full_fraction=0.0294569 max_full_streak=4 edge_capacity=0.444444 max_edge_load=0.18 max_edge_utilization=0.405 total_traversals=5944 buffer_exploded=1 load_exceeded_capacity=0
+Edge (1 -> 3) dst_input_port=3 max_buffer_ratio=1 buffer_over_90_fraction=0.0204354 buffer_full_fraction=0.0204354 max_full_streak=4 edge_capacity=0.444444 max_edge_load=0.181 max_edge_utilization=0.40725 total_traversals=5920 buffer_exploded=1 load_exceeded_capacity=0
+Edge (1 -> 4) dst_input_port=3 max_buffer_ratio=1 buffer_over_90_fraction=0.00491717 buffer_full_fraction=0.00491717 max_full_streak=8 edge_capacity=0.444444 max_edge_load=0.182 max_edge_utilization=0.4095 total_traversals=5955 buffer_exploded=1 load_exceeded_capacity=0
+Edge (1 -> 5) dst_input_port=3 max_buffer_ratio=1 buffer_over_90_fraction=0.0206196 buffer_full_fraction=0.0206196 max_full_streak=3 edge_capacity=0.444444 max_edge_load=0.181 max_edge_utilization=0.40725 total_traversals=5934 buffer_exploded=1 load_exceeded_capacity=0
+Edge (1 -> 6) dst_input_port=3 max_buffer_ratio=1 buffer_over_90_fraction=0.0218773 buffer_full_fraction=0.0218773 max_full_streak=6 edge_capacity=0.444444 max_edge_load=0.179 max_edge_utilization=0.40275 total_traversals=5945 buffer_exploded=1 load_exceeded_capacity=0
+Edge (1 -> 7) dst_input_port=3 max_buffer_ratio=1 buffer_over_90_fraction=0.0234129 buffer_full_fraction=0.0234129 max_full_streak=4 edge_capacity=0.444444 max_edge_load=0.182 max_edge_utilization=0.4095 total_traversals=5941 buffer_exploded=1 load_exceeded_capacity=0
+Edge (1 -> 8) dst_input_port=3 max_buffer_ratio=1 buffer_over_90_fraction=0.0185514 buffer_full_fraction=0.0185514 max_full_streak=5 edge_capacity=0.444444 max_edge_load=0.182 max_edge_utilization=0.4095 total_traversals=5937 buffer_exploded=1 load_exceeded_capacity=0
+Edge (1 -> 10) dst_input_port=0 max_buffer_ratio=1 buffer_over_90_fraction=0.000613518 buffer_full_fraction=0.000613518 max_full_streak=1 edge_capacity=1 max_edge_load=0.27 max_edge_utilization=0.27 total_traversals=9438 buffer_exploded=1 load_exceeded_capacity=0
+Edge (1 -> 19) dst_input_port=0 max_buffer_ratio=1 buffer_over_90_fraction=0.000702318 buffer_full_fraction=0.000702318 max_full_streak=1 edge_capacity=1 max_edge_load=0.269 max_edge_utilization=0.269 total_traversals=8885 buffer_exploded=1 load_exceeded_capacity=0
+Edge (2 -> 0) dst_input_port=3 max_buffer_ratio=1 buffer_over_90_fraction=0.0228683 buffer_full_fraction=0.0228683 max_full_streak=3 edge_capacity=0.444444 max_edge_load=0.182 max_edge_utilization=0.4095 total_traversals=5914 buffer_exploded=1 load_exceeded_capacity=0
+Edge (2 -> 1) dst_input_port=3 max_buffer_ratio=1 buffer_over_90_fraction=0.0151018 buffer_full_fraction=0.0151018 max_full_streak=4 edge_capacity=0.444444 max_edge_load=0.181 max_edge_utilization=0.40725 total_traversals=5928 buffer_exploded=1 load_exceeded_capacity=0
+Edge (2 -> 3) dst_input_port=4 max_buffer_ratio=1 buffer_over_90_fraction=0.0338383 buffer_full_fraction=0.0338383 max_full_streak=6 edge_capacity=0.444444 max_edge_load=0.182 max_edge_utilization=0.4095 total_traversals=5901 buffer_exploded=1 load_exceeded_capacity=0
+Edge (2 -> 4) dst_input_port=4 max_buffer_ratio=1 buffer_over_90_fraction=0.0310176 buffer_full_fraction=0.0310176 max_full_streak=5 edge_capacity=0.444444 max_edge_load=0.183 max_edge_utilization=0.41175 total_traversals=5936 buffer_exploded=1 load_exceeded_capacity=0
+Edge (2 -> 5) dst_input_port=4 max_buffer_ratio=1 buffer_over_90_fraction=0.0157201 buffer_full_fraction=0.0157201 max_full_streak=3 edge_capacity=0.444444 max_edge_load=0.182 max_edge_utilization=0.4095 total_traversals=5915 buffer_exploded=1 load_exceeded_capacity=0
+Edge (2 -> 6) dst_input_port=4 max_buffer_ratio=1 buffer_over_90_fraction=0.0107587 buffer_full_fraction=0.0107587 max_full_streak=3 edge_capacity=0.444444 max_edge_load=0.181 max_edge_utilization=0.40725 total_traversals=5925 buffer_exploded=1 load_exceeded_capacity=0
+Edge (2 -> 7) dst_input_port=4 max_buffer_ratio=1 buffer_over_90_fraction=0.0130536 buffer_full_fraction=0.0130536 max_full_streak=3 edge_capacity=0.444444 max_edge_load=0.182 max_edge_utilization=0.4095 total_traversals=5921 buffer_exploded=1 load_exceeded_capacity=0
+Edge (2 -> 8) dst_input_port=4 max_buffer_ratio=1 buffer_over_90_fraction=0.0220855 buffer_full_fraction=0.0220855 max_full_streak=4 edge_capacity=0.444444 max_edge_load=0.182 max_edge_utilization=0.4095 total_traversals=5917 buffer_exploded=1 load_exceeded_capacity=0
+Edge (2 -> 11) dst_input_port=0 max_buffer_ratio=1 buffer_over_90_fraction=0.00235036 buffer_full_fraction=0.00235036 max_full_streak=2 edge_capacity=1 max_edge_load=0.27 max_edge_utilization=0.27 total_traversals=8858 buffer_exploded=1 load_exceeded_capacity=0
+Edge (2 -> 20) dst_input_port=0 max_buffer_ratio=1 buffer_over_90_fraction=0.000543631 buffer_full_fraction=0.000543631 max_full_streak=1 edge_capacity=1 max_edge_load=0.271 max_edge_utilization=0.271 total_traversals=9747 buffer_exploded=1 load_exceeded_capacity=0
+Edge (3 -> 0) dst_input_port=4 max_buffer_ratio=1 buffer_over_90_fraction=0.0289401 buffer_full_fraction=0.0289401 max_full_streak=5 edge_capacity=0.444444 max_edge_load=0.179 max_edge_utilization=0.40275 total_traversals=5907 buffer_exploded=1 load_exceeded_capacity=0
+Edge (3 -> 1) dst_input_port=4 max_buffer_ratio=1 buffer_over_90_fraction=0.0100234 buffer_full_fraction=0.0100234 max_full_streak=3 edge_capacity=0.444444 max_edge_load=0.181 max_edge_utilization=0.40725 total_traversals=5920 buffer_exploded=1 load_exceeded_capacity=0
+Edge (3 -> 2) dst_input_port=4 max_buffer_ratio=1 buffer_over_90_fraction=0.0536933 buffer_full_fraction=0.0536933 max_full_streak=8 edge_capacity=0.444444 max_edge_load=0.18 max_edge_utilization=0.405 total_traversals=5916 buffer_exploded=1 load_exceeded_capacity=0
+Edge (3 -> 4) dst_input_port=5 max_buffer_ratio=1 buffer_over_90_fraction=0.0325837 buffer_full_fraction=0.0325837 max_full_streak=4 edge_capacity=0.444444 max_edge_load=0.182 max_edge_utilization=0.4095 total_traversals=5928 buffer_exploded=1 load_exceeded_capacity=0
+Edge (3 -> 5) dst_input_port=5 max_buffer_ratio=1 buffer_over_90_fraction=0.0367406 buffer_full_fraction=0.0367406 max_full_streak=4 edge_capacity=0.444444 max_edge_load=0.18 max_edge_utilization=0.405 total_traversals=5907 buffer_exploded=1 load_exceeded_capacity=0
+Edge (3 -> 6) dst_input_port=5 max_buffer_ratio=1 buffer_over_90_fraction=0.0209346 buffer_full_fraction=0.0209346 max_full_streak=7 edge_capacity=0.444444 max_edge_load=0.199 max_edge_utilization=0.44775 total_traversals=6984 buffer_exploded=1 load_exceeded_capacity=0
+Edge (3 -> 7) dst_input_port=5 max_buffer_ratio=1 buffer_over_90_fraction=0.0309777 buffer_full_fraction=0.0309777 max_full_streak=3 edge_capacity=0.444444 max_edge_load=0.18 max_edge_utilization=0.405 total_traversals=5914 buffer_exploded=1 load_exceeded_capacity=0
+Edge (3 -> 8) dst_input_port=5 max_buffer_ratio=1 buffer_over_90_fraction=0.0361102 buffer_full_fraction=0.0361102 max_full_streak=3 edge_capacity=0.444444 max_edge_load=0.181 max_edge_utilization=0.40725 total_traversals=5910 buffer_exploded=1 load_exceeded_capacity=0
+Edge (3 -> 12) dst_input_port=0 max_buffer_ratio=1 buffer_over_90_fraction=0.000876442 buffer_full_fraction=0.000876442 max_full_streak=1 edge_capacity=1 max_edge_load=0.27 max_edge_utilization=0.27 total_traversals=8858 buffer_exploded=1 load_exceeded_capacity=0
+Edge (3 -> 21) dst_input_port=0 max_buffer_ratio=1 buffer_over_90_fraction=0.000843086 buffer_full_fraction=0.000843086 max_full_streak=2 edge_capacity=1 max_edge_load=0.271 max_edge_utilization=0.271 total_traversals=8884 buffer_exploded=1 load_exceeded_capacity=0
+Edge (4 -> 0) dst_input_port=5 max_buffer_ratio=1 buffer_over_90_fraction=0.0227943 buffer_full_fraction=0.0227943 max_full_streak=4 edge_capacity=0.444444 max_edge_load=0.182 max_edge_utilization=0.4095 total_traversals=5876 buffer_exploded=1 load_exceeded_capacity=0
+Edge (4 -> 1) dst_input_port=5 max_buffer_ratio=1 buffer_over_90_fraction=0.0389898 buffer_full_fraction=0.0389898 max_full_streak=4 edge_capacity=0.444444 max_edge_load=0.182 max_edge_utilization=0.4095 total_traversals=5890 buffer_exploded=1 load_exceeded_capacity=0
+Edge (4 -> 2) dst_input_port=5 max_buffer_ratio=1 buffer_over_90_fraction=0.0476932 buffer_full_fraction=0.0476932 max_full_streak=6 edge_capacity=0.444444 max_edge_load=0.181 max_edge_utilization=0.40725 total_traversals=5886 buffer_exploded=1 load_exceeded_capacity=0
+Edge (4 -> 3) dst_input_port=5 max_buffer_ratio=1 buffer_over_90_fraction=0.0551698 buffer_full_fraction=0.0551698 max_full_streak=4 edge_capacity=0.444444 max_edge_load=0.181 max_edge_utilization=0.40725 total_traversals=5863 buffer_exploded=1 load_exceeded_capacity=0
+Edge (4 -> 5) dst_input_port=6 max_buffer_ratio=1 buffer_over_90_fraction=0.0409107 buffer_full_fraction=0.0409107 max_full_streak=3 edge_capacity=0.444444 max_edge_load=0.181 max_edge_utilization=0.40725 total_traversals=5876 buffer_exploded=1 load_exceeded_capacity=0
+Edge (4 -> 6) dst_input_port=6 max_buffer_ratio=1 buffer_over_90_fraction=0.0252097 buffer_full_fraction=0.0252097 max_full_streak=4 edge_capacity=0.444444 max_edge_load=0.181 max_edge_utilization=0.40725 total_traversals=5888 buffer_exploded=1 load_exceeded_capacity=0
+Edge (4 -> 7) dst_input_port=6 max_buffer_ratio=1 buffer_over_90_fraction=0.0169484 buffer_full_fraction=0.0169484 max_full_streak=3 edge_capacity=0.444444 max_edge_load=0.182 max_edge_utilization=0.4095 total_traversals=5882 buffer_exploded=1 load_exceeded_capacity=0
+Edge (4 -> 8) dst_input_port=6 max_buffer_ratio=1 buffer_over_90_fraction=0.0362841 buffer_full_fraction=0.0362841 max_full_streak=4 edge_capacity=0.444444 max_edge_load=0.181 max_edge_utilization=0.40725 total_traversals=5879 buffer_exploded=1 load_exceeded_capacity=0
+Edge (4 -> 13) dst_input_port=0 max_buffer_ratio=1 buffer_over_90_fraction=0.000403289 buffer_full_fraction=0.000403289 max_full_streak=1 edge_capacity=1 max_edge_load=0.269 max_edge_utilization=0.269 total_traversals=9994 buffer_exploded=1 load_exceeded_capacity=0
+Edge (4 -> 22) dst_input_port=0 max_buffer_ratio=1 buffer_over_90_fraction=0.000802971 buffer_full_fraction=0.000802971 max_full_streak=1 edge_capacity=1 max_edge_load=0.272 max_edge_utilization=0.272 total_traversals=8884 buffer_exploded=1 load_exceeded_capacity=0
+Edge (5 -> 0) dst_input_port=6 max_buffer_ratio=1 buffer_over_90_fraction=0.0375913 buffer_full_fraction=0.0375913 max_full_streak=4 edge_capacity=0.444444 max_edge_load=0.18 max_edge_utilization=0.405 total_traversals=5873 buffer_exploded=1 load_exceeded_capacity=0
+Edge (5 -> 1) dst_input_port=6 max_buffer_ratio=1 buffer_over_90_fraction=0.00715442 buffer_full_fraction=0.00715442 max_full_streak=3 edge_capacity=0.444444 max_edge_load=0.181 max_edge_utilization=0.40725 total_traversals=5888 buffer_exploded=1 load_exceeded_capacity=0
+Edge (5 -> 2) dst_input_port=6 max_buffer_ratio=1 buffer_over_90_fraction=0.0345945 buffer_full_fraction=0.0345945 max_full_streak=6 edge_capacity=0.444444 max_edge_load=0.179 max_edge_utilization=0.40275 total_traversals=5884 buffer_exploded=1 load_exceeded_capacity=0
+Edge (5 -> 3) dst_input_port=6 max_buffer_ratio=1 buffer_over_90_fraction=0.0449069 buffer_full_fraction=0.0449069 max_full_streak=4 edge_capacity=0.444444 max_edge_load=0.18 max_edge_utilization=0.405 total_traversals=5861 buffer_exploded=1 load_exceeded_capacity=0
+Edge (5 -> 4) dst_input_port=6 max_buffer_ratio=1 buffer_over_90_fraction=0.0266206 buffer_full_fraction=0.0266206 max_full_streak=5 edge_capacity=0.444444 max_edge_load=0.181 max_edge_utilization=0.40725 total_traversals=5896 buffer_exploded=1 load_exceeded_capacity=0
+Edge (5 -> 6) dst_input_port=7 max_buffer_ratio=1 buffer_over_90_fraction=0.0255803 buffer_full_fraction=0.0255803 max_full_streak=4 edge_capacity=0.444444 max_edge_load=0.179 max_edge_utilization=0.40275 total_traversals=5885 buffer_exploded=1 load_exceeded_capacity=0
+Edge (5 -> 7) dst_input_port=7 max_buffer_ratio=1 buffer_over_90_fraction=0.0468204 buffer_full_fraction=0.0468204 max_full_streak=3 edge_capacity=0.444444 max_edge_load=0.182 max_edge_utilization=0.4095 total_traversals=5880 buffer_exploded=1 load_exceeded_capacity=0
+Edge (5 -> 8) dst_input_port=7 max_buffer_ratio=1 buffer_over_90_fraction=0.0307791 buffer_full_fraction=0.0307791 max_full_streak=3 edge_capacity=0.444444 max_edge_load=0.18 max_edge_utilization=0.405 total_traversals=5877 buffer_exploded=1 load_exceeded_capacity=0
+Edge (5 -> 14) dst_input_port=0 max_buffer_ratio=1 buffer_over_90_fraction=0.00197247 buffer_full_fraction=0.00197247 max_full_streak=2 edge_capacity=1 max_edge_load=0.27 max_edge_utilization=0.27 total_traversals=8858 buffer_exploded=1 load_exceeded_capacity=0
+Edge (5 -> 23) dst_input_port=0 max_buffer_ratio=1 buffer_over_90_fraction=0.000613766 buffer_full_fraction=0.000613766 max_full_streak=1 edge_capacity=1 max_edge_load=0.271 max_edge_utilization=0.271 total_traversals=10037 buffer_exploded=1 load_exceeded_capacity=0
+Edge (6 -> 0) dst_input_port=7 max_buffer_ratio=1 buffer_over_90_fraction=0.0282058 buffer_full_fraction=0.0282058 max_full_streak=4 edge_capacity=0.444444 max_edge_load=0.189 max_edge_utilization=0.42525 total_traversals=7098 buffer_exploded=1 load_exceeded_capacity=0
+Edge (6 -> 1) dst_input_port=7 max_buffer_ratio=1 buffer_over_90_fraction=0.0389387 buffer_full_fraction=0.0389387 max_full_streak=3 edge_capacity=0.444444 max_edge_load=0.18 max_edge_utilization=0.405 total_traversals=5908 buffer_exploded=1 load_exceeded_capacity=0
+Edge (6 -> 2) dst_input_port=7 max_buffer_ratio=1 buffer_over_90_fraction=0.0163213 buffer_full_fraction=0.0163213 max_full_streak=3 edge_capacity=0.444444 max_edge_load=0.182 max_edge_utilization=0.4095 total_traversals=5904 buffer_exploded=1 load_exceeded_capacity=0
+Edge (6 -> 3) dst_input_port=7 max_buffer_ratio=1 buffer_over_90_fraction=0.0150166 buffer_full_fraction=0.0150166 max_full_streak=3 edge_capacity=0.444444 max_edge_load=0.182 max_edge_utilization=0.4095 total_traversals=5881 buffer_exploded=1 load_exceeded_capacity=0
+Edge (6 -> 4) dst_input_port=7 max_buffer_ratio=1 buffer_over_90_fraction=0.0298662 buffer_full_fraction=0.0298662 max_full_streak=4 edge_capacity=0.444444 max_edge_load=0.182 max_edge_utilization=0.4095 total_traversals=5915 buffer_exploded=1 load_exceeded_capacity=0
+Edge (6 -> 5) dst_input_port=7 max_buffer_ratio=1 buffer_over_90_fraction=0.0608999 buffer_full_fraction=0.0608999 max_full_streak=7 edge_capacity=0.444444 max_edge_load=0.181 max_edge_utilization=0.40725 total_traversals=5893 buffer_exploded=1 load_exceeded_capacity=0
+Edge (6 -> 7) dst_input_port=8 max_buffer_ratio=1 buffer_over_90_fraction=0.0325839 buffer_full_fraction=0.0325839 max_full_streak=3 edge_capacity=0.444444 max_edge_load=0.182 max_edge_utilization=0.4095 total_traversals=5900 buffer_exploded=1 load_exceeded_capacity=0
+Edge (6 -> 8) dst_input_port=8 max_buffer_ratio=1 buffer_over_90_fraction=0.0175607 buffer_full_fraction=0.0175607 max_full_streak=4 edge_capacity=0.444444 max_edge_load=0.182 max_edge_utilization=0.4095 total_traversals=5897 buffer_exploded=1 load_exceeded_capacity=0
+Edge (6 -> 15) dst_input_port=0 max_buffer_ratio=1 buffer_over_90_fraction=0.00109595 buffer_full_fraction=0.00109595 max_full_streak=1 edge_capacity=1 max_edge_load=0.272 max_edge_utilization=0.272 total_traversals=8858 buffer_exploded=1 load_exceeded_capacity=0
+Edge (6 -> 24) dst_input_port=0 max_buffer_ratio=1 buffer_over_90_fraction=0.00140548 buffer_full_fraction=0.00140548 max_full_streak=1 edge_capacity=1 max_edge_load=0.271 max_edge_utilization=0.271 total_traversals=8882 buffer_exploded=1 load_exceeded_capacity=0
+Edge (7 -> 0) dst_input_port=8 max_buffer_ratio=1 buffer_over_90_fraction=0.0175853 buffer_full_fraction=0.0175853 max_full_streak=3 edge_capacity=0.444444 max_edge_load=0.181 max_edge_utilization=0.40725 total_traversals=5890 buffer_exploded=1 load_exceeded_capacity=0
+Edge (7 -> 1) dst_input_port=8 max_buffer_ratio=1 buffer_over_90_fraction=0.0193163 buffer_full_fraction=0.0193163 max_full_streak=3 edge_capacity=0.444444 max_edge_load=0.182 max_edge_utilization=0.4095 total_traversals=5904 buffer_exploded=1 load_exceeded_capacity=0
+Edge (7 -> 2) dst_input_port=8 max_buffer_ratio=1 buffer_over_90_fraction=0.0318994 buffer_full_fraction=0.0318994 max_full_streak=4 edge_capacity=0.444444 max_edge_load=0.181 max_edge_utilization=0.40725 total_traversals=5900 buffer_exploded=1 load_exceeded_capacity=0
+Edge (7 -> 3) dst_input_port=8 max_buffer_ratio=1 buffer_over_90_fraction=0.0331757 buffer_full_fraction=0.0331757 max_full_streak=3 edge_capacity=0.444444 max_edge_load=0.181 max_edge_utilization=0.40725 total_traversals=5876 buffer_exploded=1 load_exceeded_capacity=0
+Edge (7 -> 4) dst_input_port=8 max_buffer_ratio=1 buffer_over_90_fraction=0.0256701 buffer_full_fraction=0.0256701 max_full_streak=5 edge_capacity=0.444444 max_edge_load=0.181 max_edge_utilization=0.40725 total_traversals=5911 buffer_exploded=1 load_exceeded_capacity=0
+Edge (7 -> 5) dst_input_port=8 max_buffer_ratio=1 buffer_over_90_fraction=0.0255032 buffer_full_fraction=0.0255032 max_full_streak=5 edge_capacity=0.444444 max_edge_load=0.182 max_edge_utilization=0.4095 total_traversals=5890 buffer_exploded=1 load_exceeded_capacity=0
+Edge (7 -> 6) dst_input_port=8 max_buffer_ratio=1 buffer_over_90_fraction=0.0174324 buffer_full_fraction=0.0174324 max_full_streak=3 edge_capacity=0.444444 max_edge_load=0.182 max_edge_utilization=0.4095 total_traversals=5902 buffer_exploded=1 load_exceeded_capacity=0
+Edge (7 -> 8) dst_input_port=9 max_buffer_ratio=1 buffer_over_90_fraction=0.00641558 buffer_full_fraction=0.00641558 max_full_streak=3 edge_capacity=0.444444 max_edge_load=0.181 max_edge_utilization=0.40725 total_traversals=5894 buffer_exploded=1 load_exceeded_capacity=0
+Edge (7 -> 16) dst_input_port=0 max_buffer_ratio=1 buffer_over_90_fraction=0.00064885 buffer_full_fraction=0.00064885 max_full_streak=2 edge_capacity=1 max_edge_load=0.271 max_edge_utilization=0.271 total_traversals=9981 buffer_exploded=1 load_exceeded_capacity=0
+Edge (7 -> 25) dst_input_port=0 max_buffer_ratio=1 buffer_over_90_fraction=0.000622602 buffer_full_fraction=0.000622602 max_full_streak=1 edge_capacity=1 max_edge_load=0.27 max_edge_utilization=0.27 total_traversals=8882 buffer_exploded=1 load_exceeded_capacity=0
+Edge (8 -> 0) dst_input_port=9 max_buffer_ratio=1 buffer_over_90_fraction=0.0206059 buffer_full_fraction=0.0206059 max_full_streak=3 edge_capacity=0.444444 max_edge_load=0.181 max_edge_utilization=0.40725 total_traversals=5937 buffer_exploded=1 load_exceeded_capacity=0
+Edge (8 -> 1) dst_input_port=9 max_buffer_ratio=1 buffer_over_90_fraction=0.0191818 buffer_full_fraction=0.0191818 max_full_streak=3 edge_capacity=0.444444 max_edge_load=0.182 max_edge_utilization=0.4095 total_traversals=5951 buffer_exploded=1 load_exceeded_capacity=0
+Edge (8 -> 2) dst_input_port=9 max_buffer_ratio=1 buffer_over_90_fraction=0.0394325 buffer_full_fraction=0.0394325 max_full_streak=4 edge_capacity=0.444444 max_edge_load=0.18 max_edge_utilization=0.405 total_traversals=5948 buffer_exploded=1 load_exceeded_capacity=0
+Edge (8 -> 3) dst_input_port=9 max_buffer_ratio=1 buffer_over_90_fraction=0.0055599 buffer_full_fraction=0.0055599 max_full_streak=3 edge_capacity=0.444444 max_edge_load=0.182 max_edge_utilization=0.4095 total_traversals=5923 buffer_exploded=1 load_exceeded_capacity=0
+Edge (8 -> 4) dst_input_port=9 max_buffer_ratio=1 buffer_over_90_fraction=0.0130705 buffer_full_fraction=0.0130705 max_full_streak=3 edge_capacity=0.444444 max_edge_load=0.183 max_edge_utilization=0.41175 total_traversals=5958 buffer_exploded=1 load_exceeded_capacity=0
+Edge (8 -> 5) dst_input_port=9 max_buffer_ratio=1 buffer_over_90_fraction=0.0301327 buffer_full_fraction=0.0301327 max_full_streak=5 edge_capacity=0.444444 max_edge_load=0.18 max_edge_utilization=0.405 total_traversals=5937 buffer_exploded=1 load_exceeded_capacity=0
+Edge (8 -> 6) dst_input_port=9 max_buffer_ratio=1 buffer_over_90_fraction=0.0268626 buffer_full_fraction=0.0268626 max_full_streak=4 edge_capacity=0.444444 max_edge_load=0.181 max_edge_utilization=0.40725 total_traversals=5949 buffer_exploded=1 load_exceeded_capacity=0
+Edge (8 -> 7) dst_input_port=9 max_buffer_ratio=1 buffer_over_90_fraction=0.0156241 buffer_full_fraction=0.0156241 max_full_streak=8 edge_capacity=0.444444 max_edge_load=0.181 max_edge_utilization=0.40725 total_traversals=5944 buffer_exploded=1 load_exceeded_capacity=0
+Edge (8 -> 17) dst_input_port=0 max_buffer_ratio=1 buffer_over_90_fraction=0.000936609 buffer_full_fraction=0.000936609 max_full_streak=1 edge_capacity=1 max_edge_load=0.27 max_edge_utilization=0.27 total_traversals=8857 buffer_exploded=1 load_exceeded_capacity=0
+Edge (8 -> 26) dst_input_port=0 max_buffer_ratio=1 buffer_over_90_fraction=0.00189328 buffer_full_fraction=0.00189328 max_full_streak=1 edge_capacity=1 max_edge_load=0.27 max_edge_utilization=0.27 total_traversals=9783 buffer_exploded=1 load_exceeded_capacity=0
+Edge (9 -> 0) dst_input_port=0 max_buffer_ratio=1 buffer_over_90_fraction=0.000484119 buffer_full_fraction=0.000484119 max_full_streak=1 edge_capacity=1 max_edge_load=0.273 max_edge_utilization=0.273 total_traversals=8857 buffer_exploded=1 load_exceeded_capacity=0
+Edge (9 -> 10) dst_input_port=2 max_buffer_ratio=1 buffer_over_90_fraction=0.0322985 buffer_full_fraction=0.0322985 max_full_streak=3 edge_capacity=0.444444 max_edge_load=0.18 max_edge_utilization=0.405 total_traversals=5967 buffer_exploded=1 load_exceeded_capacity=0
+Edge (9 -> 11) dst_input_port=2 max_buffer_ratio=1 buffer_over_90_fraction=0.023566 buffer_full_fraction=0.023566 max_full_streak=5 edge_capacity=0.444444 max_edge_load=0.182 max_edge_utilization=0.4095 total_traversals=5948 buffer_exploded=1 load_exceeded_capacity=0
+Edge (9 -> 12) dst_input_port=2 max_buffer_ratio=1 buffer_over_90_fraction=0.0323152 buffer_full_fraction=0.0323152 max_full_streak=6 edge_capacity=0.444444 max_edge_load=0.182 max_edge_utilization=0.4095 total_traversals=6797 buffer_exploded=1 load_exceeded_capacity=0
+Edge (9 -> 13) dst_input_port=2 max_buffer_ratio=1 buffer_over_90_fraction=0.0103739 buffer_full_fraction=0.0103739 max_full_streak=3 edge_capacity=0.444444 max_edge_load=0.182 max_edge_utilization=0.4095 total_traversals=5910 buffer_exploded=1 load_exceeded_capacity=0
+Edge (9 -> 14) dst_input_port=2 max_buffer_ratio=1 buffer_over_90_fraction=0.0189975 buffer_full_fraction=0.0189975 max_full_streak=4 edge_capacity=0.444444 max_edge_load=0.181 max_edge_utilization=0.40725 total_traversals=5949 buffer_exploded=1 load_exceeded_capacity=0
+Edge (9 -> 15) dst_input_port=2 max_buffer_ratio=1 buffer_over_90_fraction=0.0370778 buffer_full_fraction=0.0370778 max_full_streak=6 edge_capacity=0.444444 max_edge_load=0.183 max_edge_utilization=0.41175 total_traversals=6035 buffer_exploded=1 load_exceeded_capacity=0
+Edge (9 -> 16) dst_input_port=2 max_buffer_ratio=1 buffer_over_90_fraction=0.0283768 buffer_full_fraction=0.0283768 max_full_streak=4 edge_capacity=0.444444 max_edge_load=0.181 max_edge_utilization=0.40725 total_traversals=5924 buffer_exploded=1 load_exceeded_capacity=0
+Edge (9 -> 17) dst_input_port=2 max_buffer_ratio=1 buffer_over_90_fraction=0.0371907 buffer_full_fraction=0.0371907 max_full_streak=7 edge_capacity=0.444444 max_edge_load=0.181 max_edge_utilization=0.40725 total_traversals=5938 buffer_exploded=1 load_exceeded_capacity=0
+Edge (9 -> 27) dst_input_port=0 max_buffer_ratio=1 buffer_over_90_fraction=0.00238834 buffer_full_fraction=0.00238834 max_full_streak=2 edge_capacity=1 max_edge_load=0.271 max_edge_utilization=0.271 total_traversals=8906 buffer_exploded=1 load_exceeded_capacity=0
+Edge (10 -> 1) dst_input_port=0 max_buffer_ratio=1 buffer_over_90_fraction=0.000631499 buffer_full_fraction=0.000631499 max_full_streak=1 edge_capacity=1 max_edge_load=0.272 max_edge_utilization=0.272 total_traversals=8857 buffer_exploded=1 load_exceeded_capacity=0
+Edge (10 -> 9) dst_input_port=2 max_buffer_ratio=1 buffer_over_90_fraction=0.0293503 buffer_full_fraction=0.0293503 max_full_streak=3 edge_capacity=0.444444 max_edge_load=0.181 max_edge_utilization=0.40725 total_traversals=6059 buffer_exploded=1 load_exceeded_capacity=0
+Edge (10 -> 11) dst_input_port=3 max_buffer_ratio=1 buffer_over_90_fraction=0.0311468 buffer_full_fraction=0.0311468 max_full_streak=4 edge_capacity=0.444444 max_edge_load=0.182 max_edge_utilization=0.4095 total_traversals=5993 buffer_exploded=1 load_exceeded_capacity=0
+Edge (10 -> 12) dst_input_port=3 max_buffer_ratio=1 buffer_over_90_fraction=0.00965289 buffer_full_fraction=0.00965289 max_full_streak=3 edge_capacity=0.444444 max_edge_load=0.182 max_edge_utilization=0.4095 total_traversals=6006 buffer_exploded=1 load_exceeded_capacity=0
+Edge (10 -> 13) dst_input_port=3 max_buffer_ratio=1 buffer_over_90_fraction=0.00858019 buffer_full_fraction=0.00858019 max_full_streak=3 edge_capacity=0.444444 max_edge_load=0.181 max_edge_utilization=0.40725 total_traversals=5954 buffer_exploded=1 load_exceeded_capacity=0
+Edge (10 -> 14) dst_input_port=3 max_buffer_ratio=1 buffer_over_90_fraction=0.00545828 buffer_full_fraction=0.00545828 max_full_streak=4 edge_capacity=0.444444 max_edge_load=0.182 max_edge_utilization=0.4095 total_traversals=5992 buffer_exploded=1 load_exceeded_capacity=0
+Edge (10 -> 15) dst_input_port=3 max_buffer_ratio=1 buffer_over_90_fraction=0.0327181 buffer_full_fraction=0.0327181 max_full_streak=6 edge_capacity=0.444444 max_edge_load=0.181 max_edge_utilization=0.40725 total_traversals=6080 buffer_exploded=1 load_exceeded_capacity=0
+Edge (10 -> 16) dst_input_port=3 max_buffer_ratio=1 buffer_over_90_fraction=0.021121 buffer_full_fraction=0.021121 max_full_streak=4 edge_capacity=0.444444 max_edge_load=0.18 max_edge_utilization=0.405 total_traversals=5969 buffer_exploded=1 load_exceeded_capacity=0
+Edge (10 -> 17) dst_input_port=3 max_buffer_ratio=1 buffer_over_90_fraction=0.0262251 buffer_full_fraction=0.0262251 max_full_streak=5 edge_capacity=0.444444 max_edge_load=0.182 max_edge_utilization=0.4095 total_traversals=5983 buffer_exploded=1 load_exceeded_capacity=0
+Edge (10 -> 28) dst_input_port=0 max_buffer_ratio=1 buffer_over_90_fraction=0.000455812 buffer_full_fraction=0.000455812 max_full_streak=1 edge_capacity=1 max_edge_load=0.271 max_edge_utilization=0.271 total_traversals=9479 buffer_exploded=1 load_exceeded_capacity=0
+Edge (11 -> 2) dst_input_port=0 max_buffer_ratio=1 buffer_over_90_fraction=0.000245416 buffer_full_fraction=0.000245416 max_full_streak=1 edge_capacity=1 max_edge_load=0.273 max_edge_utilization=0.273 total_traversals=9885 buffer_exploded=1 load_exceeded_capacity=0
+Edge (11 -> 9) dst_input_port=3 max_buffer_ratio=1 buffer_over_90_fraction=0.0264289 buffer_full_fraction=0.0264289 max_full_streak=6 edge_capacity=0.444444 max_edge_load=0.181 max_edge_utilization=0.40725 total_traversals=5991 buffer_exploded=1 load_exceeded_capacity=0
+Edge (11 -> 10) dst_input_port=3 max_buffer_ratio=1 buffer_over_90_fraction=0.0236649 buffer_full_fraction=0.0236649 max_full_streak=4 edge_capacity=0.444444 max_edge_load=0.18 max_edge_utilization=0.405 total_traversals=5944 buffer_exploded=1 load_exceeded_capacity=0
+Edge (11 -> 12) dst_input_port=4 max_buffer_ratio=1 buffer_over_90_fraction=0.0254443 buffer_full_fraction=0.0254443 max_full_streak=5 edge_capacity=0.444444 max_edge_load=0.18 max_edge_utilization=0.405 total_traversals=5938 buffer_exploded=1 load_exceeded_capacity=0
+Edge (11 -> 13) dst_input_port=4 max_buffer_ratio=1 buffer_over_90_fraction=0.0280427 buffer_full_fraction=0.0280427 max_full_streak=4 edge_capacity=0.444444 max_edge_load=0.181 max_edge_utilization=0.40725 total_traversals=5886 buffer_exploded=1 load_exceeded_capacity=0
+Edge (11 -> 14) dst_input_port=4 max_buffer_ratio=1 buffer_over_90_fraction=0.0433403 buffer_full_fraction=0.0433403 max_full_streak=4 edge_capacity=0.444444 max_edge_load=0.18 max_edge_utilization=0.405 total_traversals=5924 buffer_exploded=1 load_exceeded_capacity=0
+Edge (11 -> 15) dst_input_port=4 max_buffer_ratio=1 buffer_over_90_fraction=0.0168313 buffer_full_fraction=0.0168313 max_full_streak=4 edge_capacity=0.444444 max_edge_load=0.18 max_edge_utilization=0.405 total_traversals=6012 buffer_exploded=1 load_exceeded_capacity=0
+Edge (11 -> 16) dst_input_port=4 max_buffer_ratio=1 buffer_over_90_fraction=0.016388 buffer_full_fraction=0.016388 max_full_streak=3 edge_capacity=0.444444 max_edge_load=0.181 max_edge_utilization=0.40725 total_traversals=5900 buffer_exploded=1 load_exceeded_capacity=0
+Edge (11 -> 17) dst_input_port=4 max_buffer_ratio=1 buffer_over_90_fraction=0.0325611 buffer_full_fraction=0.0325611 max_full_streak=3 edge_capacity=0.444444 max_edge_load=0.183 max_edge_utilization=0.41175 total_traversals=5915 buffer_exploded=1 load_exceeded_capacity=0
+Edge (11 -> 29) dst_input_port=0 max_buffer_ratio=1 buffer_over_90_fraction=0.0027268 buffer_full_fraction=0.0027268 max_full_streak=2 edge_capacity=1 max_edge_load=0.271 max_edge_utilization=0.271 total_traversals=8906 buffer_exploded=1 load_exceeded_capacity=0
+Edge (12 -> 3) dst_input_port=0 max_buffer_ratio=1 buffer_over_90_fraction=0.000231598 buffer_full_fraction=0.000231598 max_full_streak=1 edge_capacity=1 max_edge_load=0.271 max_edge_utilization=0.271 total_traversals=8856 buffer_exploded=1 load_exceeded_capacity=0
+Edge (12 -> 9) dst_input_port=4 max_buffer_ratio=1 buffer_over_90_fraction=0.0207111 buffer_full_fraction=0.0207111 max_full_streak=3 edge_capacity=0.444444 max_edge_load=0.18 max_edge_utilization=0.405 total_traversals=6088 buffer_exploded=1 load_exceeded_capacity=0
+Edge (12 -> 10) dst_input_port=4 max_buffer_ratio=1 buffer_over_90_fraction=0.0234876 buffer_full_fraction=0.0234876 max_full_streak=3 edge_capacity=0.444444 max_edge_load=0.18 max_edge_utilization=0.405 total_traversals=6041 buffer_exploded=1 load_exceeded_capacity=0
+Edge (12 -> 11) dst_input_port=4 max_buffer_ratio=1 buffer_over_90_fraction=0.0133918 buffer_full_fraction=0.0133918 max_full_streak=8 edge_capacity=0.444444 max_edge_load=0.182 max_edge_utilization=0.4095 total_traversals=6022 buffer_exploded=1 load_exceeded_capacity=0
+Edge (12 -> 13) dst_input_port=5 max_buffer_ratio=1 buffer_over_90_fraction=0.0296196 buffer_full_fraction=0.0296196 max_full_streak=4 edge_capacity=0.444444 max_edge_load=0.181 max_edge_utilization=0.40725 total_traversals=5984 buffer_exploded=1 load_exceeded_capacity=0
+Edge (12 -> 14) dst_input_port=5 max_buffer_ratio=1 buffer_over_90_fraction=0.0121217 buffer_full_fraction=0.0121217 max_full_streak=3 edge_capacity=0.444444 max_edge_load=0.182 max_edge_utilization=0.4095 total_traversals=6022 buffer_exploded=1 load_exceeded_capacity=0
+Edge (12 -> 15) dst_input_port=5 max_buffer_ratio=1 buffer_over_90_fraction=0.0139021 buffer_full_fraction=0.0139021 max_full_streak=5 edge_capacity=0.444444 max_edge_load=0.183 max_edge_utilization=0.41175 total_traversals=6399 buffer_exploded=1 load_exceeded_capacity=0
+Edge (12 -> 16) dst_input_port=5 max_buffer_ratio=1 buffer_over_90_fraction=0.0320006 buffer_full_fraction=0.0320006 max_full_streak=4 edge_capacity=0.444444 max_edge_load=0.181 max_edge_utilization=0.40725 total_traversals=5998 buffer_exploded=1 load_exceeded_capacity=0
+Edge (12 -> 17) dst_input_port=5 max_buffer_ratio=1 buffer_over_90_fraction=0.0235909 buffer_full_fraction=0.0235909 max_full_streak=3 edge_capacity=0.444444 max_edge_load=0.181 max_edge_utilization=0.40725 total_traversals=6012 buffer_exploded=1 load_exceeded_capacity=0
+Edge (12 -> 30) dst_input_port=0 max_buffer_ratio=1 buffer_over_90_fraction=0.00302548 buffer_full_fraction=0.00302548 max_full_streak=1 edge_capacity=1 max_edge_load=0.27 max_edge_utilization=0.27 total_traversals=8905 buffer_exploded=1 load_exceeded_capacity=0
+Edge (13 -> 4) dst_input_port=0 max_buffer_ratio=1 buffer_over_90_fraction=0.000821139 buffer_full_fraction=0.000821139 max_full_streak=1 edge_capacity=1 max_edge_load=0.272 max_edge_utilization=0.272 total_traversals=8855 buffer_exploded=1 load_exceeded_capacity=0
+Edge (13 -> 9) dst_input_port=5 max_buffer_ratio=1 buffer_over_90_fraction=0.0284127 buffer_full_fraction=0.0284127 max_full_streak=4 edge_capacity=0.444444 max_edge_load=0.182 max_edge_utilization=0.4095 total_traversals=5954 buffer_exploded=1 load_exceeded_capacity=0
+Edge (13 -> 10) dst_input_port=5 max_buffer_ratio=1 buffer_over_90_fraction=0.0246857 buffer_full_fraction=0.0246857 max_full_streak=3 edge_capacity=0.444444 max_edge_load=0.181 max_edge_utilization=0.40725 total_traversals=5907 buffer_exploded=1 load_exceeded_capacity=0
+Edge (13 -> 11) dst_input_port=5 max_buffer_ratio=1 buffer_over_90_fraction=0.031987 buffer_full_fraction=0.031987 max_full_streak=6 edge_capacity=0.444444 max_edge_load=0.182 max_edge_utilization=0.4095 total_traversals=5888 buffer_exploded=1 load_exceeded_capacity=0
+Edge (13 -> 12) dst_input_port=5 max_buffer_ratio=1 buffer_over_90_fraction=0.0295361 buffer_full_fraction=0.0295361 max_full_streak=5 edge_capacity=0.444444 max_edge_load=0.18 max_edge_utilization=0.405 total_traversals=5902 buffer_exploded=1 load_exceeded_capacity=0
+Edge (13 -> 14) dst_input_port=6 max_buffer_ratio=1 buffer_over_90_fraction=0.0558964 buffer_full_fraction=0.0558964 max_full_streak=6 edge_capacity=0.444444 max_edge_load=0.182 max_edge_utilization=0.4095 total_traversals=5887 buffer_exploded=1 load_exceeded_capacity=0
+Edge (13 -> 15) dst_input_port=6 max_buffer_ratio=1 buffer_over_90_fraction=0.0282158 buffer_full_fraction=0.0282158 max_full_streak=4 edge_capacity=0.444444 max_edge_load=0.181 max_edge_utilization=0.40725 total_traversals=5975 buffer_exploded=1 load_exceeded_capacity=0
+Edge (13 -> 16) dst_input_port=6 max_buffer_ratio=1 buffer_over_90_fraction=0.0180558 buffer_full_fraction=0.0180558 max_full_streak=3 edge_capacity=0.444444 max_edge_load=0.182 max_edge_utilization=0.4095 total_traversals=5863 buffer_exploded=1 load_exceeded_capacity=0
+Edge (13 -> 17) dst_input_port=6 max_buffer_ratio=1 buffer_over_90_fraction=0.0266658 buffer_full_fraction=0.0266658 max_full_streak=3 edge_capacity=0.444444 max_edge_load=0.182 max_edge_utilization=0.4095 total_traversals=5877 buffer_exploded=1 load_exceeded_capacity=0
+Edge (13 -> 31) dst_input_port=0 max_buffer_ratio=1 buffer_over_90_fraction=0.000368156 buffer_full_fraction=0.000368156 max_full_streak=1 edge_capacity=1 max_edge_load=0.271 max_edge_utilization=0.271 total_traversals=10227 buffer_exploded=1 load_exceeded_capacity=0
+Edge (14 -> 5) dst_input_port=0 max_buffer_ratio=1 buffer_over_90_fraction=0.000420706 buffer_full_fraction=0.000420706 max_full_streak=1 edge_capacity=1 max_edge_load=0.271 max_edge_utilization=0.271 total_traversals=9877 buffer_exploded=1 load_exceeded_capacity=0
+Edge (14 -> 9) dst_input_port=6 max_buffer_ratio=1 buffer_over_90_fraction=0.034576 buffer_full_fraction=0.034576 max_full_streak=4 edge_capacity=0.444444 max_edge_load=0.182 max_edge_utilization=0.4095 total_traversals=5980 buffer_exploded=1 load_exceeded_capacity=0
+Edge (14 -> 10) dst_input_port=6 max_buffer_ratio=1 buffer_over_90_fraction=0.025126 buffer_full_fraction=0.025126 max_full_streak=3 edge_capacity=0.444444 max_edge_load=0.182 max_edge_utilization=0.4095 total_traversals=5934 buffer_exploded=1 load_exceeded_capacity=0
+Edge (14 -> 11) dst_input_port=6 max_buffer_ratio=1 buffer_over_90_fraction=0.00762314 buffer_full_fraction=0.00762314 max_full_streak=3 edge_capacity=0.444444 max_edge_load=0.182 max_edge_utilization=0.4095 total_traversals=5915 buffer_exploded=1 load_exceeded_capacity=0
+Edge (14 -> 12) dst_input_port=6 max_buffer_ratio=1 buffer_over_90_fraction=0.017225 buffer_full_fraction=0.017225 max_full_streak=4 edge_capacity=0.444444 max_edge_load=0.18 max_edge_utilization=0.405 total_traversals=5929 buffer_exploded=1 load_exceeded_capacity=0
+Edge (14 -> 13) dst_input_port=6 max_buffer_ratio=1 buffer_over_90_fraction=0.0375462 buffer_full_fraction=0.0375462 max_full_streak=5 edge_capacity=0.444444 max_edge_load=0.181 max_edge_utilization=0.40725 total_traversals=5876 buffer_exploded=1 load_exceeded_capacity=0
+Edge (14 -> 15) dst_input_port=7 max_buffer_ratio=1 buffer_over_90_fraction=0.0135857 buffer_full_fraction=0.0135857 max_full_streak=3 edge_capacity=0.444444 max_edge_load=0.18 max_edge_utilization=0.405 total_traversals=6002 buffer_exploded=1 load_exceeded_capacity=0
+Edge (14 -> 16) dst_input_port=7 max_buffer_ratio=1 buffer_over_90_fraction=0.0147981 buffer_full_fraction=0.0147981 max_full_streak=3 edge_capacity=0.444444 max_edge_load=0.181 max_edge_utilization=0.40725 total_traversals=5890 buffer_exploded=1 load_exceeded_capacity=0
+Edge (14 -> 17) dst_input_port=7 max_buffer_ratio=1 buffer_over_90_fraction=0.00874543 buffer_full_fraction=0.00874543 max_full_streak=3 edge_capacity=0.444444 max_edge_load=0.184 max_edge_utilization=0.414 total_traversals=5904 buffer_exploded=1 load_exceeded_capacity=0
+Edge (14 -> 32) dst_input_port=0 max_buffer_ratio=1 buffer_over_90_fraction=0.00173324 buffer_full_fraction=0.00173324 max_full_streak=2 edge_capacity=1 max_edge_load=0.271 max_edge_utilization=0.271 total_traversals=8904 buffer_exploded=1 load_exceeded_capacity=0
+Edge (15 -> 6) dst_input_port=0 max_buffer_ratio=1 buffer_over_90_fraction=0.000357985 buffer_full_fraction=0.000357985 max_full_streak=1 edge_capacity=1 max_edge_load=0.271 max_edge_utilization=0.271 total_traversals=8855 buffer_exploded=1 load_exceeded_capacity=0
+Edge (15 -> 9) dst_input_port=7 max_buffer_ratio=1 buffer_over_90_fraction=0.0141482 buffer_full_fraction=0.0141482 max_full_streak=3 edge_capacity=0.444444 max_edge_load=0.181 max_edge_utilization=0.40725 total_traversals=6328 buffer_exploded=1 load_exceeded_capacity=0
+Edge (15 -> 10) dst_input_port=7 max_buffer_ratio=1 buffer_over_90_fraction=0.00598745 buffer_full_fraction=0.00598745 max_full_streak=3 edge_capacity=0.444444 max_edge_load=0.181 max_edge_utilization=0.40725 total_traversals=6019 buffer_exploded=1 load_exceeded_capacity=0
+Edge (15 -> 11) dst_input_port=7 max_buffer_ratio=1 buffer_over_90_fraction=0.0202669 buffer_full_fraction=0.0202669 max_full_streak=4 edge_capacity=0.444444 max_edge_load=0.181 max_edge_utilization=0.40725 total_traversals=6000 buffer_exploded=1 load_exceeded_capacity=0
+Edge (15 -> 12) dst_input_port=7 max_buffer_ratio=1 buffer_over_90_fraction=0.0232058 buffer_full_fraction=0.0232058 max_full_streak=3 edge_capacity=0.444444 max_edge_load=0.179 max_edge_utilization=0.40275 total_traversals=6013 buffer_exploded=1 load_exceeded_capacity=0
+Edge (15 -> 13) dst_input_port=7 max_buffer_ratio=1 buffer_over_90_fraction=0.0355845 buffer_full_fraction=0.0355845 max_full_streak=7 edge_capacity=0.444444 max_edge_load=0.181 max_edge_utilization=0.40725 total_traversals=5962 buffer_exploded=1 load_exceeded_capacity=0
+Edge (15 -> 14) dst_input_port=7 max_buffer_ratio=1 buffer_over_90_fraction=0.0196855 buffer_full_fraction=0.0196855 max_full_streak=4 edge_capacity=0.444444 max_edge_load=0.181 max_edge_utilization=0.40725 total_traversals=5999 buffer_exploded=1 load_exceeded_capacity=0
+Edge (15 -> 16) dst_input_port=8 max_buffer_ratio=1 buffer_over_90_fraction=0.0422476 buffer_full_fraction=0.0422476 max_full_streak=4 edge_capacity=0.444444 max_edge_load=0.182 max_edge_utilization=0.4095 total_traversals=5975 buffer_exploded=1 load_exceeded_capacity=0
+Edge (15 -> 17) dst_input_port=8 max_buffer_ratio=1 buffer_over_90_fraction=0.0448466 buffer_full_fraction=0.0448466 max_full_streak=4 edge_capacity=0.444444 max_edge_load=0.182 max_edge_utilization=0.4095 total_traversals=5989 buffer_exploded=1 load_exceeded_capacity=0
+Edge (15 -> 33) dst_input_port=0 max_buffer_ratio=1 buffer_over_90_fraction=0.00163399 buffer_full_fraction=0.00163399 max_full_streak=1 edge_capacity=1 max_edge_load=0.271 max_edge_utilization=0.271 total_traversals=8903 buffer_exploded=1 load_exceeded_capacity=0
+Edge (16 -> 7) dst_input_port=0 max_buffer_ratio=1 buffer_over_90_fraction=0.000336984 buffer_full_fraction=0.000336984 max_full_streak=1 edge_capacity=1 max_edge_load=0.272 max_edge_utilization=0.272 total_traversals=8855 buffer_exploded=1 load_exceeded_capacity=0
+Edge (16 -> 9) dst_input_port=8 max_buffer_ratio=1 buffer_over_90_fraction=0.0134867 buffer_full_fraction=0.0134867 max_full_streak=3 edge_capacity=0.444444 max_edge_load=0.181 max_edge_utilization=0.40725 total_traversals=5991 buffer_exploded=1 load_exceeded_capacity=0
+Edge (16 -> 10) dst_input_port=8 max_buffer_ratio=1 buffer_over_90_fraction=0.0299733 buffer_full_fraction=0.0299733 max_full_streak=3 edge_capacity=0.444444 max_edge_load=0.181 max_edge_utilization=0.40725 total_traversals=5945 buffer_exploded=1 load_exceeded_capacity=0
+Edge (16 -> 11) dst_input_port=8 max_buffer_ratio=1 buffer_over_90_fraction=0.0165111 buffer_full_fraction=0.0165111 max_full_streak=3 edge_capacity=0.444444 max_edge_load=0.182 max_edge_utilization=0.4095 total_traversals=5926 buffer_exploded=1 load_exceeded_capacity=0
+Edge (16 -> 12) dst_input_port=8 max_buffer_ratio=1 buffer_over_90_fraction=0.0346742 buffer_full_fraction=0.0346742 max_full_streak=4 edge_capacity=0.444444 max_edge_load=0.182 max_edge_utilization=0.4095 total_traversals=5939 buffer_exploded=1 load_exceeded_capacity=0
+Edge (16 -> 13) dst_input_port=8 max_buffer_ratio=1 buffer_over_90_fraction=0.0461768 buffer_full_fraction=0.0461768 max_full_streak=7 edge_capacity=0.444444 max_edge_load=0.181 max_edge_utilization=0.40725 total_traversals=5887 buffer_exploded=1 load_exceeded_capacity=0
+Edge (16 -> 14) dst_input_port=8 max_buffer_ratio=1 buffer_over_90_fraction=0.0144798 buffer_full_fraction=0.0144798 max_full_streak=4 edge_capacity=0.444444 max_edge_load=0.18 max_edge_utilization=0.405 total_traversals=5926 buffer_exploded=1 load_exceeded_capacity=0
+Edge (16 -> 15) dst_input_port=8 max_buffer_ratio=1 buffer_over_90_fraction=0.0209996 buffer_full_fraction=0.0209996 max_full_streak=5 edge_capacity=0.444444 max_edge_load=0.182 max_edge_utilization=0.4095 total_traversals=6013 buffer_exploded=1 load_exceeded_capacity=0
+Edge (16 -> 17) dst_input_port=9 max_buffer_ratio=1 buffer_over_90_fraction=0.026094 buffer_full_fraction=0.026094 max_full_streak=3 edge_capacity=0.444444 max_edge_load=0.182 max_edge_utilization=0.4095 total_traversals=5915 buffer_exploded=1 load_exceeded_capacity=0
+Edge (16 -> 34) dst_input_port=0 max_buffer_ratio=1 buffer_over_90_fraction=0.000438573 buffer_full_fraction=0.000438573 max_full_streak=1 edge_capacity=1 max_edge_load=0.271 max_edge_utilization=0.271 total_traversals=9964 buffer_exploded=1 load_exceeded_capacity=0
+Edge (17 -> 8) dst_input_port=0 max_buffer_ratio=1 buffer_over_90_fraction=5.26168e-05 buffer_full_fraction=5.26168e-05 max_full_streak=1 edge_capacity=1 max_edge_load=0.273 max_edge_utilization=0.273 total_traversals=9951 buffer_exploded=1 load_exceeded_capacity=0
+Edge (17 -> 9) dst_input_port=9 max_buffer_ratio=1 buffer_over_90_fraction=0.0257593 buffer_full_fraction=0.0257593 max_full_streak=4 edge_capacity=0.444444 max_edge_load=0.18 max_edge_utilization=0.405 total_traversals=5983 buffer_exploded=1 load_exceeded_capacity=0
+Edge (17 -> 10) dst_input_port=9 max_buffer_ratio=1 buffer_over_90_fraction=0.0108018 buffer_full_fraction=0.0108018 max_full_streak=3 edge_capacity=0.444444 max_edge_load=0.18 max_edge_utilization=0.405 total_traversals=5937 buffer_exploded=1 load_exceeded_capacity=0
+Edge (17 -> 11) dst_input_port=9 max_buffer_ratio=1 buffer_over_90_fraction=0.0258846 buffer_full_fraction=0.0258846 max_full_streak=4 edge_capacity=0.444444 max_edge_load=0.183 max_edge_utilization=0.41175 total_traversals=5918 buffer_exploded=1 load_exceeded_capacity=0
+Edge (17 -> 12) dst_input_port=9 max_buffer_ratio=1 buffer_over_90_fraction=0.0292266 buffer_full_fraction=0.0292266 max_full_streak=3 edge_capacity=0.444444 max_edge_load=0.18 max_edge_utilization=0.405 total_traversals=5931 buffer_exploded=1 load_exceeded_capacity=0
+Edge (17 -> 13) dst_input_port=9 max_buffer_ratio=1 buffer_over_90_fraction=0.0188675 buffer_full_fraction=0.0188675 max_full_streak=4 edge_capacity=0.444444 max_edge_load=0.181 max_edge_utilization=0.40725 total_traversals=5879 buffer_exploded=1 load_exceeded_capacity=0
+Edge (17 -> 14) dst_input_port=9 max_buffer_ratio=1 buffer_over_90_fraction=0.0236019 buffer_full_fraction=0.0236019 max_full_streak=3 edge_capacity=0.444444 max_edge_load=0.182 max_edge_utilization=0.4095 total_traversals=5918 buffer_exploded=1 load_exceeded_capacity=0
+Edge (17 -> 15) dst_input_port=9 max_buffer_ratio=1 buffer_over_90_fraction=0.015513 buffer_full_fraction=0.015513 max_full_streak=5 edge_capacity=0.444444 max_edge_load=0.181 max_edge_utilization=0.40725 total_traversals=6005 buffer_exploded=1 load_exceeded_capacity=0
+Edge (17 -> 16) dst_input_port=9 max_buffer_ratio=1 buffer_over_90_fraction=0.0438159 buffer_full_fraction=0.0438159 max_full_streak=6 edge_capacity=0.444444 max_edge_load=0.181 max_edge_utilization=0.40725 total_traversals=5894 buffer_exploded=1 load_exceeded_capacity=0
+Edge (17 -> 35) dst_input_port=0 max_buffer_ratio=1 buffer_over_90_fraction=0.00179365 buffer_full_fraction=0.00179365 max_full_streak=2 edge_capacity=1 max_edge_load=0.272 max_edge_utilization=0.272 total_traversals=8903 buffer_exploded=1 load_exceeded_capacity=0
+Edge (18 -> 0) dst_input_port=1 max_buffer_ratio=1 buffer_over_90_fraction=0.00107307 buffer_full_fraction=0.00107307 max_full_streak=1 edge_capacity=1 max_edge_load=0.271 max_edge_utilization=0.271 total_traversals=8885 buffer_exploded=1 load_exceeded_capacity=0
+Edge (18 -> 19) dst_input_port=2 max_buffer_ratio=1 buffer_over_90_fraction=0.0424915 buffer_full_fraction=0.0424915 max_full_streak=4 edge_capacity=0.444444 max_edge_load=0.181 max_edge_utilization=0.40725 total_traversals=6023 buffer_exploded=1 load_exceeded_capacity=0
+Edge (18 -> 20) dst_input_port=2 max_buffer_ratio=1 buffer_over_90_fraction=0.0305382 buffer_full_fraction=0.0305382 max_full_streak=4 edge_capacity=0.444444 max_edge_load=0.183 max_edge_utilization=0.41175 total_traversals=6013 buffer_exploded=1 load_exceeded_capacity=0
+Edge (18 -> 21) dst_input_port=2 max_buffer_ratio=1 buffer_over_90_fraction=0.0156936 buffer_full_fraction=0.0156936 max_full_streak=6 edge_capacity=0.444444 max_edge_load=0.183 max_edge_utilization=0.41175 total_traversals=6539 buffer_exploded=1 load_exceeded_capacity=0
+Edge (18 -> 22) dst_input_port=2 max_buffer_ratio=1 buffer_over_90_fraction=0.0155579 buffer_full_fraction=0.0155579 max_full_streak=4 edge_capacity=0.444444 max_edge_load=0.181 max_edge_utilization=0.40725 total_traversals=5991 buffer_exploded=1 load_exceeded_capacity=0
+Edge (18 -> 23) dst_input_port=2 max_buffer_ratio=1 buffer_over_90_fraction=0.0165284 buffer_full_fraction=0.0165284 max_full_streak=5 edge_capacity=0.444444 max_edge_load=0.179 max_edge_utilization=0.40275 total_traversals=5973 buffer_exploded=1 load_exceeded_capacity=0
+Edge (18 -> 24) dst_input_port=2 max_buffer_ratio=1 buffer_over_90_fraction=0.0470502 buffer_full_fraction=0.0470502 max_full_streak=6 edge_capacity=0.444444 max_edge_load=0.18 max_edge_utilization=0.405 total_traversals=6101 buffer_exploded=1 load_exceeded_capacity=0
+Edge (18 -> 25) dst_input_port=2 max_buffer_ratio=1 buffer_over_90_fraction=0.0326181 buffer_full_fraction=0.0326181 max_full_streak=4 edge_capacity=0.444444 max_edge_load=0.181 max_edge_utilization=0.40725 total_traversals=5978 buffer_exploded=1 load_exceeded_capacity=0
+Edge (18 -> 26) dst_input_port=2 max_buffer_ratio=1 buffer_over_90_fraction=0.0391926 buffer_full_fraction=0.0391926 max_full_streak=7 edge_capacity=0.444444 max_edge_load=0.181 max_edge_utilization=0.40725 total_traversals=6037 buffer_exploded=1 load_exceeded_capacity=0
+Edge (18 -> 27) dst_input_port=1 max_buffer_ratio=1 buffer_over_90_fraction=0.00116368 buffer_full_fraction=0.00116368 max_full_streak=1 edge_capacity=1 max_edge_load=0.273 max_edge_utilization=0.273 total_traversals=8913 buffer_exploded=1 load_exceeded_capacity=0
+Edge (19 -> 1) dst_input_port=1 max_buffer_ratio=1 buffer_over_90_fraction=0.000894611 buffer_full_fraction=0.000894611 max_full_streak=1 edge_capacity=1 max_edge_load=0.27 max_edge_utilization=0.27 total_traversals=9969 buffer_exploded=1 load_exceeded_capacity=0
+Edge (19 -> 18) dst_input_port=2 max_buffer_ratio=1 buffer_over_90_fraction=0.0284974 buffer_full_fraction=0.0284974 max_full_streak=5 edge_capacity=0.444444 max_edge_load=0.18 max_edge_utilization=0.405 total_traversals=6012 buffer_exploded=1 load_exceeded_capacity=0
+Edge (19 -> 20) dst_input_port=3 max_buffer_ratio=1 buffer_over_90_fraction=0.0416718 buffer_full_fraction=0.0416718 max_full_streak=4 edge_capacity=0.444444 max_edge_load=0.181 max_edge_utilization=0.40725 total_traversals=5928 buffer_exploded=1 load_exceeded_capacity=0
+Edge (19 -> 21) dst_input_port=3 max_buffer_ratio=1 buffer_over_90_fraction=0.0142303 buffer_full_fraction=0.0142303 max_full_streak=4 edge_capacity=0.444444 max_edge_load=0.181 max_edge_utilization=0.40725 total_traversals=6007 buffer_exploded=1 load_exceeded_capacity=0
+Edge (19 -> 22) dst_input_port=3 max_buffer_ratio=1 buffer_over_90_fraction=0.0143685 buffer_full_fraction=0.0143685 max_full_streak=4 edge_capacity=0.444444 max_edge_load=0.18 max_edge_utilization=0.405 total_traversals=5905 buffer_exploded=1 load_exceeded_capacity=0
+Edge (19 -> 23) dst_input_port=3 max_buffer_ratio=1 buffer_over_90_fraction=0.0140196 buffer_full_fraction=0.0140196 max_full_streak=4 edge_capacity=0.444444 max_edge_load=0.18 max_edge_utilization=0.405 total_traversals=5888 buffer_exploded=1 load_exceeded_capacity=0
+Edge (19 -> 24) dst_input_port=3 max_buffer_ratio=1 buffer_over_90_fraction=0.0332099 buffer_full_fraction=0.0332099 max_full_streak=6 edge_capacity=0.444444 max_edge_load=0.183 max_edge_utilization=0.41175 total_traversals=6016 buffer_exploded=1 load_exceeded_capacity=0
+Edge (19 -> 25) dst_input_port=3 max_buffer_ratio=1 buffer_over_90_fraction=0.0378883 buffer_full_fraction=0.0378883 max_full_streak=4 edge_capacity=0.444444 max_edge_load=0.182 max_edge_utilization=0.4095 total_traversals=5891 buffer_exploded=1 load_exceeded_capacity=0
+Edge (19 -> 26) dst_input_port=3 max_buffer_ratio=1 buffer_over_90_fraction=0.0233188 buffer_full_fraction=0.0233188 max_full_streak=6 edge_capacity=0.444444 max_edge_load=0.182 max_edge_utilization=0.4095 total_traversals=5951 buffer_exploded=1 load_exceeded_capacity=0
+Edge (19 -> 28) dst_input_port=1 max_buffer_ratio=1 buffer_over_90_fraction=0.000902907 buffer_full_fraction=0.000902907 max_full_streak=1 edge_capacity=1 max_edge_load=0.272 max_edge_utilization=0.272 total_traversals=8913 buffer_exploded=1 load_exceeded_capacity=0
+Edge (20 -> 2) dst_input_port=1 max_buffer_ratio=1 buffer_over_90_fraction=0.000839303 buffer_full_fraction=0.000839303 max_full_streak=1 edge_capacity=1 max_edge_load=0.27 max_edge_utilization=0.27 total_traversals=8885 buffer_exploded=1 load_exceeded_capacity=0
+Edge (20 -> 18) dst_input_port=3 max_buffer_ratio=1 buffer_over_90_fraction=0.0242903 buffer_full_fraction=0.0242903 max_full_streak=4 edge_capacity=0.444444 max_edge_load=0.181 max_edge_utilization=0.40725 total_traversals=6012 buffer_exploded=1 load_exceeded_capacity=0
+Edge (20 -> 19) dst_input_port=3 max_buffer_ratio=1 buffer_over_90_fraction=0.0526812 buffer_full_fraction=0.0526812 max_full_streak=5 edge_capacity=0.444444 max_edge_load=0.181 max_edge_utilization=0.40725 total_traversals=5938 buffer_exploded=1 load_exceeded_capacity=0
+Edge (20 -> 21) dst_input_port=4 max_buffer_ratio=1 buffer_over_90_fraction=0.0543576 buffer_full_fraction=0.0543576 max_full_streak=6 edge_capacity=0.444444 max_edge_load=0.18 max_edge_utilization=0.405 total_traversals=6007 buffer_exploded=1 load_exceeded_capacity=0
+Edge (20 -> 22) dst_input_port=4 max_buffer_ratio=1 buffer_over_90_fraction=0.0353614 buffer_full_fraction=0.0353614 max_full_streak=6 edge_capacity=0.444444 max_edge_load=0.181 max_edge_utilization=0.40725 total_traversals=5905 buffer_exploded=1 load_exceeded_capacity=0
+Edge (20 -> 23) dst_input_port=4 max_buffer_ratio=1 buffer_over_90_fraction=0.012378 buffer_full_fraction=0.012378 max_full_streak=3 edge_capacity=0.444444 max_edge_load=0.181 max_edge_utilization=0.40725 total_traversals=5887 buffer_exploded=1 load_exceeded_capacity=0
+Edge (20 -> 24) dst_input_port=4 max_buffer_ratio=1 buffer_over_90_fraction=0.0169115 buffer_full_fraction=0.0169115 max_full_streak=3 edge_capacity=0.444444 max_edge_load=0.181 max_edge_utilization=0.40725 total_traversals=6015 buffer_exploded=1 load_exceeded_capacity=0
+Edge (20 -> 25) dst_input_port=4 max_buffer_ratio=1 buffer_over_90_fraction=0.0249219 buffer_full_fraction=0.0249219 max_full_streak=4 edge_capacity=0.444444 max_edge_load=0.182 max_edge_utilization=0.4095 total_traversals=5891 buffer_exploded=1 load_exceeded_capacity=0
+Edge (20 -> 26) dst_input_port=4 max_buffer_ratio=1 buffer_over_90_fraction=0.0094332 buffer_full_fraction=0.0094332 max_full_streak=4 edge_capacity=0.444444 max_edge_load=0.18 max_edge_utilization=0.405 total_traversals=5951 buffer_exploded=1 load_exceeded_capacity=0
+Edge (20 -> 29) dst_input_port=1 max_buffer_ratio=1 buffer_over_90_fraction=0.000175365 buffer_full_fraction=0.000175365 max_full_streak=1 edge_capacity=1 max_edge_load=0.273 max_edge_utilization=0.273 total_traversals=9863 buffer_exploded=1 load_exceeded_capacity=0
+Edge (21 -> 3) dst_input_port=1 max_buffer_ratio=1 buffer_over_90_fraction=0.000683247 buffer_full_fraction=0.000683247 max_full_streak=1 edge_capacity=1 max_edge_load=0.27 max_edge_utilization=0.27 total_traversals=8885 buffer_exploded=1 load_exceeded_capacity=0
+Edge (21 -> 18) dst_input_port=4 max_buffer_ratio=1 buffer_over_90_fraction=0.0451543 buffer_full_fraction=0.0451543 max_full_streak=6 edge_capacity=0.444444 max_edge_load=0.178 max_edge_utilization=0.4005 total_traversals=6106 buffer_exploded=1 load_exceeded_capacity=0
+Edge (21 -> 19) dst_input_port=4 max_buffer_ratio=1 buffer_over_90_fraction=0.033136 buffer_full_fraction=0.033136 max_full_streak=6 edge_capacity=0.444444 max_edge_load=0.181 max_edge_utilization=0.40725 total_traversals=6032 buffer_exploded=1 load_exceeded_capacity=0
+Edge (21 -> 20) dst_input_port=4 max_buffer_ratio=1 buffer_over_90_fraction=0.0338207 buffer_full_fraction=0.0338207 max_full_streak=4 edge_capacity=0.444444 max_edge_load=0.179 max_edge_utilization=0.40275 total_traversals=6022 buffer_exploded=1 load_exceeded_capacity=0
+Edge (21 -> 22) dst_input_port=5 max_buffer_ratio=1 buffer_over_90_fraction=0.0313955 buffer_full_fraction=0.0313955 max_full_streak=5 edge_capacity=0.444444 max_edge_load=0.18 max_edge_utilization=0.405 total_traversals=5998 buffer_exploded=1 load_exceeded_capacity=0
+Edge (21 -> 23) dst_input_port=5 max_buffer_ratio=1 buffer_over_90_fraction=0.0155752 buffer_full_fraction=0.0155752 max_full_streak=4 edge_capacity=0.444444 max_edge_load=0.182 max_edge_utilization=0.4095 total_traversals=5981 buffer_exploded=1 load_exceeded_capacity=0
+Edge (21 -> 24) dst_input_port=5 max_buffer_ratio=1 buffer_over_90_fraction=0.00683983 buffer_full_fraction=0.00683983 max_full_streak=6 edge_capacity=0.444444 max_edge_load=0.183 max_edge_utilization=0.41175 total_traversals=6169 buffer_exploded=1 load_exceeded_capacity=0
+Edge (21 -> 25) dst_input_port=5 max_buffer_ratio=1 buffer_over_90_fraction=0.0107007 buffer_full_fraction=0.0107007 max_full_streak=3 edge_capacity=0.444444 max_edge_load=0.183 max_edge_utilization=0.41175 total_traversals=5985 buffer_exploded=1 load_exceeded_capacity=0
+Edge (21 -> 26) dst_input_port=5 max_buffer_ratio=1 buffer_over_90_fraction=0.01749 buffer_full_fraction=0.01749 max_full_streak=4 edge_capacity=0.444444 max_edge_load=0.182 max_edge_utilization=0.4095 total_traversals=6044 buffer_exploded=1 load_exceeded_capacity=0
+Edge (21 -> 30) dst_input_port=1 max_buffer_ratio=1 buffer_over_90_fraction=0.000983324 buffer_full_fraction=0.000983324 max_full_streak=1 edge_capacity=1 max_edge_load=0.272 max_edge_utilization=0.272 total_traversals=8913 buffer_exploded=1 load_exceeded_capacity=0
+Edge (22 -> 4) dst_input_port=1 max_buffer_ratio=1 buffer_over_90_fraction=0.000473477 buffer_full_fraction=0.000473477 max_full_streak=1 edge_capacity=1 max_edge_load=0.27 max_edge_utilization=0.27 total_traversals=9950 buffer_exploded=1 load_exceeded_capacity=0
+Edge (22 -> 18) dst_input_port=5 max_buffer_ratio=1 buffer_over_90_fraction=0.0232808 buffer_full_fraction=0.0232808 max_full_streak=3 edge_capacity=0.444444 max_edge_load=0.183 max_edge_utilization=0.41175 total_traversals=6020 buffer_exploded=1 load_exceeded_capacity=0
+Edge (22 -> 19) dst_input_port=5 max_buffer_ratio=1 buffer_over_90_fraction=0.0416528 buffer_full_fraction=0.0416528 max_full_streak=5 edge_capacity=0.444444 max_edge_load=0.181 max_edge_utilization=0.40725 total_traversals=5946 buffer_exploded=1 load_exceeded_capacity=0
+Edge (22 -> 20) dst_input_port=5 max_buffer_ratio=1 buffer_over_90_fraction=0.0251186 buffer_full_fraction=0.0251186 max_full_streak=5 edge_capacity=0.444444 max_edge_load=0.183 max_edge_utilization=0.41175 total_traversals=5936 buffer_exploded=1 load_exceeded_capacity=0
+Edge (22 -> 21) dst_input_port=5 max_buffer_ratio=1 buffer_over_90_fraction=0.0126879 buffer_full_fraction=0.0126879 max_full_streak=3 edge_capacity=0.444444 max_edge_load=0.183 max_edge_utilization=0.41175 total_traversals=6015 buffer_exploded=1 load_exceeded_capacity=0
+Edge (22 -> 23) dst_input_port=6 max_buffer_ratio=1 buffer_over_90_fraction=0.0398563 buffer_full_fraction=0.0398563 max_full_streak=4 edge_capacity=0.444444 max_edge_load=0.18 max_edge_utilization=0.405 total_traversals=5896 buffer_exploded=1 load_exceeded_capacity=0
+Edge (22 -> 24) dst_input_port=6 max_buffer_ratio=1 buffer_over_90_fraction=0.0253976 buffer_full_fraction=0.0253976 max_full_streak=3 edge_capacity=0.444444 max_edge_load=0.18 max_edge_utilization=0.405 total_traversals=6022 buffer_exploded=1 load_exceeded_capacity=0
+Edge (22 -> 25) dst_input_port=6 max_buffer_ratio=1 buffer_over_90_fraction=0.0228143 buffer_full_fraction=0.0228143 max_full_streak=3 edge_capacity=0.444444 max_edge_load=0.182 max_edge_utilization=0.4095 total_traversals=5899 buffer_exploded=1 load_exceeded_capacity=0
+Edge (22 -> 26) dst_input_port=6 max_buffer_ratio=1 buffer_over_90_fraction=0.0129903 buffer_full_fraction=0.0129903 max_full_streak=4 edge_capacity=0.444444 max_edge_load=0.183 max_edge_utilization=0.41175 total_traversals=5958 buffer_exploded=1 load_exceeded_capacity=0
+Edge (22 -> 31) dst_input_port=1 max_buffer_ratio=1 buffer_over_90_fraction=0.00166566 buffer_full_fraction=0.00166566 max_full_streak=1 edge_capacity=1 max_edge_load=0.272 max_edge_utilization=0.272 total_traversals=8913 buffer_exploded=1 load_exceeded_capacity=0
+Edge (23 -> 5) dst_input_port=1 max_buffer_ratio=1 buffer_over_90_fraction=0.000527292 buffer_full_fraction=0.000527292 max_full_streak=1 edge_capacity=1 max_edge_load=0.27 max_edge_utilization=0.27 total_traversals=8884 buffer_exploded=1 load_exceeded_capacity=0
+Edge (23 -> 18) dst_input_port=6 max_buffer_ratio=1 buffer_over_90_fraction=0.0308588 buffer_full_fraction=0.0308588 max_full_streak=4 edge_capacity=0.444444 max_edge_load=0.182 max_edge_utilization=0.4095 total_traversals=6025 buffer_exploded=1 load_exceeded_capacity=0
+Edge (23 -> 19) dst_input_port=6 max_buffer_ratio=1 buffer_over_90_fraction=0.0346517 buffer_full_fraction=0.0346517 max_full_streak=4 edge_capacity=0.444444 max_edge_load=0.181 max_edge_utilization=0.40725 total_traversals=5952 buffer_exploded=1 load_exceeded_capacity=0
+Edge (23 -> 20) dst_input_port=6 max_buffer_ratio=1 buffer_over_90_fraction=0.019139 buffer_full_fraction=0.019139 max_full_streak=5 edge_capacity=0.444444 max_edge_load=0.182 max_edge_utilization=0.4095 total_traversals=5942 buffer_exploded=1 load_exceeded_capacity=0
+Edge (23 -> 21) dst_input_port=6 max_buffer_ratio=1 buffer_over_90_fraction=0.0356478 buffer_full_fraction=0.0356478 max_full_streak=4 edge_capacity=0.444444 max_edge_load=0.183 max_edge_utilization=0.41175 total_traversals=6021 buffer_exploded=1 load_exceeded_capacity=0
+Edge (23 -> 22) dst_input_port=6 max_buffer_ratio=1 buffer_over_90_fraction=0.0408095 buffer_full_fraction=0.0408095 max_full_streak=5 edge_capacity=0.444444 max_edge_load=0.181 max_edge_utilization=0.40725 total_traversals=5919 buffer_exploded=1 load_exceeded_capacity=0
+Edge (23 -> 24) dst_input_port=7 max_buffer_ratio=1 buffer_over_90_fraction=0.0194659 buffer_full_fraction=0.0194659 max_full_streak=3 edge_capacity=0.444444 max_edge_load=0.18 max_edge_utilization=0.405 total_traversals=6028 buffer_exploded=1 load_exceeded_capacity=0
+Edge (23 -> 25) dst_input_port=7 max_buffer_ratio=1 buffer_over_90_fraction=0.0131327 buffer_full_fraction=0.0131327 max_full_streak=4 edge_capacity=0.444444 max_edge_load=0.181 max_edge_utilization=0.40725 total_traversals=5905 buffer_exploded=1 load_exceeded_capacity=0
+Edge (23 -> 26) dst_input_port=7 max_buffer_ratio=1 buffer_over_90_fraction=0.00144564 buffer_full_fraction=0.00144564 max_full_streak=3 edge_capacity=0.444444 max_edge_load=0.18 max_edge_utilization=0.405 total_traversals=5964 buffer_exploded=1 load_exceeded_capacity=0
+Edge (23 -> 32) dst_input_port=1 max_buffer_ratio=1 buffer_over_90_fraction=0.000753751 buffer_full_fraction=0.000753751 max_full_streak=1 edge_capacity=1 max_edge_load=0.273 max_edge_utilization=0.273 total_traversals=9732 buffer_exploded=1 load_exceeded_capacity=0
+Edge (24 -> 6) dst_input_port=1 max_buffer_ratio=1 buffer_over_90_fraction=0.00109377 buffer_full_fraction=0.00109377 max_full_streak=1 edge_capacity=1 max_edge_load=0.27 max_edge_utilization=0.27 total_traversals=8883 buffer_exploded=1 load_exceeded_capacity=0
+Edge (24 -> 18) dst_input_port=7 max_buffer_ratio=1 buffer_over_90_fraction=0.0132529 buffer_full_fraction=0.0132529 max_full_streak=4 edge_capacity=0.444444 max_edge_load=0.182 max_edge_utilization=0.4095 total_traversals=6146 buffer_exploded=1 load_exceeded_capacity=0
+Edge (24 -> 19) dst_input_port=7 max_buffer_ratio=1 buffer_over_90_fraction=0.0220597 buffer_full_fraction=0.0220597 max_full_streak=4 edge_capacity=0.444444 max_edge_load=0.181 max_edge_utilization=0.40725 total_traversals=6028 buffer_exploded=1 load_exceeded_capacity=0
+Edge (24 -> 20) dst_input_port=7 max_buffer_ratio=1 buffer_over_90_fraction=0.027385 buffer_full_fraction=0.027385 max_full_streak=4 edge_capacity=0.444444 max_edge_load=0.181 max_edge_utilization=0.40725 total_traversals=6017 buffer_exploded=1 load_exceeded_capacity=0
+Edge (24 -> 21) dst_input_port=7 max_buffer_ratio=1 buffer_over_90_fraction=0.0332045 buffer_full_fraction=0.0332045 max_full_streak=3 edge_capacity=0.444444 max_edge_load=0.183 max_edge_utilization=0.41175 total_traversals=6097 buffer_exploded=1 load_exceeded_capacity=0
+Edge (24 -> 22) dst_input_port=7 max_buffer_ratio=1 buffer_over_90_fraction=0.0372287 buffer_full_fraction=0.0372287 max_full_streak=7 edge_capacity=0.444444 max_edge_load=0.182 max_edge_utilization=0.4095 total_traversals=5995 buffer_exploded=1 load_exceeded_capacity=0
+Edge (24 -> 23) dst_input_port=7 max_buffer_ratio=1 buffer_over_90_fraction=0.026648 buffer_full_fraction=0.026648 max_full_streak=4 edge_capacity=0.444444 max_edge_load=0.18 max_edge_utilization=0.405 total_traversals=5976 buffer_exploded=1 load_exceeded_capacity=0
+Edge (24 -> 25) dst_input_port=8 max_buffer_ratio=1 buffer_over_90_fraction=0.0374006 buffer_full_fraction=0.0374006 max_full_streak=3 edge_capacity=0.444444 max_edge_load=0.18 max_edge_utilization=0.405 total_traversals=5981 buffer_exploded=1 load_exceeded_capacity=0
+Edge (24 -> 26) dst_input_port=8 max_buffer_ratio=1 buffer_over_90_fraction=0.0393211 buffer_full_fraction=0.0393211 max_full_streak=5 edge_capacity=0.444444 max_edge_load=0.18 max_edge_utilization=0.405 total_traversals=6040 buffer_exploded=1 load_exceeded_capacity=0
+Edge (24 -> 33) dst_input_port=1 max_buffer_ratio=1 buffer_over_90_fraction=0.000943339 buffer_full_fraction=0.000943339 max_full_streak=1 edge_capacity=1 max_edge_load=0.271 max_edge_utilization=0.271 total_traversals=8911 buffer_exploded=1 load_exceeded_capacity=0
+Edge (25 -> 7) dst_input_port=1 max_buffer_ratio=1 buffer_over_90_fraction=0.00140356 buffer_full_fraction=0.00140356 max_full_streak=1 edge_capacity=1 max_edge_load=0.27 max_edge_utilization=0.27 total_traversals=9994 buffer_exploded=1 load_exceeded_capacity=0
+Edge (25 -> 18) dst_input_port=8 max_buffer_ratio=1 buffer_over_90_fraction=0.00652049 buffer_full_fraction=0.00652049 max_full_streak=3 edge_capacity=0.444444 max_edge_load=0.182 max_edge_utilization=0.4095 total_traversals=6005 buffer_exploded=1 load_exceeded_capacity=0
+Edge (25 -> 19) dst_input_port=8 max_buffer_ratio=1 buffer_over_90_fraction=0.0106246 buffer_full_fraction=0.0106246 max_full_streak=4 edge_capacity=0.444444 max_edge_load=0.182 max_edge_utilization=0.4095 total_traversals=5932 buffer_exploded=1 load_exceeded_capacity=0
+Edge (25 -> 20) dst_input_port=8 max_buffer_ratio=1 buffer_over_90_fraction=0.0298865 buffer_full_fraction=0.0298865 max_full_streak=5 edge_capacity=0.444444 max_edge_load=0.182 max_edge_utilization=0.4095 total_traversals=5921 buffer_exploded=1 load_exceeded_capacity=0
+Edge (25 -> 21) dst_input_port=8 max_buffer_ratio=1 buffer_over_90_fraction=0.0325618 buffer_full_fraction=0.0325618 max_full_streak=3 edge_capacity=0.444444 max_edge_load=0.18 max_edge_utilization=0.405 total_traversals=6001 buffer_exploded=1 load_exceeded_capacity=0
+Edge (25 -> 22) dst_input_port=8 max_buffer_ratio=1 buffer_over_90_fraction=0.00590663 buffer_full_fraction=0.00590663 max_full_streak=3 edge_capacity=0.444444 max_edge_load=0.181 max_edge_utilization=0.40725 total_traversals=5898 buffer_exploded=1 load_exceeded_capacity=0
+Edge (25 -> 23) dst_input_port=8 max_buffer_ratio=1 buffer_over_90_fraction=0.0232998 buffer_full_fraction=0.0232998 max_full_streak=5 edge_capacity=0.444444 max_edge_load=0.182 max_edge_utilization=0.4095 total_traversals=5880 buffer_exploded=1 load_exceeded_capacity=0
+Edge (25 -> 24) dst_input_port=8 max_buffer_ratio=1 buffer_over_90_fraction=0.00829942 buffer_full_fraction=0.00829942 max_full_streak=3 edge_capacity=0.444444 max_edge_load=0.182 max_edge_utilization=0.4095 total_traversals=6008 buffer_exploded=1 load_exceeded_capacity=0
+Edge (25 -> 26) dst_input_port=9 max_buffer_ratio=1 buffer_over_90_fraction=0.0268544 buffer_full_fraction=0.0268544 max_full_streak=5 edge_capacity=0.444444 max_edge_load=0.181 max_edge_utilization=0.40725 total_traversals=5944 buffer_exploded=1 load_exceeded_capacity=0
+Edge (25 -> 34) dst_input_port=1 max_buffer_ratio=1 buffer_over_90_fraction=0.00156576 buffer_full_fraction=0.00156576 max_full_streak=1 edge_capacity=1 max_edge_load=0.272 max_edge_utilization=0.272 total_traversals=8910 buffer_exploded=1 load_exceeded_capacity=0
+Edge (26 -> 8) dst_input_port=1 max_buffer_ratio=1 buffer_over_90_fraction=0.00164101 buffer_full_fraction=0.00164101 max_full_streak=2 edge_capacity=1 max_edge_load=0.27 max_edge_utilization=0.27 total_traversals=8882 buffer_exploded=1 load_exceeded_capacity=0
+Edge (26 -> 18) dst_input_port=9 max_buffer_ratio=1 buffer_over_90_fraction=0.017081 buffer_full_fraction=0.017081 max_full_streak=3 edge_capacity=0.444444 max_edge_load=0.182 max_edge_utilization=0.4095 total_traversals=6027 buffer_exploded=1 load_exceeded_capacity=0
+Edge (26 -> 19) dst_input_port=9 max_buffer_ratio=1 buffer_over_90_fraction=0.0224906 buffer_full_fraction=0.0224906 max_full_streak=3 edge_capacity=0.444444 max_edge_load=0.182 max_edge_utilization=0.4095 total_traversals=5953 buffer_exploded=1 load_exceeded_capacity=0
+Edge (26 -> 20) dst_input_port=9 max_buffer_ratio=1 buffer_over_90_fraction=0.0234369 buffer_full_fraction=0.0234369 max_full_streak=3 edge_capacity=0.444444 max_edge_load=0.182 max_edge_utilization=0.4095 total_traversals=5943 buffer_exploded=1 load_exceeded_capacity=0
+Edge (26 -> 21) dst_input_port=9 max_buffer_ratio=1 buffer_over_90_fraction=0.0283668 buffer_full_fraction=0.0283668 max_full_streak=3 edge_capacity=0.444444 max_edge_load=0.182 max_edge_utilization=0.4095 total_traversals=6023 buffer_exploded=1 load_exceeded_capacity=0
+Edge (26 -> 22) dst_input_port=9 max_buffer_ratio=1 buffer_over_90_fraction=0.0318283 buffer_full_fraction=0.0318283 max_full_streak=4 edge_capacity=0.444444 max_edge_load=0.182 max_edge_utilization=0.4095 total_traversals=5921 buffer_exploded=1 load_exceeded_capacity=0
+Edge (26 -> 23) dst_input_port=9 max_buffer_ratio=1 buffer_over_90_fraction=0.0350191 buffer_full_fraction=0.0350191 max_full_streak=4 edge_capacity=0.444444 max_edge_load=0.18 max_edge_utilization=0.405 total_traversals=5903 buffer_exploded=1 load_exceeded_capacity=0
+Edge (26 -> 24) dst_input_port=9 max_buffer_ratio=1 buffer_over_90_fraction=0.0236805 buffer_full_fraction=0.0236805 max_full_streak=3 edge_capacity=0.444444 max_edge_load=0.181 max_edge_utilization=0.40725 total_traversals=6031 buffer_exploded=1 load_exceeded_capacity=0
+Edge (26 -> 25) dst_input_port=9 max_buffer_ratio=1 buffer_over_90_fraction=0.0295865 buffer_full_fraction=0.0295865 max_full_streak=4 edge_capacity=0.444444 max_edge_load=0.181 max_edge_utilization=0.40725 total_traversals=5907 buffer_exploded=1 load_exceeded_capacity=0
+Edge (26 -> 35) dst_input_port=1 max_buffer_ratio=1 buffer_over_90_fraction=0.000175325 buffer_full_fraction=0.000175325 max_full_streak=2 edge_capacity=1 max_edge_load=0.273 max_edge_utilization=0.273 total_traversals=9801 buffer_exploded=1 load_exceeded_capacity=0
+Edge (27 -> 9) dst_input_port=1 max_buffer_ratio=1 buffer_over_90_fraction=0.000798135 buffer_full_fraction=0.000798135 max_full_streak=1 edge_capacity=1 max_edge_load=0.271 max_edge_utilization=0.271 total_traversals=8893 buffer_exploded=1 load_exceeded_capacity=0
+Edge (27 -> 18) dst_input_port=1 max_buffer_ratio=1 buffer_over_90_fraction=0.0016396 buffer_full_fraction=0.0016396 max_full_streak=2 edge_capacity=1 max_edge_load=0.271 max_edge_utilization=0.271 total_traversals=8854 buffer_exploded=1 load_exceeded_capacity=0
+Edge (27 -> 28) dst_input_port=2 max_buffer_ratio=1 buffer_over_90_fraction=0.0222799 buffer_full_fraction=0.0222799 max_full_streak=4 edge_capacity=0.444444 max_edge_load=0.18 max_edge_utilization=0.405 total_traversals=6011 buffer_exploded=1 load_exceeded_capacity=0
+Edge (27 -> 29) dst_input_port=2 max_buffer_ratio=1 buffer_over_90_fraction=0.0229914 buffer_full_fraction=0.0229914 max_full_streak=4 edge_capacity=0.444444 max_edge_load=0.182 max_edge_utilization=0.4095 total_traversals=5946 buffer_exploded=1 load_exceeded_capacity=0
+Edge (27 -> 30) dst_input_port=2 max_buffer_ratio=1 buffer_over_90_fraction=0.0159746 buffer_full_fraction=0.0159746 max_full_streak=4 edge_capacity=0.444444 max_edge_load=0.182 max_edge_utilization=0.4095 total_traversals=6987 buffer_exploded=1 load_exceeded_capacity=0
+Edge (27 -> 31) dst_input_port=2 max_buffer_ratio=1 buffer_over_90_fraction=0.0081037 buffer_full_fraction=0.0081037 max_full_streak=3 edge_capacity=0.444444 max_edge_load=0.181 max_edge_utilization=0.40725 total_traversals=5906 buffer_exploded=1 load_exceeded_capacity=0
+Edge (27 -> 32) dst_input_port=2 max_buffer_ratio=1 buffer_over_90_fraction=0.032993 buffer_full_fraction=0.032993 max_full_streak=4 edge_capacity=0.444444 max_edge_load=0.182 max_edge_utilization=0.4095 total_traversals=5960 buffer_exploded=1 load_exceeded_capacity=0
+Edge (27 -> 33) dst_input_port=2 max_buffer_ratio=1 buffer_over_90_fraction=0.0331065 buffer_full_fraction=0.0331065 max_full_streak=5 edge_capacity=0.444444 max_edge_load=0.181 max_edge_utilization=0.40725 total_traversals=5920 buffer_exploded=1 load_exceeded_capacity=0
+Edge (27 -> 34) dst_input_port=2 max_buffer_ratio=1 buffer_over_90_fraction=0.0326066 buffer_full_fraction=0.0326066 max_full_streak=6 edge_capacity=0.444444 max_edge_load=0.181 max_edge_utilization=0.40725 total_traversals=5944 buffer_exploded=1 load_exceeded_capacity=0
+Edge (27 -> 35) dst_input_port=2 max_buffer_ratio=1 buffer_over_90_fraction=0.0430427 buffer_full_fraction=0.0430427 max_full_streak=5 edge_capacity=0.444444 max_edge_load=0.181 max_edge_utilization=0.40725 total_traversals=5961 buffer_exploded=1 load_exceeded_capacity=0
+Edge (28 -> 10) dst_input_port=1 max_buffer_ratio=1 buffer_over_90_fraction=0.000693161 buffer_full_fraction=0.000693161 max_full_streak=1 edge_capacity=1 max_edge_load=0.271 max_edge_utilization=0.271 total_traversals=8892 buffer_exploded=1 load_exceeded_capacity=0
+Edge (28 -> 19) dst_input_port=1 max_buffer_ratio=1 buffer_over_90_fraction=0.000192871 buffer_full_fraction=0.000192871 max_full_streak=1 edge_capacity=1 max_edge_load=0.271 max_edge_utilization=0.271 total_traversals=9627 buffer_exploded=1 load_exceeded_capacity=0
+Edge (28 -> 27) dst_input_port=2 max_buffer_ratio=1 buffer_over_90_fraction=0.0161409 buffer_full_fraction=0.0161409 max_full_streak=3 edge_capacity=0.444444 max_edge_load=0.18 max_edge_utilization=0.405 total_traversals=5942 buffer_exploded=1 load_exceeded_capacity=0
+Edge (28 -> 29) dst_input_port=3 max_buffer_ratio=1 buffer_over_90_fraction=0.019135 buffer_full_fraction=0.019135 max_full_streak=3 edge_capacity=0.444444 max_edge_load=0.182 max_edge_utilization=0.4095 total_traversals=5938 buffer_exploded=1 load_exceeded_capacity=0
+Edge (28 -> 30) dst_input_port=3 max_buffer_ratio=1 buffer_over_90_fraction=0.0479262 buffer_full_fraction=0.0479262 max_full_streak=6 edge_capacity=0.444444 max_edge_load=0.182 max_edge_utilization=0.4095 total_traversals=5962 buffer_exploded=1 load_exceeded_capacity=0
+Edge (28 -> 31) dst_input_port=3 max_buffer_ratio=1 buffer_over_90_fraction=0.00860956 buffer_full_fraction=0.00860956 max_full_streak=5 edge_capacity=0.444444 max_edge_load=0.182 max_edge_utilization=0.4095 total_traversals=5898 buffer_exploded=1 load_exceeded_capacity=0
+Edge (28 -> 32) dst_input_port=3 max_buffer_ratio=1 buffer_over_90_fraction=0.0215257 buffer_full_fraction=0.0215257 max_full_streak=4 edge_capacity=0.444444 max_edge_load=0.181 max_edge_utilization=0.40725 total_traversals=5952 buffer_exploded=1 load_exceeded_capacity=0
+Edge (28 -> 33) dst_input_port=3 max_buffer_ratio=1 buffer_over_90_fraction=0.0230966 buffer_full_fraction=0.0230966 max_full_streak=3 edge_capacity=0.444444 max_edge_load=0.181 max_edge_utilization=0.40725 total_traversals=5912 buffer_exploded=1 load_exceeded_capacity=0
+Edge (28 -> 34) dst_input_port=3 max_buffer_ratio=1 buffer_over_90_fraction=0.0312122 buffer_full_fraction=0.0312122 max_full_streak=4 edge_capacity=0.444444 max_edge_load=0.182 max_edge_utilization=0.4095 total_traversals=5936 buffer_exploded=1 load_exceeded_capacity=0
+Edge (28 -> 35) dst_input_port=3 max_buffer_ratio=1 buffer_over_90_fraction=0.0297582 buffer_full_fraction=0.0297582 max_full_streak=3 edge_capacity=0.444444 max_edge_load=0.181 max_edge_utilization=0.40725 total_traversals=5953 buffer_exploded=1 load_exceeded_capacity=0
+Edge (29 -> 11) dst_input_port=1 max_buffer_ratio=1 buffer_over_90_fraction=0.00101669 buffer_full_fraction=0.00101669 max_full_streak=1 edge_capacity=1 max_edge_load=0.271 max_edge_utilization=0.271 total_traversals=9916 buffer_exploded=1 load_exceeded_capacity=0
+Edge (29 -> 20) dst_input_port=1 max_buffer_ratio=1 buffer_over_90_fraction=0.00119099 buffer_full_fraction=0.00119099 max_full_streak=2 edge_capacity=1 max_edge_load=0.271 max_edge_utilization=0.271 total_traversals=8852 buffer_exploded=1 load_exceeded_capacity=0
+Edge (29 -> 27) dst_input_port=3 max_buffer_ratio=1 buffer_over_90_fraction=0.0122783 buffer_full_fraction=0.0122783 max_full_streak=3 edge_capacity=0.444444 max_edge_load=0.181 max_edge_utilization=0.40725 total_traversals=5932 buffer_exploded=1 load_exceeded_capacity=0
+Edge (29 -> 28) dst_input_port=3 max_buffer_ratio=1 buffer_over_90_fraction=0.0367252 buffer_full_fraction=0.0367252 max_full_streak=10 edge_capacity=0.444444 max_edge_load=0.182 max_edge_utilization=0.4095 total_traversals=5993 buffer_exploded=1 load_exceeded_capacity=0
+Edge (29 -> 30) dst_input_port=4 max_buffer_ratio=1 buffer_over_90_fraction=0.031628 buffer_full_fraction=0.031628 max_full_streak=4 edge_capacity=0.444444 max_edge_load=0.181 max_edge_utilization=0.40725 total_traversals=5952 buffer_exploded=1 load_exceeded_capacity=0
+Edge (29 -> 31) dst_input_port=4 max_buffer_ratio=1 buffer_over_90_fraction=0.0375611 buffer_full_fraction=0.0375611 max_full_streak=4 edge_capacity=0.444444 max_edge_load=0.182 max_edge_utilization=0.4095 total_traversals=5888 buffer_exploded=1 load_exceeded_capacity=0
+Edge (29 -> 32) dst_input_port=4 max_buffer_ratio=1 buffer_over_90_fraction=0.0235851 buffer_full_fraction=0.0235851 max_full_streak=5 edge_capacity=0.444444 max_edge_load=0.183 max_edge_utilization=0.41175 total_traversals=5942 buffer_exploded=1 load_exceeded_capacity=0
+Edge (29 -> 33) dst_input_port=4 max_buffer_ratio=1 buffer_over_90_fraction=0.0453285 buffer_full_fraction=0.0453285 max_full_streak=5 edge_capacity=0.444444 max_edge_load=0.18 max_edge_utilization=0.405 total_traversals=5902 buffer_exploded=1 load_exceeded_capacity=0
+Edge (29 -> 34) dst_input_port=4 max_buffer_ratio=1 buffer_over_90_fraction=0.0415335 buffer_full_fraction=0.0415335 max_full_streak=4 edge_capacity=0.444444 max_edge_load=0.181 max_edge_utilization=0.40725 total_traversals=5926 buffer_exploded=1 load_exceeded_capacity=0
+Edge (29 -> 35) dst_input_port=4 max_buffer_ratio=1 buffer_over_90_fraction=0.0350606 buffer_full_fraction=0.0350606 max_full_streak=5 edge_capacity=0.444444 max_edge_load=0.183 max_edge_utilization=0.41175 total_traversals=5944 buffer_exploded=1 load_exceeded_capacity=0
+Edge (30 -> 12) dst_input_port=1 max_buffer_ratio=1 buffer_over_90_fraction=0.000651247 buffer_full_fraction=0.000651247 max_full_streak=1 edge_capacity=1 max_edge_load=0.271 max_edge_utilization=0.271 total_traversals=8892 buffer_exploded=1 load_exceeded_capacity=0
+Edge (30 -> 21) dst_input_port=1 max_buffer_ratio=1 buffer_over_90_fraction=0.00140614 buffer_full_fraction=0.00140614 max_full_streak=1 edge_capacity=1 max_edge_load=0.271 max_edge_utilization=0.271 total_traversals=8852 buffer_exploded=1 load_exceeded_capacity=0
+Edge (30 -> 27) dst_input_port=4 max_buffer_ratio=1 buffer_over_90_fraction=0.0222659 buffer_full_fraction=0.0222659 max_full_streak=5 edge_capacity=0.444444 max_edge_load=0.18 max_edge_utilization=0.405 total_traversals=5900 buffer_exploded=1 load_exceeded_capacity=0
+Edge (30 -> 28) dst_input_port=4 max_buffer_ratio=1 buffer_over_90_fraction=0.0208719 buffer_full_fraction=0.0208719 max_full_streak=4 edge_capacity=0.444444 max_edge_load=0.18 max_edge_utilization=0.405 total_traversals=5960 buffer_exploded=1 load_exceeded_capacity=0
+Edge (30 -> 29) dst_input_port=4 max_buffer_ratio=1 buffer_over_90_fraction=0.0650955 buffer_full_fraction=0.0650955 max_full_streak=6 edge_capacity=0.444444 max_edge_load=0.182 max_edge_utilization=0.4095 total_traversals=5896 buffer_exploded=1 load_exceeded_capacity=0
+Edge (30 -> 31) dst_input_port=5 max_buffer_ratio=1 buffer_over_90_fraction=0.0267947 buffer_full_fraction=0.0267947 max_full_streak=3 edge_capacity=0.444444 max_edge_load=0.181 max_edge_utilization=0.40725 total_traversals=5856 buffer_exploded=1 load_exceeded_capacity=0
+Edge (30 -> 32) dst_input_port=5 max_buffer_ratio=1 buffer_over_90_fraction=0.00723996 buffer_full_fraction=0.00723996 max_full_streak=3 edge_capacity=0.444444 max_edge_load=0.18 max_edge_utilization=0.405 total_traversals=5910 buffer_exploded=1 load_exceeded_capacity=0
+Edge (30 -> 33) dst_input_port=5 max_buffer_ratio=1 buffer_over_90_fraction=0.02565 buffer_full_fraction=0.02565 max_full_streak=5 edge_capacity=0.444444 max_edge_load=0.203 max_edge_utilization=0.45675 total_traversals=7130 buffer_exploded=1 load_exceeded_capacity=0
+Edge (30 -> 34) dst_input_port=5 max_buffer_ratio=1 buffer_over_90_fraction=0.0243965 buffer_full_fraction=0.0243965 max_full_streak=3 edge_capacity=0.444444 max_edge_load=0.181 max_edge_utilization=0.40725 total_traversals=5894 buffer_exploded=1 load_exceeded_capacity=0
+Edge (30 -> 35) dst_input_port=5 max_buffer_ratio=1 buffer_over_90_fraction=0.0420667 buffer_full_fraction=0.0420667 max_full_streak=3 edge_capacity=0.444444 max_edge_load=0.181 max_edge_utilization=0.40725 total_traversals=5911 buffer_exploded=1 load_exceeded_capacity=0
+Edge (31 -> 13) dst_input_port=1 max_buffer_ratio=1 buffer_over_90_fraction=0.000714406 buffer_full_fraction=0.000714406 max_full_streak=1 edge_capacity=1 max_edge_load=0.271 max_edge_utilization=0.271 total_traversals=8891 buffer_exploded=1 load_exceeded_capacity=0
+Edge (31 -> 22) dst_input_port=1 max_buffer_ratio=1 buffer_over_90_fraction=0.000491073 buffer_full_fraction=0.000491073 max_full_streak=1 edge_capacity=1 max_edge_load=0.272 max_edge_utilization=0.272 total_traversals=10051 buffer_exploded=1 load_exceeded_capacity=0
+Edge (31 -> 27) dst_input_port=5 max_buffer_ratio=1 buffer_over_90_fraction=0.0213522 buffer_full_fraction=0.0213522 max_full_streak=4 edge_capacity=0.444444 max_edge_load=0.18 max_edge_utilization=0.405 total_traversals=5910 buffer_exploded=1 load_exceeded_capacity=0
+Edge (31 -> 28) dst_input_port=5 max_buffer_ratio=1 buffer_over_90_fraction=0.0388827 buffer_full_fraction=0.0388827 max_full_streak=6 edge_capacity=0.444444 max_edge_load=0.181 max_edge_utilization=0.40725 total_traversals=5969 buffer_exploded=1 load_exceeded_capacity=0
+Edge (31 -> 29) dst_input_port=5 max_buffer_ratio=1 buffer_over_90_fraction=0.0335208 buffer_full_fraction=0.0335208 max_full_streak=7 edge_capacity=0.444444 max_edge_load=0.181 max_edge_utilization=0.40725 total_traversals=5905 buffer_exploded=1 load_exceeded_capacity=0
+Edge (31 -> 30) dst_input_port=5 max_buffer_ratio=1 buffer_over_90_fraction=0.015232 buffer_full_fraction=0.015232 max_full_streak=4 edge_capacity=0.444444 max_edge_load=0.18 max_edge_utilization=0.405 total_traversals=5929 buffer_exploded=1 load_exceeded_capacity=0
+Edge (31 -> 32) dst_input_port=6 max_buffer_ratio=1 buffer_over_90_fraction=0.0119343 buffer_full_fraction=0.0119343 max_full_streak=4 edge_capacity=0.444444 max_edge_load=0.181 max_edge_utilization=0.40725 total_traversals=5919 buffer_exploded=1 load_exceeded_capacity=0
+Edge (31 -> 33) dst_input_port=6 max_buffer_ratio=1 buffer_over_90_fraction=0.0155215 buffer_full_fraction=0.0155215 max_full_streak=3 edge_capacity=0.444444 max_edge_load=0.18 max_edge_utilization=0.405 total_traversals=5879 buffer_exploded=1 load_exceeded_capacity=0
+Edge (31 -> 34) dst_input_port=6 max_buffer_ratio=1 buffer_over_90_fraction=0.0237988 buffer_full_fraction=0.0237988 max_full_streak=3 edge_capacity=0.444444 max_edge_load=0.18 max_edge_utilization=0.405 total_traversals=5903 buffer_exploded=1 load_exceeded_capacity=0
+Edge (31 -> 35) dst_input_port=6 max_buffer_ratio=1 buffer_over_90_fraction=0.00582874 buffer_full_fraction=0.00582874 max_full_streak=5 edge_capacity=0.444444 max_edge_load=0.181 max_edge_utilization=0.40725 total_traversals=5921 buffer_exploded=1 load_exceeded_capacity=0
+Edge (32 -> 14) dst_input_port=1 max_buffer_ratio=1 buffer_over_90_fraction=0.000192861 buffer_full_fraction=0.000192861 max_full_streak=1 edge_capacity=1 max_edge_load=0.271 max_edge_utilization=0.271 total_traversals=9889 buffer_exploded=1 load_exceeded_capacity=0
+Edge (32 -> 23) dst_input_port=1 max_buffer_ratio=1 buffer_over_90_fraction=0.0012111 buffer_full_fraction=0.0012111 max_full_streak=1 edge_capacity=1 max_edge_load=0.271 max_edge_utilization=0.271 total_traversals=8852 buffer_exploded=1 load_exceeded_capacity=0
+Edge (32 -> 27) dst_input_port=6 max_buffer_ratio=1 buffer_over_90_fraction=0.0368823 buffer_full_fraction=0.0368823 max_full_streak=3 edge_capacity=0.444444 max_edge_load=0.182 max_edge_utilization=0.4095 total_traversals=5933 buffer_exploded=1 load_exceeded_capacity=0
+Edge (32 -> 28) dst_input_port=6 max_buffer_ratio=1 buffer_over_90_fraction=0.0296069 buffer_full_fraction=0.0296069 max_full_streak=3 edge_capacity=0.444444 max_edge_load=0.182 max_edge_utilization=0.4095 total_traversals=5992 buffer_exploded=1 load_exceeded_capacity=0
+Edge (32 -> 29) dst_input_port=6 max_buffer_ratio=1 buffer_over_90_fraction=0.00854273 buffer_full_fraction=0.00854273 max_full_streak=4 edge_capacity=0.444444 max_edge_load=0.18 max_edge_utilization=0.405 total_traversals=5927 buffer_exploded=1 load_exceeded_capacity=0
+Edge (32 -> 30) dst_input_port=6 max_buffer_ratio=1 buffer_over_90_fraction=0.0354156 buffer_full_fraction=0.0354156 max_full_streak=4 edge_capacity=0.444444 max_edge_load=0.18 max_edge_utilization=0.405 total_traversals=5952 buffer_exploded=1 load_exceeded_capacity=0
+Edge (32 -> 31) dst_input_port=6 max_buffer_ratio=1 buffer_over_90_fraction=0.063976 buffer_full_fraction=0.063976 max_full_streak=6 edge_capacity=0.444444 max_edge_load=0.181 max_edge_utilization=0.40725 total_traversals=5887 buffer_exploded=1 load_exceeded_capacity=0
+Edge (32 -> 33) dst_input_port=7 max_buffer_ratio=1 buffer_over_90_fraction=0.0107427 buffer_full_fraction=0.0107427 max_full_streak=3 edge_capacity=0.444444 max_edge_load=0.182 max_edge_utilization=0.4095 total_traversals=5902 buffer_exploded=1 load_exceeded_capacity=0
+Edge (32 -> 34) dst_input_port=7 max_buffer_ratio=1 buffer_over_90_fraction=0.00161836 buffer_full_fraction=0.00161836 max_full_streak=3 edge_capacity=0.444444 max_edge_load=0.18 max_edge_utilization=0.405 total_traversals=5926 buffer_exploded=1 load_exceeded_capacity=0
+Edge (32 -> 35) dst_input_port=7 max_buffer_ratio=1 buffer_over_90_fraction=0.0252097 buffer_full_fraction=0.0252097 max_full_streak=3 edge_capacity=0.444444 max_edge_load=0.182 max_edge_utilization=0.4095 total_traversals=5944 buffer_exploded=1 load_exceeded_capacity=0
+Edge (33 -> 15) dst_input_port=1 max_buffer_ratio=1 buffer_over_90_fraction=0.000609397 buffer_full_fraction=0.000609397 max_full_streak=1 edge_capacity=1 max_edge_load=0.271 max_edge_utilization=0.271 total_traversals=8891 buffer_exploded=1 load_exceeded_capacity=0
+Edge (33 -> 24) dst_input_port=1 max_buffer_ratio=1 buffer_over_90_fraction=0.0013294 buffer_full_fraction=0.0013294 max_full_streak=1 edge_capacity=1 max_edge_load=0.271 max_edge_utilization=0.271 total_traversals=8852 buffer_exploded=1 load_exceeded_capacity=0
+Edge (33 -> 27) dst_input_port=7 max_buffer_ratio=1 buffer_over_90_fraction=0.0215783 buffer_full_fraction=0.0215783 max_full_streak=3 edge_capacity=0.444444 max_edge_load=0.181 max_edge_utilization=0.40725 total_traversals=6882 buffer_exploded=1 load_exceeded_capacity=0
+Edge (33 -> 28) dst_input_port=7 max_buffer_ratio=1 buffer_over_90_fraction=0.0111798 buffer_full_fraction=0.0111798 max_full_streak=5 edge_capacity=0.444444 max_edge_load=0.181 max_edge_utilization=0.40725 total_traversals=5990 buffer_exploded=1 load_exceeded_capacity=0
+Edge (33 -> 29) dst_input_port=7 max_buffer_ratio=1 buffer_over_90_fraction=0.00787664 buffer_full_fraction=0.00787664 max_full_streak=4 edge_capacity=0.444444 max_edge_load=0.18 max_edge_utilization=0.405 total_traversals=5925 buffer_exploded=1 load_exceeded_capacity=0
+Edge (33 -> 30) dst_input_port=7 max_buffer_ratio=1 buffer_over_90_fraction=0.0209383 buffer_full_fraction=0.0209383 max_full_streak=3 edge_capacity=0.444444 max_edge_load=0.182 max_edge_utilization=0.4095 total_traversals=5950 buffer_exploded=1 load_exceeded_capacity=0
+Edge (33 -> 31) dst_input_port=7 max_buffer_ratio=1 buffer_over_90_fraction=0.0310644 buffer_full_fraction=0.0310644 max_full_streak=6 edge_capacity=0.444444 max_edge_load=0.18 max_edge_utilization=0.405 total_traversals=5885 buffer_exploded=1 load_exceeded_capacity=0
+Edge (33 -> 32) dst_input_port=7 max_buffer_ratio=1 buffer_over_90_fraction=0.023193 buffer_full_fraction=0.023193 max_full_streak=4 edge_capacity=0.444444 max_edge_load=0.181 max_edge_utilization=0.40725 total_traversals=5939 buffer_exploded=1 load_exceeded_capacity=0
+Edge (33 -> 34) dst_input_port=8 max_buffer_ratio=1 buffer_over_90_fraction=0.0187403 buffer_full_fraction=0.0187403 max_full_streak=5 edge_capacity=0.444444 max_edge_load=0.181 max_edge_utilization=0.40725 total_traversals=5923 buffer_exploded=1 load_exceeded_capacity=0
+Edge (33 -> 35) dst_input_port=8 max_buffer_ratio=1 buffer_over_90_fraction=0.0376764 buffer_full_fraction=0.0376764 max_full_streak=4 edge_capacity=0.444444 max_edge_load=0.181 max_edge_utilization=0.40725 total_traversals=5942 buffer_exploded=1 load_exceeded_capacity=0
+Edge (34 -> 16) dst_input_port=1 max_buffer_ratio=1 buffer_over_90_fraction=0.000483335 buffer_full_fraction=0.000483335 max_full_streak=1 edge_capacity=1 max_edge_load=0.27 max_edge_utilization=0.27 total_traversals=8891 buffer_exploded=1 load_exceeded_capacity=0
+Edge (34 -> 25) dst_input_port=1 max_buffer_ratio=1 buffer_over_90_fraction=0.00120989 buffer_full_fraction=0.00120989 max_full_streak=2 edge_capacity=1 max_edge_load=0.27 max_edge_utilization=0.27 total_traversals=9959 buffer_exploded=1 load_exceeded_capacity=0
+Edge (34 -> 27) dst_input_port=8 max_buffer_ratio=1 buffer_over_90_fraction=0.0188136 buffer_full_fraction=0.0188136 max_full_streak=4 edge_capacity=0.444444 max_edge_load=0.181 max_edge_utilization=0.40725 total_traversals=5897 buffer_exploded=1 load_exceeded_capacity=0
+Edge (34 -> 28) dst_input_port=8 max_buffer_ratio=1 buffer_over_90_fraction=0.0334602 buffer_full_fraction=0.0334602 max_full_streak=4 edge_capacity=0.444444 max_edge_load=0.181 max_edge_utilization=0.40725 total_traversals=5956 buffer_exploded=1 load_exceeded_capacity=0
+Edge (34 -> 29) dst_input_port=8 max_buffer_ratio=1 buffer_over_90_fraction=0.0301571 buffer_full_fraction=0.0301571 max_full_streak=4 edge_capacity=0.444444 max_edge_load=0.182 max_edge_utilization=0.4095 total_traversals=5891 buffer_exploded=1 load_exceeded_capacity=0
+Edge (34 -> 30) dst_input_port=8 max_buffer_ratio=1 buffer_over_90_fraction=0.00488054 buffer_full_fraction=0.00488054 max_full_streak=3 edge_capacity=0.444444 max_edge_load=0.181 max_edge_utilization=0.40725 total_traversals=5916 buffer_exploded=1 load_exceeded_capacity=0
+Edge (34 -> 31) dst_input_port=8 max_buffer_ratio=1 buffer_over_90_fraction=0.0292565 buffer_full_fraction=0.0292565 max_full_streak=5 edge_capacity=0.444444 max_edge_load=0.181 max_edge_utilization=0.40725 total_traversals=5851 buffer_exploded=1 load_exceeded_capacity=0
+Edge (34 -> 32) dst_input_port=8 max_buffer_ratio=1 buffer_over_90_fraction=0.0321099 buffer_full_fraction=0.0321099 max_full_streak=7 edge_capacity=0.444444 max_edge_load=0.181 max_edge_utilization=0.40725 total_traversals=5905 buffer_exploded=1 load_exceeded_capacity=0
+Edge (34 -> 33) dst_input_port=8 max_buffer_ratio=1 buffer_over_90_fraction=0.0344923 buffer_full_fraction=0.0344923 max_full_streak=4 edge_capacity=0.444444 max_edge_load=0.182 max_edge_utilization=0.4095 total_traversals=5866 buffer_exploded=1 load_exceeded_capacity=0
+Edge (34 -> 35) dst_input_port=9 max_buffer_ratio=1 buffer_over_90_fraction=0.0385851 buffer_full_fraction=0.0385851 max_full_streak=3 edge_capacity=0.444444 max_edge_load=0.18 max_edge_utilization=0.405 total_traversals=5907 buffer_exploded=1 load_exceeded_capacity=0
+Edge (35 -> 17) dst_input_port=1 max_buffer_ratio=1 buffer_over_90_fraction=0.000245493 buffer_full_fraction=0.000245493 max_full_streak=1 edge_capacity=1 max_edge_load=0.272 max_edge_utilization=0.272 total_traversals=9987 buffer_exploded=1 load_exceeded_capacity=0
+Edge (35 -> 26) dst_input_port=1 max_buffer_ratio=1 buffer_over_90_fraction=0.00138883 buffer_full_fraction=0.00138883 max_full_streak=1 edge_capacity=1 max_edge_load=0.271 max_edge_utilization=0.271 total_traversals=8851 buffer_exploded=1 load_exceeded_capacity=0
+Edge (35 -> 27) dst_input_port=9 max_buffer_ratio=1 buffer_over_90_fraction=0.0261854 buffer_full_fraction=0.0261854 max_full_streak=4 edge_capacity=0.444444 max_edge_load=0.181 max_edge_utilization=0.40725 total_traversals=5923 buffer_exploded=1 load_exceeded_capacity=0
+Edge (35 -> 28) dst_input_port=9 max_buffer_ratio=1 buffer_over_90_fraction=0.0394435 buffer_full_fraction=0.0394435 max_full_streak=8 edge_capacity=0.444444 max_edge_load=0.182 max_edge_utilization=0.4095 total_traversals=5983 buffer_exploded=1 load_exceeded_capacity=0
+Edge (35 -> 29) dst_input_port=9 max_buffer_ratio=1 buffer_over_90_fraction=0.0302828 buffer_full_fraction=0.0302828 max_full_streak=3 edge_capacity=0.444444 max_edge_load=0.184 max_edge_utilization=0.414 total_traversals=5918 buffer_exploded=1 load_exceeded_capacity=0
+Edge (35 -> 30) dst_input_port=9 max_buffer_ratio=1 buffer_over_90_fraction=0.0365114 buffer_full_fraction=0.0365114 max_full_streak=3 edge_capacity=0.444444 max_edge_load=0.181 max_edge_utilization=0.40725 total_traversals=5942 buffer_exploded=1 load_exceeded_capacity=0
+Edge (35 -> 31) dst_input_port=9 max_buffer_ratio=1 buffer_over_90_fraction=0.011022 buffer_full_fraction=0.011022 max_full_streak=3 edge_capacity=0.444444 max_edge_load=0.183 max_edge_utilization=0.41175 total_traversals=5877 buffer_exploded=1 load_exceeded_capacity=0
+Edge (35 -> 32) dst_input_port=9 max_buffer_ratio=1 buffer_over_90_fraction=0.0132618 buffer_full_fraction=0.0132618 max_full_streak=4 edge_capacity=0.444444 max_edge_load=0.181 max_edge_utilization=0.40725 total_traversals=5931 buffer_exploded=1 load_exceeded_capacity=0
+Edge (35 -> 33) dst_input_port=9 max_buffer_ratio=1 buffer_over_90_fraction=0.0372098 buffer_full_fraction=0.0372098 max_full_streak=5 edge_capacity=0.444444 max_edge_load=0.182 max_edge_utilization=0.4095 total_traversals=5891 buffer_exploded=1 load_exceeded_capacity=0
+Edge (35 -> 34) dst_input_port=9 max_buffer_ratio=1 buffer_over_90_fraction=0.0554771 buffer_full_fraction=0.0554771 max_full_streak=8 edge_capacity=0.444444 max_edge_load=0.182 max_edge_utilization=0.4095 total_traversals=5915 buffer_exploded=1 load_exceeded_capacity=0
+Observed edge count = 360
+Observed edge max buffer ratio = 1
+Observed edge max load = 0.273
+Observed edge max utilization = 0.45675
+Observed edge avg over-0.9 buffer fraction = 0.0209488
+Observed edge avg full-buffer fraction = 0.0209488
+Observed edge max over-0.9 buffer fraction = 0.0650955
+Observed edge max full-buffer fraction = 0.0650955
+Observed edge worst full-buffer streak = 10
+Observed edge exploded buffer count = 360
+Observed edge exceeded capacity count = 0
+
